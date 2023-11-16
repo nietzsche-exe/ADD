@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT coches (coche+)>
+<!ELEMENT coche (id)>
+<!ATTLIST coche marca CDATA #REQUIRED>
+<!ATTLIST coche modelo CDATA #REQUIRED>
+<!ATTLIST coche precio CDATA #REQUIRED>
+<!ELEMENT id (#PCDATA)>

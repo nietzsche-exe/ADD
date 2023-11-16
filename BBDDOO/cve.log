@@ -1,0 +1,28 @@
+2023-11-15 11:46:27,648 [main] DEBUG es.ciudadescolar.bbddoo.Principal        - Inicio main
+2023-11-15 11:46:27,651 [main] DEBUG es.ciudadescolar.bbddoo.Principal        - Se ha creado o abierto la base de datos C:\Users\alumno-215\eclipse-workspace\BBDDOO\alumnos.db4o
+2023-11-15 11:46:27,809 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se ha abierto o creado la BD C:\Users\alumno-215\eclipse-workspace\BBDDOO\alumnos.db4o
+2023-11-15 11:46:27,815 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se ha cerrado la BD
+2023-11-15 11:46:27,815 [main] DEBUG es.ciudadescolar.bbddoo.Principal        - Fin main
+2023-11-15 12:11:41,838 [main] DEBUG es.ciudadescolar.bbddoo.Principal        - Inicio main
+2023-11-15 12:11:41,852 [main] DEBUG es.ciudadescolar.bbddoo.Principal        - Se ha creado o abierto la base de datos C:\Users\alumno-215\eclipse-workspace\BBDDOO\alumnos.db4o
+2023-11-15 12:11:42,010 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se ha abierto o creado la BD C:\Users\alumno-215\eclipse-workspace\BBDDOO\alumnos.db4o
+2023-11-15 12:11:42,018 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se ha guardado el Alumno Paco
+2023-11-15 12:11:42,019 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se ha guardado el Alumno Manolo
+2023-11-15 12:11:42,019 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se ha guardado el Alumno Frank
+2023-11-15 12:11:42,019 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se ha guardado el Alumno Juan
+2023-11-15 12:11:42,032 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se han recuperado todos los alumnos
+2023-11-15 12:11:51,318 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se han recuperado todos los alumnos con expediente 0000
+2023-11-15 12:11:51,326 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se ha cerrado la BD
+2023-11-15 12:11:51,326 [main] DEBUG es.ciudadescolar.bbddoo.Principal        - Fin main
+2023-11-15 12:12:51,383 [main] DEBUG es.ciudadescolar.bbddoo.Principal        - Inicio main
+2023-11-15 12:12:51,397 [main] DEBUG es.ciudadescolar.bbddoo.Principal        - Se ha creado o abierto la base de datos C:\Users\alumno-215\eclipse-workspace\BBDDOO\alumnos.db4o
+2023-11-15 12:12:51,555 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se ha abierto o creado la BD C:\Users\alumno-215\eclipse-workspace\BBDDOO\alumnos.db4o
+2023-11-15 12:12:51,564 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se ha guardado el Alumno Paco
+2023-11-15 12:12:51,565 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se ha guardado el Alumno Manolo
+2023-11-15 12:12:51,565 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se ha guardado el Alumno Frank
+2023-11-15 12:12:51,565 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se ha guardado el Alumno Juan
+2023-11-15 12:12:51,578 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se han recuperado todos los alumnos
+2023-11-15 12:12:57,165 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se han recuperado todos los alumnos con expediente 0000
+2023-11-15 12:12:57,166 [main] WARN  es.ciudadescolar.bbddoo.Principal        - No hay alumnos con el expediente facilitado
+2023-11-15 12:12:57,172 [main] DEBUG es.ciudadescolar.bbddoo.BBDDOO           - Se ha cerrado la BD
+2023-11-15 12:12:57,173 [main] DEBUG es.ciudadescolar.bbddoo.Principal        - Fin main

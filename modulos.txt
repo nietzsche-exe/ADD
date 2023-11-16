@@ -1,0 +1,7 @@
+Bases de datos|6|José|1|DAM23fn3-a$
+Entornos de desarrollo|3|Salvador|1|DAM23fn3-a$
+Acceso a datos|6|José|2|DAM23fn3-a$
+Programación de servicios y procesos|4|Agustín|2|DAM23fn3-a$
+Programación|8|Salvador|1|DAM23fn3-a$
+Desarrollo web en entorno servidor|9|Vicky|2|DAW23fn3-a$
+Sistemas informáticos|6|Llanos|1|DAM23fn3-a$

@@ -1,0 +1,18 @@
+2023-11-03 10:38:38,062 [main] ERROR es.ciudadescolar.ItemDefaultHandler      - cvc-datatype-valid.1.2.1: 'https://github.com/bytebase/bytebase/blob/1.0.4/frontend/src/store/modules/issue.ts#L108-#L187' no es un valor válido para 'anyURI'.
+2023-11-03 10:38:38,068 [main] ERROR es.ciudadescolar.ItemDefaultHandler      - cvc-attribute.3: El valor 'https://github.com/bytebase/bytebase/blob/1.0.4/frontend/src/store/modules/issue.ts#L108-#L187' del atributo 'url' del elemento 'ref' no es válido con respecto a su tipo, 'anyURI'.
+2023-11-03 10:38:38,068 [main] ERROR es.ciudadescolar.ItemDefaultHandler      - cvc-datatype-valid.1.2.1: 'https://github.com/bytebase/bytebase/blob/1.0.4/frontend/src/store/modules/project.ts#L166-#L197' no es un valor válido para 'anyURI'.
+2023-11-03 10:38:38,068 [main] ERROR es.ciudadescolar.ItemDefaultHandler      - cvc-attribute.3: El valor 'https://github.com/bytebase/bytebase/blob/1.0.4/frontend/src/store/modules/project.ts#L166-#L197' del atributo 'url' del elemento 'ref' no es válido con respecto a su tipo, 'anyURI'.
+2023-11-03 10:43:54,388 [main] DEBUG es.ciudadescolar.Principal               - El fichero a parsear es C:\Users\alumno-215\Downloads\cve_list_20231022.xml
+2023-11-03 10:43:54,392 [main] DEBUG es.ciudadescolar.Principal               - El fichero xsd contra el que validar el xml es C:\Users\alumno-215\Downloads\cve_1.0.xsd
+2023-11-03 10:43:54,392 [main] DEBUG es.ciudadescolar.Principal               - Nueva instancia de SAXParserFactory
+2023-11-03 10:43:54,430 [main] DEBUG es.ciudadescolar.Principal               - Añadido schema al SAXParserFactory
+2023-11-03 10:43:54,432 [main] DEBUG es.ciudadescolar.Principal               - Nueva instancia del SAXParser
+2023-11-03 10:43:54,432 [main] DEBUG es.ciudadescolar.Principal               - Nueva instancia del DefaultHandler
+2023-11-03 10:43:54,433 [main] TRACE es.ciudadescolar.ItemDefaultHandler      - Comienzo de parseo XML
+2023-11-03 10:43:58,732 [main] ERROR es.ciudadescolar.ItemDefaultHandler      - cvc-datatype-valid.1.2.1: 'https://github.com/bytebase/bytebase/blob/1.0.4/frontend/src/store/modules/issue.ts#L108-#L187' no es un valor válido para 'anyURI'.
+2023-11-03 10:43:58,732 [main] ERROR es.ciudadescolar.ItemDefaultHandler      - cvc-attribute.3: El valor 'https://github.com/bytebase/bytebase/blob/1.0.4/frontend/src/store/modules/issue.ts#L108-#L187' del atributo 'url' del elemento 'ref' no es válido con respecto a su tipo, 'anyURI'.
+2023-11-03 10:43:58,733 [main] ERROR es.ciudadescolar.ItemDefaultHandler      - cvc-datatype-valid.1.2.1: 'https://github.com/bytebase/bytebase/blob/1.0.4/frontend/src/store/modules/project.ts#L166-#L197' no es un valor válido para 'anyURI'.
+2023-11-03 10:43:58,733 [main] ERROR es.ciudadescolar.ItemDefaultHandler      - cvc-attribute.3: El valor 'https://github.com/bytebase/bytebase/blob/1.0.4/frontend/src/store/modules/project.ts#L166-#L197' del atributo 'url' del elemento 'ref' no es válido con respecto a su tipo, 'anyURI'.
+2023-11-03 10:43:59,294 [main] TRACE es.ciudadescolar.ItemDefaultHandler      - Fin de parseo XML
+2023-11-03 10:43:59,294 [main] DEBUG es.ciudadescolar.Principal               - Fichero xml parseado
+2023-11-03 10:43:59,294 [main] DEBUG es.ciudadescolar.Principal               - Se han recuperado [289695] items del xml

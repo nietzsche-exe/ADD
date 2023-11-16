@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"AAD.UD02E07.JoseJulianSaavedra","l":"JsonManager"},{"p":"AAD.UD02E07.JoseJulianSaavedra","l":"Principal"},{"p":"AAD.UD02E07.JoseJulianSaavedra","l":"XmlManager"}];updateSearchResults();

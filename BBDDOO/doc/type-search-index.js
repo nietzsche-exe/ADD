@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"es.ciudadescolar.bbddoo","l":"Alumno"},{"p":"es.ciudadescolar.bbddoo","l":"BBDDOO"},{"p":"es.ciudadescolar.bbddoo","l":"Principal"}];updateSearchResults();
