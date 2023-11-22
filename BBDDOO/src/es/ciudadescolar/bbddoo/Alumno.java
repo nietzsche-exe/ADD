@@ -41,6 +41,14 @@ public class Alumno {
 	public String toString() {
 		return "Alumno [expediente=" + expediente + ", nombre=" + nombre + ", edad=" + edad + "]";
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		Alumno alumno = (Alumno) obj;
+		
+		return this.expediente.equals(alumno.expediente);
+		
+	}
 	
 	
 	

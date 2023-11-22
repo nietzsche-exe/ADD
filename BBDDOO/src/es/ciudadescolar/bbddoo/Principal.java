@@ -56,11 +56,11 @@ public class Principal {
 		
 		System.out.println("Introduzca el expediente del alumno a recuperar");
 		
-		List<Alumno> alumnos2 = gestorBD.getAlumnosExpediente(input.nextLine());
+		List<Alumno> alumnos2 = gestorBD.getAlumnosEdad(input.nextInt());
 		input.close();
 		
 		if (alumnos2.size() == 0) {
-			LOGGER.warn("No hay alumnos con el expediente facilitado");
+			LOGGER.warn("No hay alumnos con la edad facilitada");
 		}
 		else {
 			for (Alumno a : alumnos2) {
