@@ -1,0 +1,38 @@
+2023-11-24 09:36:18,278 [main] DEBUG ADD_EX01E01.Programa                     - Inicio Programa
+2023-11-24 09:36:18,284 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Inicio Parseo XML
+2023-11-24 09:37:15,330 [main] DEBUG ADD_EX01E01.Programa                     - Inicio Programa
+2023-11-24 09:37:15,335 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Inicio Parseo XML
+2023-11-24 09:44:45,122 [main] DEBUG ADD_EX01E01.Programa                     - Inicio Programa
+2023-11-24 09:44:45,128 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Inicio Parseo XML
+2023-11-24 09:44:45,159 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Final Parseo XML
+2023-11-24 09:44:45,165 [main] DEBUG ADD_EX01E01.Programa                     - Fin Programa
+2023-11-24 09:45:21,447 [main] DEBUG ADD_EX01E01.Programa                     - Inicio Programa
+2023-11-24 09:45:21,452 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Inicio Parseo XML
+2023-11-24 09:45:21,480 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Final Parseo XML
+2023-11-24 09:45:21,487 [main] DEBUG ADD_EX01E01.Programa                     - Fin Programa
+2023-11-24 09:54:58,938 [main] DEBUG ADD_EX01E01.Programa                     - Inicio Programa
+2023-11-24 09:54:58,943 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Inicio Parseo XML
+2023-11-24 09:56:39,041 [main] DEBUG ADD_EX01E01.Programa                     - Inicio Programa
+2023-11-24 09:56:39,046 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Inicio Parseo XML
+2023-11-24 09:56:39,073 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Final Parseo XML
+2023-11-24 09:56:39,078 [main] DEBUG ADD_EX01E01.Programa                     - Fin Programa
+2023-11-24 09:57:18,123 [main] DEBUG ADD_EX01E01.Programa                     - Inicio Programa
+2023-11-24 09:57:18,128 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Inicio Parseo XML
+2023-11-24 09:57:18,159 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Final Parseo XML
+2023-11-24 09:57:18,165 [main] DEBUG ADD_EX01E01.Programa                     - Fin Programa
+2023-11-24 09:58:31,991 [main] DEBUG ADD_EX01E01.Programa                     - Inicio Programa
+2023-11-24 09:58:31,997 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Inicio Parseo XML
+2023-11-24 09:58:32,027 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Final Parseo XML
+2023-11-24 09:58:32,032 [main] DEBUG ADD_EX01E01.Programa                     - Fin Programa
+2023-11-24 10:01:01,261 [main] DEBUG ADD_EX01E01.Programa                     - Inicio Programa
+2023-11-24 10:01:01,267 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Inicio Parseo XML
+2023-11-24 10:01:01,297 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Final Parseo XML
+2023-11-24 10:01:01,302 [main] DEBUG ADD_EX01E01.Programa                     - Fin Programa
+2023-11-24 10:02:43,745 [main] DEBUG ADD_EX01E01.Programa                     - Inicio Programa
+2023-11-24 10:02:43,752 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Inicio Parseo XML
+2023-11-24 10:02:43,781 [main] DEBUG ADD_EX01E01.JuegoDefaultHandler          - Final Parseo XML
+2023-11-24 10:02:43,786 [main] DEBUG ADD_EX01E01.Programa                     - Fin Programa
+2023-11-24 10:55:02,118 [main] DEBUG ADD_EX01E01.Programa                     - Inicio Programa
+2023-11-24 10:55:58,933 [main] DEBUG ADD_EX01E01.Programa                     - Inicio Programa
+2023-11-24 10:55:58,937 [main] ERROR ADD_EX01E01.Programa                     - Se espera un parametro (fichero xml)
+2023-11-24 10:55:58,937 [main] DEBUG ADD_EX01E01.Programa                     - Fin Programa
