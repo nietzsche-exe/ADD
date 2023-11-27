@@ -5,11 +5,23 @@ import java.io.File;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+/**
+ * Clase Principal del programa que ejecuta la logica de la app
+ * @author Jose Julian Saavedra
+ * @version 1.0
+ * @since curso 2023-2024
+ */
 public class Principal {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(Principal.class);
 
+	/**
+	 * Metodo main
+	 * Aqui se lleva acabo la ejecuccion de los metodos principales
+	 * @author Jose Julian Saavedra
+	 * @version 1.0
+	 * @since curso 2023-2024
+	 */
 	public static void main(String[] args) {
 		
 		LOGGER.debug("Inicio programa");
@@ -25,7 +37,7 @@ public class Principal {
 		XMLManager.parsearXML(xml);
 		
 		BBDDOOManager BD = new BBDDOOManager();
-		BD.almacenarEnDB(Distrito.getDistritos());
+		BD.almacenarEnDB(XMLManager.distritos);
 		
 		BD.consultarDistrito();
 	

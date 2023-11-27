@@ -13,12 +13,27 @@ import com.db4o.ObjectContainer;
 import com.db4o.ObjectSet;
 import com.db4o.query.Query;
 
+/**
+ * Clase BBDDOOManager
+ * Esta clase se encarga de gestionar la base de datos 
+ * @author Jose Julian Saavedra
+ * @version 1.0
+ * @since curso 2023-2024
+ */
 public class BBDDOOManager {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(BBDDOOManager.class);
 	private ObjectContainer db;
 	private String nombreBaseDatos = "JoseJulian_Saavedra.db4o";
 	
+	
+	/**
+	 * Constructor de la clase
+	 * En el constructor de clase se procede a la apertura o creacion de la base de datos en caso de que no exista
+	 * @author Jose Julian Saavedra
+	 * @version 1.0
+	 * @since curso 2023-2024
+	 */
 	public BBDDOOManager() {
 		
 		db = Db4oEmbedded.openFile(Db4oEmbedded.newConfiguration(), nombreBaseDatos);
@@ -26,6 +41,16 @@ public class BBDDOOManager {
 		
 	}
 	
+	/**
+	 * Metodo almacenarEnDB
+	 * Este metodo se encarga de almacenar los distintos distritos guardados previemente en una coleccion
+	 * Recibe por parametro la coleccion de distritos
+	 * @author Jose Julian Saavedra
+	 * @version 1.0
+	 * @since curso 2023-2024
+	 * @exception En caso de haber algun error en el almacenamiento se deshacen los cambios
+	 * @param distritos
+	 */
 	public void almacenarEnDB(List<Distrito> distritos) {
        
 		try {
@@ -49,6 +74,13 @@ public class BBDDOOManager {
 		 
 	}	
 	
+	/**
+	 * Metodo consultarDistrito
+	 * Este metodo permite al usuario consultar un Distrito concreto en funcion de su ID
+	 * @author Jose Julian Saavedra
+	 * @version 1.0
+	 * @since curso 2023-2024
+	 */
 	public void consultarDistrito() {
        
         db = Db4oEmbedded.openFile(Db4oEmbedded.newConfiguration(), nombreBaseDatos);
@@ -87,6 +119,13 @@ public class BBDDOOManager {
         
     }
 	
+	 /**
+	  * Metodo borrarDatos
+	  * Este metodo esta pensado para borrar todos los datos al finalizar el programa y evitar la insercion de duplicados puesto que no ha sido gestionado
+	  * @author Jose Julian Saavedra
+	  * @version 1.0
+	  * @since curso 2023-2024
+	  */
 	 public void borrarDatos() {
 	        
 		 	db = Db4oEmbedded.openFile(Db4oEmbedded.newConfiguration(), nombreBaseDatos);

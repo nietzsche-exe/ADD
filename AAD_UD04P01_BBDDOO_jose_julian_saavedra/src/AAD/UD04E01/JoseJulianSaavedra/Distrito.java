@@ -1,8 +1,12 @@
 package AAD.UD04E01.JoseJulianSaavedra;
 
-import java.util.ArrayList;
-import java.util.List;
-
+/**
+ * Clase Distrito 
+ * Gestiona las instancias de los Distritos recogidos desde el XML
+ * @author Jose Julian Saavedra
+ * @version 1.0
+ * @since curso 2023-2024
+ */
 public class Distrito {
 
 	 private int codigoDistrito;
@@ -10,7 +14,7 @@ public class Distrito {
 	 private int numMujeres;
 	 private int numHombres;
 	
-	 private static List<Distrito> distritos = new ArrayList<>();
+	 
 	 
 	 public Distrito() {
 		 
@@ -24,11 +28,7 @@ public class Distrito {
 		this.numHombres = numHombres;
 	}
 
-	
-	
-	public static List<Distrito> getDistritos() {
-		return distritos;
-	}
+
 
 	public int getCodigoDistrito() {
 		return codigoDistrito;
