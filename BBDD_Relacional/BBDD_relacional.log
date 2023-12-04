@@ -26,3 +26,247 @@
 2023-12-01 11:07:03,746 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
 2023-12-01 11:07:03,746 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
 2023-12-01 11:07:03,748 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD
+2023-12-04 11:16:06,936 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 11:16:07,303 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 11:16:07,307 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 11:16:07,333 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 11:16:07,334 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 11:16:07,334 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 11:16:07,334 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 11:16:07,334 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 11:16:07,335 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 11:16:07,335 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 11:16:07,335 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 11:17:39,961 [main] DEBUG BBDD_relacional.BBDD                     - Se ha dado de alta el alumno [5|Jose]
+2023-12-04 11:17:39,963 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD
+2023-12-04 11:45:03,125 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 11:45:03,523 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 11:45:03,528 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 11:45:03,563 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 11:45:03,563 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 11:45:03,564 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 11:45:03,564 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 11:45:03,564 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 11:45:03,564 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 11:45:03,564 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 11:45:03,564 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 11:45:03,564 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 11:45:13,620 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 11:45:14,013 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 11:45:14,017 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 11:45:14,049 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 11:45:14,050 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 11:45:14,050 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 11:45:14,050 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 11:45:14,050 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 11:45:14,051 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 11:45:14,051 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 11:45:14,051 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 11:45:14,051 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 11:53:19,214 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 11:53:19,555 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 11:53:19,559 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 11:53:19,581 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 11:53:19,582 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 11:53:19,582 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 11:53:19,582 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 11:53:19,583 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 11:53:19,583 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 11:53:19,583 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 11:53:19,583 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 11:53:19,583 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 11:53:23,238 [main] INFO  BBDD_relacional.Principal                - Se ha consultado el alumno [5]:Alumno [nombre=Jose, expediente=5]
+2023-12-04 11:53:23,241 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD
+2023-12-04 12:06:48,307 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 12:06:48,655 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 12:06:48,658 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 12:06:48,683 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 12:06:48,684 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 12:06:48,685 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 12:06:48,685 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 12:06:48,685 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 12:06:48,685 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 12:06:48,685 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 12:06:48,685 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 12:06:48,685 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 12:06:53,231 [main] INFO  BBDD_relacional.Principal                - Se ha consultado el alumno [jose]:Alumno [nombre=jose, expediente=5]
+2023-12-04 12:06:53,233 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD
+2023-12-04 12:07:04,581 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 12:07:04,927 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 12:07:04,930 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 12:07:04,955 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 12:07:04,956 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 12:07:04,956 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 12:07:04,956 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 12:07:04,956 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 12:07:04,956 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 12:07:04,956 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 12:07:04,956 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 12:07:04,956 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 12:07:09,023 [main] INFO  BBDD_relacional.Principal                - Se ha consultado el alumno [manolo]:Alumno [nombre=manolo, expediente=]
+2023-12-04 12:07:09,025 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD
+2023-12-04 12:08:16,181 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 12:08:16,522 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 12:08:16,526 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 12:08:16,549 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 12:08:16,549 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 12:08:16,550 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 12:08:16,550 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 12:08:16,550 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 12:08:16,550 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 12:08:16,550 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 12:08:16,550 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 12:08:16,550 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 12:08:22,741 [main] INFO  BBDD_relacional.Principal                - Se ha consultado el alumno [Jose]:Alumno [nombre=Jose, expediente=5]
+2023-12-04 12:08:22,744 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD
+2023-12-04 12:08:29,292 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 12:08:29,638 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 12:08:29,641 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 12:08:29,665 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 12:08:29,666 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 12:08:29,666 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 12:08:29,666 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 12:08:29,666 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 12:08:29,666 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 12:08:29,666 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 12:08:29,666 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 12:08:29,666 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 12:08:33,313 [main] INFO  BBDD_relacional.Principal                - Se ha consultado el alumno [marta]:Alumno [nombre=marta, expediente=4]
+2023-12-04 12:08:33,315 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD
+2023-12-04 12:08:37,710 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 12:08:38,054 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 12:08:38,058 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 12:08:38,082 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 12:08:38,083 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 12:08:38,083 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 12:08:38,083 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 12:08:38,084 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 12:08:38,084 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 12:08:38,084 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 12:08:38,084 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 12:08:38,084 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 12:08:42,091 [main] INFO  BBDD_relacional.Principal                - Se ha consultado el alumno [manolo]:Alumno [nombre=manolo, expediente=]
+2023-12-04 12:08:42,094 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD
+2023-12-04 12:09:14,897 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 12:09:15,245 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 12:09:15,248 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 12:09:15,272 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 12:09:15,273 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 12:09:15,273 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 12:09:15,273 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 12:09:15,274 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 12:09:15,274 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 12:09:15,274 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 12:09:15,274 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 12:09:15,274 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 12:09:19,405 [main] INFO  BBDD_relacional.Principal                - Se ha consultado el alumno [Jose]:Alumno [nombre=Jose, expediente=5]
+2023-12-04 12:09:19,407 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD
+2023-12-04 12:09:24,243 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 12:09:24,585 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 12:09:24,589 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 12:09:24,612 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 12:09:24,613 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 12:09:24,613 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 12:09:24,613 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 12:09:24,613 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 12:09:24,613 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 12:09:24,613 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 12:09:24,613 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 12:09:24,613 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 12:09:30,379 [main] INFO  BBDD_relacional.Principal                - Se ha consultado el alumno [manolo]:Alumno [nombre=manolo, expediente=]
+2023-12-04 12:09:30,381 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD
+2023-12-04 12:12:32,608 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 12:12:32,953 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 12:12:32,956 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 12:12:32,979 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 12:12:32,979 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 12:12:32,979 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 12:12:32,979 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 12:12:32,980 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 12:12:32,980 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 12:12:32,980 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 12:12:32,980 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 12:12:32,980 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 12:12:37,117 [main] WARN  BBDD_relacional.Principal                - Se ha consultado el alumno [manolo] pero no se ha encontrado en la BD
+2023-12-04 12:12:37,120 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD
+2023-12-04 12:26:00,045 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 12:26:00,388 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 12:26:00,391 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 12:26:00,414 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 12:26:00,414 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 12:26:00,414 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 12:26:00,414 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 12:26:00,415 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 12:26:00,415 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 12:26:00,415 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 12:26:00,415 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 12:26:00,415 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 12:26:00,430 [main] DEBUG BBDD_relacional.BBDD                     - Se ha dado de alta el alumno [7|Paco]
+2023-12-04 12:26:00,431 [main] DEBUG BBDD_relacional.BBDD                     - Se ha dado de alta el alumno [8|David]
+2023-12-04 12:26:00,458 [main] ERROR BBDD_relacional.BBDD                     - Error durante la insercion del alumno [8|Luisa]
+2023-12-04 12:26:00,458 [main] ERROR BBDD_relacional.BBDD                     - Error durante la insercion de Alumnos
+2023-12-04 12:26:00,462 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD
+2023-12-04 12:26:35,236 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 12:26:35,591 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 12:26:35,594 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 12:26:35,618 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 12:26:35,619 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 12:26:35,619 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 12:26:35,619 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 12:26:35,620 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 12:26:35,620 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 12:26:35,620 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 12:26:35,620 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 12:26:35,620 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 12:26:35,628 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD
+2023-12-04 12:26:58,923 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 12:26:59,278 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 12:26:59,282 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 12:26:59,307 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 12:26:59,308 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 12:26:59,308 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 12:26:59,308 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 12:26:59,308 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 12:26:59,308 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 12:26:59,308 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 12:26:59,308 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 12:26:59,308 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 12:26:59,322 [main] DEBUG BBDD_relacional.BBDD                     - Se ha dado de alta el alumno [7|Paco]
+2023-12-04 12:26:59,323 [main] DEBUG BBDD_relacional.BBDD                     - Se ha dado de alta el alumno [8|David]
+2023-12-04 12:26:59,324 [main] DEBUG BBDD_relacional.BBDD                     - Se ha dado de alta el alumno [9|Luisa]
+2023-12-04 12:26:59,329 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD
+2023-12-04 12:27:20,380 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 12:27:20,728 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 12:27:20,732 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 12:27:20,756 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 12:27:20,757 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 12:27:20,757 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 12:27:20,757 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 12:27:20,757 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 12:27:20,757 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 12:27:20,758 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 12:27:20,758 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 12:27:20,758 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 12:27:20,758 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Paco, expediente=7]
+2023-12-04 12:27:20,758 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=David, expediente=8]
+2023-12-04 12:27:20,758 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Luisa, expediente=9]
+2023-12-04 12:27:20,773 [main] DEBUG BBDD_relacional.BBDD                     - Se ha dado de alta el alumno [77|Paco]
+2023-12-04 12:27:20,799 [main] ERROR BBDD_relacional.BBDD                     - Error durante la insercion del alumno [8|David]
+2023-12-04 12:27:20,799 [main] ERROR BBDD_relacional.BBDD                     - Error durante la insercion de Alumnos
+2023-12-04 12:27:20,806 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD
+2023-12-04 12:27:34,669 [main] DEBUG BBDD_relacional.BBDD                     - Se ha registrado correctamente el driver mysql
+2023-12-04 12:27:35,030 [main] DEBUG BBDD_relacional.BBDD                     - Se ha establaecido correctamente la conexion con la BD ciudadescolar
+2023-12-04 12:27:35,034 [main] DEBUG BBDD_relacional.BBDD                     - Se ha creado correctamente el statement
+2023-12-04 12:27:35,057 [main] DEBUG BBDD_relacional.BBDD                     - Se ha ejecutado correctamente el statement: SELECT A.expediente, A.nombre FROM alumnos A
+2023-12-04 12:27:35,058 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el resultset
+2023-12-04 12:27:35,058 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado el statement
+2023-12-04 12:27:35,058 [main] INFO  BBDD_relacional.Principal                - Los alumnos recueprados son: 
+2023-12-04 12:27:35,058 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=juan, expediente=1]
+2023-12-04 12:27:35,058 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=luis, expediente=2]
+2023-12-04 12:27:35,058 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=ana, expediente=3]
+2023-12-04 12:27:35,058 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=marta, expediente=4]
+2023-12-04 12:27:35,058 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Jose, expediente=5]
+2023-12-04 12:27:35,058 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Paco, expediente=7]
+2023-12-04 12:27:35,058 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=David, expediente=8]
+2023-12-04 12:27:35,058 [main] INFO  BBDD_relacional.Principal                - Alumno [nombre=Luisa, expediente=9]
+2023-12-04 12:27:35,067 [main] DEBUG BBDD_relacional.BBDD                     - Se ha cerrado la BD

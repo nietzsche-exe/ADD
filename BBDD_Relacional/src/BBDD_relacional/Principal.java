@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Scanner;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,6 +28,47 @@ public class Principal {
 			for (Alumno alumno : alumnos) {
 				LOGGER.info(alumno.toString());
 			}
+			
+			
+			Scanner input = new Scanner(System.in);
+			
+			/* 
+			System.out.println("Escriba el expediente del alumno");
+			String expediente = input.nextLine();
+			
+			System.out.println("Escriba el nombre del alumno");
+			String nombre = input.nextLine();
+			
+			bd.insertarAlumno(expediente, nombre);
+			*/
+			
+			/*
+			System.out.println("Escriba el expediente del alumno a consultar");
+			String expediente = input.nextLine();
+			Alumno alumno = bd.getAlumnoSP(expediente);
+			if(alumno != null) {
+				LOGGER.info("Se ha consultado el alumno [" + expediente + "]:" + alumno);
+			}
+			else {
+				LOGGER.warn("Se ha consultado el alumno [" + expediente + "] pero no se ha encontrado en la BD");
+			}
+			*/
+			
+			/*
+			System.out.println("Escriba el nombre del alumno a consultar:");
+			String nombre = input.nextLine();
+			Alumno alumno = bd.getAlumnoFUN(nombre);
+			if(alumno != null) {
+				LOGGER.info("Se ha consultado el alumno [" + nombre + "]:" + alumno);
+			}
+			else {
+				LOGGER.warn("Se ha consultado el alumno [" + nombre + "] pero no se ha encontrado en la BD");
+			}
+			*/
+			
+			
+			//bd.insertTransaccionAlumnos();
+			
 			
 		}
 		catch(ClassNotFoundException e) {
