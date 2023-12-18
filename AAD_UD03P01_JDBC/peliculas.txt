@@ -1,0 +1,5 @@
+El padrino|1972|Al Pacino, Marlon Brando, Robert De Niro|n,s,n
+Rocky|1976|Sylvester Stallone, Carl Weathers, Burgess Meredith, Talia Shire|s,n,n,n
+Jungla de cristal|1988|Alan Rickman, Bonnie Bedelia, Reginald Veljohnson, Bruce Willis|n,n,n,s
+Los mercenarios 2|2012|Jason Statham, Sylvester Stallone, Bruce Willis|s,s,s
+Presunto inocente|1990|Bonnie Bedelia, Harrison Ford|s,n

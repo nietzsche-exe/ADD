@@ -1,0 +1,72 @@
+2023-12-11 12:23:53,729 [main] INFO  es.ciudadescolar.Principal               - Se han recuperado las siguientes películas...
+2023-12-11 12:23:53,743 [main] INFO  es.ciudadescolar.Principal               - Pelicula [El padrino|1972|Al Pacino(false) Robert De Niro(false) Marlon Brando(true) ]
+2023-12-11 12:23:53,744 [main] INFO  es.ciudadescolar.Principal               - Pelicula [Rocky|1976|Burgess Meredith(false) Carl Weathers(false) Sylvester Stallone(true) Talia Shire(false) ]
+2023-12-11 12:23:53,747 [main] INFO  es.ciudadescolar.Principal               - Pelicula [Jungla de cristal|1988|Bonnie Bedelia(false) Alan Rickman(false) Bruce Willis(true) Reginald Veljohnson(false) ]
+2023-12-11 12:23:53,749 [main] INFO  es.ciudadescolar.Principal               - Pelicula [Los mercenarios 2|2012|Sylvester Stallone(true) Bruce Willis(true) Jason Statham(true) ]
+2023-12-11 12:23:53,749 [main] INFO  es.ciudadescolar.Principal               - Pelicula [Presunto inocente|1990|Harrison Ford(false) Bonnie Bedelia(true) ]
+2023-12-11 12:24:17,881 [main] INFO  es.ciudadescolar.Principal               - El actor [Bonnie Bedelia] ha participado en [2] peliculas
+2023-12-11 12:24:17,930 [main] INFO  es.ciudadescolar.Principal               -   1)Jungla de cristal con un total de [4] actores
+2023-12-11 12:24:17,942 [main] INFO  es.ciudadescolar.Principal               -   2)Presunto inocente con un total de [2] actores
+2023-12-11 12:25:11,416 [main] INFO  es.ciudadescolar.Principal               - Se han recuperado las siguientes películas...
+2023-12-11 12:25:11,425 [main] INFO  es.ciudadescolar.Principal               - Pelicula [El padrino|1972|Al Pacino(false) Robert De Niro(false) Marlon Brando(true) ]
+2023-12-11 12:25:11,425 [main] INFO  es.ciudadescolar.Principal               - Pelicula [Rocky|1976|Burgess Meredith(false) Carl Weathers(false) Sylvester Stallone(true) Talia Shire(false) ]
+2023-12-11 12:25:11,426 [main] INFO  es.ciudadescolar.Principal               - Pelicula [Jungla de cristal|1988|Bonnie Bedelia(false) Alan Rickman(false) Bruce Willis(true) Reginald Veljohnson(false) ]
+2023-12-11 12:25:11,426 [main] INFO  es.ciudadescolar.Principal               - Pelicula [Los mercenarios 2|2012|Sylvester Stallone(true) Bruce Willis(true) Jason Statham(true) ]
+2023-12-11 12:25:11,426 [main] INFO  es.ciudadescolar.Principal               - Pelicula [Presunto inocente|1990|Harrison Ford(false) Bonnie Bedelia(true) ]
+2023-12-11 12:25:11,448 [main] DEBUG es.ciudadescolar.BBDD                    - Se ha registrado correctamente el driver MySQL
+2023-12-11 12:25:12,586 [main] DEBUG es.ciudadescolar.BBDD                    - Se ha establecido correctamente la conexión contra la BD jdbc:mysql://localhost:3306/coleccion_peliculas_josesala
+2023-12-11 12:25:12,613 [main] DEBUG es.ciudadescolar.BBDD                    -  Sentencia SQL insercion peliculas creada
+2023-12-11 12:25:12,614 [main] DEBUG es.ciudadescolar.BBDD                    -  Sentencia SQL insercion actores creada
+2023-12-11 12:25:12,617 [main] DEBUG es.ciudadescolar.BBDD                    -  Sentencia SQL insercion interpretes creada
+2023-12-11 12:25:12,618 [main] DEBUG es.ciudadescolar.BBDD                    -  Sentencia SQL consulta codigo de peli creada
+2023-12-11 12:25:12,619 [main] DEBUG es.ciudadescolar.BBDD                    -  Sentencia SQL consulta codigo de actor creada
+2023-12-11 12:25:12,625 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente la película [El padrino]
+2023-12-11 12:25:12,676 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Al Pacino] en la pelicula [El padrino]
+2023-12-11 12:25:12,682 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [El padrino]
+2023-12-11 12:25:12,686 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Robert De Niro] en la pelicula [El padrino]
+2023-12-11 12:25:12,688 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [El padrino]
+2023-12-11 12:25:12,691 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Marlon Brando] en la pelicula [El padrino]
+2023-12-11 12:25:12,696 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [El padrino]
+2023-12-11 12:25:12,701 [main] TRACE es.ciudadescolar.Principal               - Pelicula procesada [El padrino]
+2023-12-11 12:25:12,708 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente la película [Rocky]
+2023-12-11 12:25:12,711 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Burgess Meredith] en la pelicula [Rocky]
+2023-12-11 12:25:12,718 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [Rocky]
+2023-12-11 12:25:12,721 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Carl Weathers] en la pelicula [Rocky]
+2023-12-11 12:25:12,721 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [Rocky]
+2023-12-11 12:25:12,726 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Sylvester Stallone] en la pelicula [Rocky]
+2023-12-11 12:25:12,728 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [Rocky]
+2023-12-11 12:25:12,728 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Talia Shire] en la pelicula [Rocky]
+2023-12-11 12:25:12,731 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [Rocky]
+2023-12-11 12:25:12,738 [main] TRACE es.ciudadescolar.Principal               - Pelicula procesada [Rocky]
+2023-12-11 12:25:12,741 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente la película [Jungla de cristal]
+2023-12-11 12:25:12,741 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Bonnie Bedelia] en la pelicula [Jungla de cristal]
+2023-12-11 12:25:12,746 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [Jungla de cristal]
+2023-12-11 12:25:12,748 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Alan Rickman] en la pelicula [Jungla de cristal]
+2023-12-11 12:25:12,748 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [Jungla de cristal]
+2023-12-11 12:25:12,748 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Bruce Willis] en la pelicula [Jungla de cristal]
+2023-12-11 12:25:12,748 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [Jungla de cristal]
+2023-12-11 12:25:12,756 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Reginald Veljohnson] en la pelicula [Jungla de cristal]
+2023-12-11 12:25:12,759 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [Jungla de cristal]
+2023-12-11 12:25:12,759 [main] TRACE es.ciudadescolar.Principal               - Pelicula procesada [Jungla de cristal]
+2023-12-11 12:25:12,759 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente la película [Los mercenarios 2]
+2023-12-11 12:25:12,767 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Sylvester Stallone] en la pelicula [Los mercenarios 2]
+2023-12-11 12:25:12,769 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [Los mercenarios 2]
+2023-12-11 12:25:12,769 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Bruce Willis] en la pelicula [Los mercenarios 2]
+2023-12-11 12:25:12,777 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [Los mercenarios 2]
+2023-12-11 12:25:12,777 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Jason Statham] en la pelicula [Los mercenarios 2]
+2023-12-11 12:25:12,779 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [Los mercenarios 2]
+2023-12-11 12:25:12,786 [main] TRACE es.ciudadescolar.Principal               - Pelicula procesada [Los mercenarios 2]
+2023-12-11 12:25:12,789 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente la película [Presunto inocente]
+2023-12-11 12:25:12,789 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Harrison Ford] en la pelicula [Presunto inocente]
+2023-12-11 12:25:12,789 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [Presunto inocente]
+2023-12-11 12:25:12,796 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente el actor [Bonnie Bedelia] en la pelicula [Presunto inocente]
+2023-12-11 12:25:12,799 [main] TRACE es.ciudadescolar.BBDD                    - Se ha dado de alta correctamente un interprete en la pelicula [Presunto inocente]
+2023-12-11 12:25:12,799 [main] TRACE es.ciudadescolar.Principal               - Pelicula procesada [Presunto inocente]
+2023-12-11 12:25:52,651 [main] INFO  es.ciudadescolar.Principal               - El actor [Harrison Ford] ha participado en [1] peliculas
+2023-12-11 12:25:52,695 [main] INFO  es.ciudadescolar.Principal               -   1)Presunto inocente con un total de [2] actores
+2023-12-11 12:25:52,695 [main] DEBUG es.ciudadescolar.BBDD                    -  Cerrando definitivamente el PreparedStatement alta de peliculas 
+2023-12-11 12:25:52,695 [main] DEBUG es.ciudadescolar.BBDD                    -  Cerrando definitivamente el PreparedStatement alta de actores 
+2023-12-11 12:25:52,696 [main] DEBUG es.ciudadescolar.BBDD                    -  Cerrando definitivamente el PreparedStatement alta de interpretes 
+2023-12-11 12:25:52,696 [main] DEBUG es.ciudadescolar.BBDD                    -  Cerrando definitivamente el PreparedStatement consulta de codigo pelicula
+2023-12-11 12:25:52,696 [main] DEBUG es.ciudadescolar.BBDD                    -  Cerrando definitivamente el PreparedStatement consulta de codigo actor
+2023-12-11 12:25:52,701 [main] DEBUG es.ciudadescolar.BBDD                    - Se ha cerrado correctamente la conexión contra la BD jdbc:mysql://localhost:3306/coleccion_peliculas_josesala

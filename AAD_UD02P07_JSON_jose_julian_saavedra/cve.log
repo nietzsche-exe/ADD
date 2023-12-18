@@ -11,3 +11,18 @@
 2023-11-15 11:21:19,229 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.JsonManager - Inicio escritura JSON
 2023-11-15 11:21:19,233 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.JsonManager - Finalizacion escritura JSON
 2023-11-15 11:21:19,233 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.Principal - Fin main
+2023-12-03 18:57:12,814 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.Principal - Inicio main
+2023-12-03 18:57:12,841 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.Principal - Fin main
+2023-12-03 18:58:35,337 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.Principal - Inicio main
+2023-12-03 18:58:45,552 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.XmlManager - Inicio parseo XML
+2023-12-03 18:58:45,553 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.XmlManager - Finalizacion parseo XML
+2023-12-03 18:58:45,553 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.Principal - Ejeccucion de metodos principales
+2023-12-03 18:58:45,558 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.JsonManager - Inicio lectura JSON
+2023-12-03 18:58:45,620 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.JsonManager - Finalizacion lectura JSON
+2023-12-03 18:58:45,620 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.JsonManager - Inicio de creacion de objetos JSON
+2023-12-03 18:58:45,620 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.JsonManager - Inicio lectura JSON
+2023-12-03 18:58:45,653 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.JsonManager - Finalizacion lectura JSON
+2023-12-03 18:58:45,654 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.JsonManager - Finalizacion de creacion de objetos JSON
+2023-12-03 18:58:45,654 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.JsonManager - Inicio escritura JSON
+2023-12-03 18:58:45,658 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.JsonManager - Finalizacion escritura JSON
+2023-12-03 18:58:45,658 [main] DEBUG AAD.UD02E07.JoseJulianSaavedra.Principal - Fin main
