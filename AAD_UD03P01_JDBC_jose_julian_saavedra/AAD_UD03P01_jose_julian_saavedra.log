@@ -1,0 +1,118 @@
+2023-12-11 11:11:59,392 [main] DEBUG AAD_UD03P01_JDBC.Principal               - Inicio del programa
+2023-12-11 11:11:59,402 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha registrado correctamente el driver mysql
+2023-12-11 11:11:59,825 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha establaecido correctamente la conexion con la BD coleccion_peliculas
+2023-12-11 11:11:59,875 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta el actor [AlPacino]
+2023-12-11 11:11:59,878 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta el actor [MarlonBrando]
+2023-12-11 11:11:59,881 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta el actor [RobertDeNiro]
+2023-12-11 11:11:59,884 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta el actor [SylvesterStallone]
+2023-12-11 11:11:59,886 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta el actor [CarlWeathers]
+2023-12-11 11:11:59,889 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta el actor [BurgessMeredith]
+2023-12-11 11:11:59,892 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta el actor [TaliaShire]
+2023-12-11 11:11:59,895 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta el actor [AlanRickman]
+2023-12-11 11:11:59,897 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta el actor [BonnieBedelia]
+2023-12-11 11:11:59,899 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta el actor [ReginaldVeljohnson]
+2023-12-11 11:11:59,902 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta el actor [BruceWillis]
+2023-12-11 11:11:59,904 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta el actor [JasonStatham]
+2023-12-11 11:11:59,906 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta el actor [HarrisonFord]
+2023-12-11 11:11:59,909 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta la pelicula [El padrino]
+2023-12-11 11:11:59,912 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta la pelicula [Rocky]
+2023-12-11 11:11:59,914 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta la pelicula [Jungla de cristal]
+2023-12-11 11:11:59,916 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta la pelicula [Los mercenarios 2]
+2023-12-11 11:11:59,919 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha dado de alta la pelicula [Presunto inocente]
+2023-12-11 11:11:59,920 [main] ERROR AAD_UD03P01_JDBC.BBDD                    - No se encontró el actor: Al Pacino
+2023-12-11 11:11:59,922 [main] ERROR AAD_UD03P01_JDBC.BBDD                    - No se encontró el actor:  Marlon Brando
+2023-12-11 11:11:59,923 [main] ERROR AAD_UD03P01_JDBC.BBDD                    - No se encontró el actor:  Robert De Niro
+2023-12-11 11:11:59,925 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha cerrado la BD
+2023-12-11 11:20:03,647 [main] DEBUG AAD_UD03P01_JDBC.Principal               - Inicio del programa
+2023-12-11 11:20:03,655 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha registrado correctamente el driver mysql
+2023-12-11 11:20:03,998 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha establaecido correctamente la conexion con la BD coleccion_peliculas
+2023-12-11 11:20:04,039 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [AlPacino] ya existe en la base de datos
+2023-12-11 11:20:04,040 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [MarlonBrando] ya existe en la base de datos
+2023-12-11 11:20:04,041 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [RobertDeNiro] ya existe en la base de datos
+2023-12-11 11:20:04,041 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [SylvesterStallone] ya existe en la base de datos
+2023-12-11 11:20:04,042 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [CarlWeathers] ya existe en la base de datos
+2023-12-11 11:20:04,043 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [BurgessMeredith] ya existe en la base de datos
+2023-12-11 11:20:04,043 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [TaliaShire] ya existe en la base de datos
+2023-12-11 11:20:04,044 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [AlanRickman] ya existe en la base de datos
+2023-12-11 11:20:04,045 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [BonnieBedelia] ya existe en la base de datos
+2023-12-11 11:20:04,045 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [ReginaldVeljohnson] ya existe en la base de datos
+2023-12-11 11:20:04,046 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [BruceWillis] ya existe en la base de datos
+2023-12-11 11:20:04,047 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [JasonStatham] ya existe en la base de datos
+2023-12-11 11:20:04,047 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [HarrisonFord] ya existe en la base de datos
+2023-12-11 11:20:04,048 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [El padrino] ya existe en la base de datos
+2023-12-11 11:20:04,050 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Rocky] ya existe en la base de datos
+2023-12-11 11:20:04,051 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Jungla de cristal] ya existe en la base de datos
+2023-12-11 11:20:04,052 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Los mercenarios 2] ya existe en la base de datos
+2023-12-11 11:20:04,053 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Presunto inocente] ya existe en la base de datos
+2023-12-11 11:20:04,054 [main] ERROR AAD_UD03P01_JDBC.BBDD                    - No se encontró el actor: Al Pacino
+2023-12-11 11:20:04,057 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha cerrado la BD
+2023-12-11 11:53:33,836 [main] DEBUG AAD_UD03P01_JDBC.Principal               - Inicio del programa
+2023-12-11 12:08:38,510 [main] DEBUG AAD_UD03P01_JDBC.Principal               - Inicio del programa
+2023-12-11 12:08:38,520 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha registrado correctamente el driver mysql
+2023-12-11 12:08:38,865 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha establaecido correctamente la conexion con la BD coleccion_peliculas
+2023-12-11 12:08:38,908 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [AlPacino] ya existe en la base de datos
+2023-12-11 12:08:38,909 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [MarlonBrando] ya existe en la base de datos
+2023-12-11 12:08:38,910 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [RobertDeNiro] ya existe en la base de datos
+2023-12-11 12:08:38,911 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [SylvesterStallone] ya existe en la base de datos
+2023-12-11 12:08:38,912 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [CarlWeathers] ya existe en la base de datos
+2023-12-11 12:08:38,913 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [BurgessMeredith] ya existe en la base de datos
+2023-12-11 12:08:38,914 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [TaliaShire] ya existe en la base de datos
+2023-12-11 12:08:38,915 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [AlanRickman] ya existe en la base de datos
+2023-12-11 12:08:38,915 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [BonnieBedelia] ya existe en la base de datos
+2023-12-11 12:08:38,916 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [ReginaldVeljohnson] ya existe en la base de datos
+2023-12-11 12:08:38,917 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [BruceWillis] ya existe en la base de datos
+2023-12-11 12:08:38,917 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [JasonStatham] ya existe en la base de datos
+2023-12-11 12:08:38,918 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [HarrisonFord] ya existe en la base de datos
+2023-12-11 12:08:38,919 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [El padrino] ya existe en la base de datos
+2023-12-11 12:08:38,920 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Rocky] ya existe en la base de datos
+2023-12-11 12:08:38,921 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Jungla de cristal] ya existe en la base de datos
+2023-12-11 12:08:38,922 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Los mercenarios 2] ya existe en la base de datos
+2023-12-11 12:08:38,923 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Presunto inocente] ya existe en la base de datos
+2023-12-11 12:08:38,924 [main] ERROR AAD_UD03P01_JDBC.BBDD                    - No se encontró el actor: Al Pacino
+2023-12-11 12:08:38,928 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha cerrado la BD
+2023-12-11 12:08:38,928 [main] DEBUG AAD_UD03P01_JDBC.Principal               - Fin del programa
+2023-12-11 12:22:18,670 [main] DEBUG AAD_UD03P01_JDBC.Principal               - Inicio del programa
+2023-12-11 12:22:18,679 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha registrado correctamente el driver mysql
+2023-12-11 12:22:19,018 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha establaecido correctamente la conexion con la BD coleccion_peliculas
+2023-12-11 12:22:19,060 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [AlPacino] ya existe en la base de datos
+2023-12-11 12:22:19,061 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [MarlonBrando] ya existe en la base de datos
+2023-12-11 12:22:19,062 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [RobertDeNiro] ya existe en la base de datos
+2023-12-11 12:22:19,063 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [SylvesterStallone] ya existe en la base de datos
+2023-12-11 12:22:19,063 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [CarlWeathers] ya existe en la base de datos
+2023-12-11 12:22:19,064 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [BurgessMeredith] ya existe en la base de datos
+2023-12-11 12:22:19,065 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [TaliaShire] ya existe en la base de datos
+2023-12-11 12:22:19,066 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [AlanRickman] ya existe en la base de datos
+2023-12-11 12:22:19,067 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [BonnieBedelia] ya existe en la base de datos
+2023-12-11 12:22:19,068 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [ReginaldVeljohnson] ya existe en la base de datos
+2023-12-11 12:22:19,069 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [BruceWillis] ya existe en la base de datos
+2023-12-11 12:22:19,069 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [JasonStatham] ya existe en la base de datos
+2023-12-11 12:22:19,070 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [HarrisonFord] ya existe en la base de datos
+2023-12-11 12:22:19,071 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [El padrino] ya existe en la base de datos
+2023-12-11 12:22:19,072 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Rocky] ya existe en la base de datos
+2023-12-11 12:22:19,073 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Jungla de cristal] ya existe en la base de datos
+2023-12-11 12:22:19,074 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Los mercenarios 2] ya existe en la base de datos
+2023-12-11 12:22:19,075 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Presunto inocente] ya existe en la base de datos
+2023-12-11 12:22:19,076 [main] ERROR AAD_UD03P01_JDBC.BBDD                    - No se encontró el actor: Al Pacino
+2023-12-11 12:22:19,077 [main] ERROR AAD_UD03P01_JDBC.BBDD                    - No se encontró el actor:  Carl Weathers
+2023-12-11 12:22:19,079 [main] ERROR AAD_UD03P01_JDBC.BBDD                    - No se encontró el actor:  Reginald Veljohnson
+2023-12-11 12:22:19,081 [main] DEBUG AAD_UD03P01_JDBC.BBDD                    - Se ha cerrado la BD
+2023-12-11 12:22:19,081 [main] DEBUG AAD_UD03P01_JDBC.Principal               - Fin del programa
+2023-12-11 12:25:47,387 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [AlPacino] ya existe en la base de datos
+2023-12-11 12:25:47,390 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [MarlonBrando] ya existe en la base de datos
+2023-12-11 12:25:47,391 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [RobertDeNiro] ya existe en la base de datos
+2023-12-11 12:25:47,392 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [SylvesterStallone] ya existe en la base de datos
+2023-12-11 12:25:47,393 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [CarlWeathers] ya existe en la base de datos
+2023-12-11 12:25:47,393 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [BurgessMeredith] ya existe en la base de datos
+2023-12-11 12:25:47,394 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [TaliaShire] ya existe en la base de datos
+2023-12-11 12:25:47,394 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [AlanRickman] ya existe en la base de datos
+2023-12-11 12:25:47,395 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [BonnieBedelia] ya existe en la base de datos
+2023-12-11 12:25:47,396 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [ReginaldVeljohnson] ya existe en la base de datos
+2023-12-11 12:25:47,396 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [BruceWillis] ya existe en la base de datos
+2023-12-11 12:25:47,397 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [JasonStatham] ya existe en la base de datos
+2023-12-11 12:25:47,397 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - El actor [HarrisonFord] ya existe en la base de datos
+2023-12-11 12:25:47,398 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [El padrino] ya existe en la base de datos
+2023-12-11 12:25:47,399 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Rocky] ya existe en la base de datos
+2023-12-11 12:25:47,400 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Jungla de cristal] ya existe en la base de datos
+2023-12-11 12:25:47,401 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Los mercenarios 2] ya existe en la base de datos
+2023-12-11 12:25:47,402 [main] WARN  AAD_UD03P01_JDBC.BBDD                    - La pelicula [Presunto inocente] ya existe en la base de datos
+2023-12-11 12:25:47,404 [main] ERROR AAD_UD03P01_JDBC.BBDD                    - No se encontró el actor: Al Pacino

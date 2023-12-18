@@ -1,6 +1,7 @@
 package AAD_UD03P01_JDBC;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Clase Peliculas. En ella se gestionan la creacion de instancias de Peliculas para guardar la informacion extraida del fichero de texto.
@@ -14,9 +15,9 @@ public class Peliculas {
 	private String titulo;
 	private int año;
 	private String[] actores;
-	private String protagonista;
+	private List<String> protagonista;
 	
-	public Peliculas(String titulo, int año, String[] actores, String protagonista) {
+	public Peliculas(String titulo, int año, String[] actores, List<String> protagonista) {
 		super();
 		this.titulo = titulo;
 		this.año = año;
@@ -53,11 +54,11 @@ public class Peliculas {
 	}
 	
 
-	public String getProtagonista() {
+	public List<String> getProtagonista() {
 		return protagonista;
 	}
 
-	public void setProtagonista(String protagonista) {
+	public void setProtagonista(List<String> protagonista) {
 		this.protagonista = protagonista;
 	}
 

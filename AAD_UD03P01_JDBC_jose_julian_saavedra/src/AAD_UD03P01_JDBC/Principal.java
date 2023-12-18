@@ -40,7 +40,7 @@ public class Principal {
 		// TODO Auto-generated method stub
 
 		LOGGER.debug("Inicio del programa");
-
+		
 		BBDD bd = null;
 		File fichero = new File(args[0]);
 
@@ -56,19 +56,33 @@ public class Principal {
 
 			for (int i = 0; i < peliculas.size(); i++) {
 				bd.insertarPelicula(peliculas.get(i).getTitulo(), peliculas.get(i).getAño());
-				bd.registrarNumeroActoresPorPelicula(peliculas.get(i).getTitulo());
 			}
 
+			/*
+			for (int i = 0; i < peliculas.size() + actores.size(); i++) {
+				boolean prota = false;
+				if(peliculas.get(i).getActores()[i].equals(peliculas.get(i).getProtagonista().get(i))) {
+					prota = true;
+				}
+				bd.insertarInterprete(peliculas.get(i).getActores()[i], peliculas.get(i).getTitulo(), prota);
+			}
+			*/
 		
+			
 			for (int i = 0; i < peliculas.size(); i++) {
 				for(int j = 0; j < peliculas.get(i).getActores()[j].length(); j++) {
 					boolean prota = false;
-					if(peliculas.get(i).getActores()[j].equals(peliculas.get(i).getProtagonista())) {
+					if(peliculas.get(i).getActores()[j].equals(peliculas.get(i).getProtagonista().get(j))) {
 						prota = true;
 					}
 					bd.insertarInterprete(peliculas.get(i).getActores()[j], peliculas.get(i).getTitulo(), prota);
 				}
 				
+			}
+			
+			
+			for (int i = 0; i < peliculas.size(); i++) {
+				bd.registrarNumeroActoresPorPelicula(peliculas.get(i).getTitulo());
 			}
 
 			Scanner scanner = new Scanner(System.in);
@@ -99,10 +113,12 @@ public class Principal {
 
 			if (bd != null)
 				bd.cerrarBD();
-
+			
+			LOGGER.debug("Fin del programa");
+			
 		}
 
-		LOGGER.debug("Fin del programa");
+	
 
 	}
 
@@ -130,14 +146,14 @@ public class Principal {
 
 				String titulo = partes[0];
 				int año = Integer.parseInt(partes[1]);
-				String protagonista = null;
+				List<String> protagonista = new ArrayList<String>();
 
 				String actores[] = partes[2].split(",");
 				String[] protagonistasInfo = partes[3].split(",");
 
 				for (int i = 0; i < actores.length; i++) {
 					if (protagonistasInfo[i].equals("s")) {
-						protagonista = actores[i];
+						protagonista.add(actores[i]);
 					}
 					String actorSinEspacios = actores[i].replaceAll("\\s", "");
 					if (!(Principal.actores.contains(actorSinEspacios))) {

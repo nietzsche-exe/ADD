@@ -237,9 +237,9 @@ public class BBDD {
 	        psInsetar.setInt(3, esProtagonista ? 1 : 0);
 
 	        if (psInsetar.executeUpdate() == 1) {
-	            LOGGER.debug("Se ha dado de alta al intérprete [codActor=" + codActor + ", codPelicula=" + codPelicula + "]");
+	        	conexion.commit();
+	        	LOGGER.debug("Se ha dado de alta al intérprete [codActor=" + codActor + ", codPelicula=" + codPelicula + "]");
 	        }
-	        
 
 
 	    } catch (SQLException e) {
@@ -253,7 +253,7 @@ public class BBDD {
 	        try {
 				conexion.setAutoCommit(true);
 			} catch (SQLException e) {
-				LOGGER.error("Error al asiganr autoCommit a true");
+				LOGGER.error("Error al asignar autoCommit a true");
 			}
 	    	
 	    	if (psInsetar != null) {
