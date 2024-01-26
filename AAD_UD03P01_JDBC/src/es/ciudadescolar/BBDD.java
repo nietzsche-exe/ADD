@@ -182,6 +182,7 @@ public class BBDD
 		}
 	}
 
+	//buscar pelicula por actor
 	public List<Pelicula> buscarPeliculasPorActor(String nomActor) 
 	{
 		List<Pelicula> pelis = null;
@@ -229,6 +230,7 @@ public class BBDD
 		return pelis;
 	}
 	
+	//Funcion que devuelve numero de actores
 	public int getNumActoresPorPeliculaFUN (String tituloPelicula)
 	{
 		CallableStatement cs = null;

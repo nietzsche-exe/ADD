@@ -121,6 +121,7 @@ public class BBDD {
 		
 	}
 	
+	//Procedimiento que consulta alumnos por expediente
 	public Alumno getAlumnoSP(String exp) {
 		
 		Alumno alumno = null;

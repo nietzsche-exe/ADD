@@ -1,0 +1,454 @@
+2024-01-19 10:10:12,383 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-01-19 10:10:12,428 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-19 10:10:12,462 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-01-19 10:10:12,462 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-19 10:10:12,622 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-01-19 10:10:12,625 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-19 10:10:12,629 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-19 10:10:12,629 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-19 10:10:12,629 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-01-19 10:10:12,629 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-01-19 10:10:12,631 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-01-19 10:10:13,792 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-19 10:10:13,797 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-01-19 10:10:13,830 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-01-19 10:10:13,832 [main] INFO  es.ciudadescolar.Principal               - Creada la instancia direccion
+2024-01-19 10:10:13,832 [main] INFO  es.ciudadescolar.Principal               - Creada instancia de actor
+2024-01-19 10:10:13,847 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        actores
+        (cod_direccion, nombre) 
+    values
+        (?, ?)
+2024-01-19 10:10:13,853 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [null]
+2024-01-19 10:10:13,854 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [James Stewart]
+2024-01-19 10:10:13,866 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000
+2024-01-19 10:10:13,867 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Column 'cod_direccion' cannot be null
+2024-01-19 10:10:13,875 [main] ERROR es.ciudadescolar.Principal               - Error durante la operacion de persistencia: could not execute statement [Column 'cod_direccion' cannot be null] [insert into actores (cod_direccion,nombre) values (?,?)]
+2024-01-19 10:10:13,876 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    436300 nanoseconds spent acquiring 1 JDBC connections;
+    351500 nanoseconds spent releasing 1 JDBC connections;
+    4452200 nanoseconds spent preparing 1 JDBC statements;
+    12703400 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-19 10:10:13,876 [main] INFO  es.ciudadescolar.Principal               - Cierre de EntityManager
+2024-01-19 10:10:13,877 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-19 10:10:13,880 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-01-19 10:48:40,096 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-01-19 10:48:40,141 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-19 10:48:40,175 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-01-19 10:48:40,176 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-19 10:48:40,332 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-01-19 10:48:40,335 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-19 10:48:40,341 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-19 10:48:40,341 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-19 10:48:40,341 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-01-19 10:48:40,341 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-01-19 10:48:40,343 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-01-19 10:48:41,503 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-19 10:48:41,507 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-01-19 10:48:41,536 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-01-19 10:48:41,538 [main] INFO  es.ciudadescolar.Principal               - Creada la instancia direccion
+2024-01-19 10:48:41,539 [main] INFO  es.ciudadescolar.Principal               - Creada instancia de actor
+2024-01-19 10:48:41,556 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        Direccion
+        (calle, numero) 
+    values
+        (?, ?)
+2024-01-19 10:48:41,563 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Calle sin informar]
+2024-01-19 10:48:41,563 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [34]
+2024-01-19 10:48:41,575 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1146, SQLState: 42S02
+2024-01-19 10:48:41,576 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table 'peliculas_orm_2324.direccion' doesn't exist
+2024-01-19 10:48:41,581 [main] ERROR es.ciudadescolar.Principal               - Error durante la operacion de persistencia: could not execute statement [Table 'peliculas_orm_2324.direccion' doesn't exist] [insert into Direccion (calle,numero) values (?,?)]
+2024-01-19 10:48:41,582 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    578100 nanoseconds spent acquiring 1 JDBC connections;
+    318400 nanoseconds spent releasing 1 JDBC connections;
+    5406600 nanoseconds spent preparing 1 JDBC statements;
+    12558400 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-19 10:48:41,582 [main] INFO  es.ciudadescolar.Principal               - Cierre de EntityManager
+2024-01-19 10:48:41,583 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-19 10:48:41,585 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-01-19 10:50:06,333 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-01-19 10:50:06,378 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-19 10:50:06,412 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-01-19 10:50:06,413 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-19 10:50:06,567 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-01-19 10:50:06,569 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-19 10:50:06,574 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-19 10:50:06,574 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-19 10:50:06,574 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-01-19 10:50:06,574 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-01-19 10:50:06,576 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-01-19 10:50:07,695 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-19 10:50:07,698 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-01-19 10:50:07,726 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-01-19 10:50:07,728 [main] INFO  es.ciudadescolar.Principal               - Creada la instancia direccion
+2024-01-19 10:50:07,728 [main] INFO  es.ciudadescolar.Principal               - Creada instancia de actor
+2024-01-19 10:50:07,745 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        direcciones
+        (calle, numero) 
+    values
+        (?, ?)
+2024-01-19 10:50:07,751 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Calle sin informar]
+2024-01-19 10:50:07,752 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [34]
+2024-01-19 10:50:07,766 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        actores
+        (cod_direccion, nombre) 
+    values
+        (?, ?)
+2024-01-19 10:50:07,767 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [5]
+2024-01-19 10:50:07,767 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [James Stewart]
+2024-01-19 10:50:07,776 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    400800 nanoseconds spent acquiring 1 JDBC connections;
+    371400 nanoseconds spent releasing 1 JDBC connections;
+    4820000 nanoseconds spent preparing 2 JDBC statements;
+    4879000 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    4536700 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-19 10:50:07,776 [main] INFO  es.ciudadescolar.Principal               - Cierre de EntityManager
+2024-01-19 10:50:07,777 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-19 10:50:07,780 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-01-19 11:04:36,813 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-01-19 11:04:36,860 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-19 11:04:36,897 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-01-19 11:04:36,898 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-19 11:04:37,062 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-01-19 11:04:37,065 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-19 11:04:37,071 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-19 11:04:37,071 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-19 11:04:37,071 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-01-19 11:04:37,071 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-01-19 11:04:37,074 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-01-19 11:04:38,273 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-19 11:04:38,277 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-01-19 11:04:38,310 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-01-19 11:04:38,312 [main] INFO  es.ciudadescolar.Principal               - Creada la instancia direccion
+2024-01-19 11:04:38,312 [main] INFO  es.ciudadescolar.Principal               - Creada instancia de actor
+2024-01-19 11:04:38,329 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        direcciones
+        (calle, numero) 
+    values
+        (?, ?)
+2024-01-19 11:04:38,335 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Calle sin informar]
+2024-01-19 11:04:38,336 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [34]
+2024-01-19 11:04:38,348 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        actores
+        (cod_direccion, nombre) 
+    values
+        (?, ?)
+2024-01-19 11:04:38,348 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-01-19 11:04:38,348 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [James Stewart]
+2024-01-19 11:04:38,359 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    386900 nanoseconds spent acquiring 1 JDBC connections;
+    366500 nanoseconds spent releasing 1 JDBC connections;
+    4665900 nanoseconds spent preparing 2 JDBC statements;
+    2284800 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5592800 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-19 11:04:38,359 [main] INFO  es.ciudadescolar.Principal               - Cierre de EntityManager
+2024-01-19 11:04:38,382 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        a1_0.cod_act,
+        d1_0.cod_dir,
+        d1_0.calle,
+        d1_0.numero,
+        a1_0.nombre 
+    from
+        actores a1_0 
+    left join
+        direcciones d1_0 
+            on d1_0.cod_dir=a1_0.cod_direccion 
+    where
+        a1_0.cod_act=?
+2024-01-19 11:04:38,384 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [5]
+2024-01-19 11:04:38,390 [main] INFO  es.ciudadescolar.Principal               - Actor recuperado: Actor [cod_act=5, nombre=James Stewart, direccion_actor=Direccion [cod_dir=5, calle=Calle sin informar, numero=34]]
+2024-01-19 11:04:38,390 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    601800 nanoseconds spent acquiring 1 JDBC connections;
+    522500 nanoseconds spent releasing 1 JDBC connections;
+    926900 nanoseconds spent preparing 1 JDBC statements;
+    1024900 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-19 11:04:38,391 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-19 11:04:38,394 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-01-19 11:16:24,562 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-01-19 11:16:24,609 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-19 11:16:24,646 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-01-19 11:16:24,648 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-19 11:16:24,813 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-01-19 11:16:24,816 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-19 11:16:24,820 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-19 11:16:24,820 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-19 11:16:24,820 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-01-19 11:16:24,820 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-01-19 11:16:24,822 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-01-19 11:16:26,002 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-19 11:16:26,006 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-01-19 11:16:26,039 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-01-19 11:16:26,040 [main] INFO  es.ciudadescolar.Principal               - Creada la instancia direccion
+2024-01-19 11:16:26,041 [main] INFO  es.ciudadescolar.Principal               - Creada instancia de actor
+2024-01-19 11:16:26,059 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        direcciones
+        (calle, numero) 
+    values
+        (?, ?)
+2024-01-19 11:16:26,065 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Calle sin informar]
+2024-01-19 11:16:26,066 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [34]
+2024-01-19 11:16:26,078 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        actores
+        (cod_direccion, nombre) 
+    values
+        (?, ?)
+2024-01-19 11:16:26,079 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [7]
+2024-01-19 11:16:26,079 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [James Stewart]
+2024-01-19 11:16:26,090 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    522800 nanoseconds spent acquiring 1 JDBC connections;
+    294600 nanoseconds spent releasing 1 JDBC connections;
+    5363600 nanoseconds spent preparing 2 JDBC statements;
+    2334900 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    4931500 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-19 11:16:26,090 [main] INFO  es.ciudadescolar.Principal               - Cierre de EntityManager
+2024-01-19 11:16:26,114 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        a1_0.cod_act,
+        a1_0.cod_direccion,
+        a1_0.nombre 
+    from
+        actores a1_0 
+    where
+        a1_0.cod_act=?
+2024-01-19 11:16:26,116 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [5]
+2024-01-19 11:16:26,122 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        d1_0.cod_dir,
+        d1_0.calle,
+        d1_0.numero 
+    from
+        direcciones d1_0 
+    where
+        d1_0.cod_dir=?
+2024-01-19 11:16:26,122 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [5]
+2024-01-19 11:16:26,125 [main] INFO  es.ciudadescolar.Principal               - Actor recuperado: Actor [cod_act=5, nombre=James Stewart, direccion_actor=Direccion [cod_dir=5, calle=Calle sin informar, numero=34]]
+2024-01-19 11:16:26,125 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    857400 nanoseconds spent acquiring 2 JDBC connections;
+    1049800 nanoseconds spent releasing 2 JDBC connections;
+    1230000 nanoseconds spent preparing 2 JDBC statements;
+    1279300 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-19 11:16:26,127 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-19 11:16:26,129 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-01-19 11:16:54,191 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-01-19 11:16:54,238 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-19 11:16:54,275 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-01-19 11:16:54,276 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-19 11:16:54,438 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-01-19 11:16:54,441 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-19 11:16:54,445 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-19 11:16:54,445 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-19 11:16:54,445 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-01-19 11:16:54,445 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-01-19 11:16:54,447 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-01-19 11:16:55,640 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-19 11:16:55,645 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-01-19 11:16:55,677 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-01-19 11:16:55,679 [main] INFO  es.ciudadescolar.Principal               - Creada la instancia direccion
+2024-01-19 11:16:55,680 [main] INFO  es.ciudadescolar.Principal               - Creada instancia de actor
+2024-01-19 11:16:55,697 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        direcciones
+        (calle, numero) 
+    values
+        (?, ?)
+2024-01-19 11:16:55,703 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Calle sin informar]
+2024-01-19 11:16:55,704 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [34]
+2024-01-19 11:16:55,717 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        actores
+        (cod_direccion, nombre) 
+    values
+        (?, ?)
+2024-01-19 11:16:55,718 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [8]
+2024-01-19 11:16:55,718 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [James Stewart]
+2024-01-19 11:16:55,729 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    450700 nanoseconds spent acquiring 1 JDBC connections;
+    448500 nanoseconds spent releasing 1 JDBC connections;
+    4557600 nanoseconds spent preparing 2 JDBC statements;
+    2793700 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6187000 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-19 11:16:55,729 [main] INFO  es.ciudadescolar.Principal               - Cierre de EntityManager
+2024-01-19 11:16:55,751 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        a1_0.cod_act,
+        a1_0.cod_direccion,
+        a1_0.nombre 
+    from
+        actores a1_0 
+    where
+        a1_0.cod_act=?
+2024-01-19 11:16:55,752 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [5]
+2024-01-19 11:16:55,759 [main] INFO  es.ciudadescolar.Principal               - Actor recuperado: James Stewart
+2024-01-19 11:16:55,759 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    424300 nanoseconds spent acquiring 1 JDBC connections;
+    459200 nanoseconds spent releasing 1 JDBC connections;
+    609300 nanoseconds spent preparing 1 JDBC statements;
+    650900 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-19 11:16:55,761 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-19 11:16:55,763 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-01-19 11:21:21,166 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-01-19 11:21:21,212 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-19 11:21:21,247 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-01-19 11:21:21,248 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-19 11:21:21,414 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-01-19 11:21:21,417 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-19 11:21:21,422 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-19 11:21:21,423 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-19 11:21:21,423 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-01-19 11:21:21,423 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-01-19 11:21:21,426 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-01-19 11:21:22,619 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-19 11:21:22,624 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-01-19 11:21:22,655 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-01-19 11:21:22,657 [main] INFO  es.ciudadescolar.Principal               - Creada la instancia direccion
+2024-01-19 11:21:22,658 [main] INFO  es.ciudadescolar.Principal               - Creada instancia de actor
+2024-01-19 11:21:22,675 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        direcciones
+        (calle, numero) 
+    values
+        (?, ?)
+2024-01-19 11:21:22,682 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Calle sin informar]
+2024-01-19 11:21:22,683 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [34]
+2024-01-19 11:21:22,694 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        actores
+        (cod_direccion, nombre) 
+    values
+        (?, ?)
+2024-01-19 11:21:22,695 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [9]
+2024-01-19 11:21:22,695 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [James Stewart]
+2024-01-19 11:21:22,706 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    542200 nanoseconds spent acquiring 1 JDBC connections;
+    421900 nanoseconds spent releasing 1 JDBC connections;
+    5231700 nanoseconds spent preparing 2 JDBC statements;
+    2018600 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    4770400 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-19 11:21:22,707 [main] INFO  es.ciudadescolar.Principal               - EntityManager cerrado
+2024-01-19 11:21:22,729 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        a1_0.cod_act,
+        a1_0.cod_direccion,
+        a1_0.nombre 
+    from
+        actores a1_0 
+    where
+        a1_0.cod_act=?
+2024-01-19 11:21:22,730 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [5]
+2024-01-19 11:21:22,736 [main] INFO  es.ciudadescolar.Principal               - Actor recuperado: James Stewart
+2024-01-19 11:21:22,740 [main] INFO  es.ciudadescolar.Principal               - Actor con id [5] borrado
+2024-01-19 11:21:22,743 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        actores 
+    where
+        cod_act=?
+2024-01-19 11:21:22,743 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [5]
+2024-01-19 11:21:22,746 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        direcciones 
+    where
+        cod_dir=?
+2024-01-19 11:21:22,746 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [5]
+2024-01-19 11:21:22,749 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    790500 nanoseconds spent acquiring 2 JDBC connections;
+    676700 nanoseconds spent releasing 2 JDBC connections;
+    972500 nanoseconds spent preparing 3 JDBC statements;
+    2557700 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6895500 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-19 11:21:22,749 [main] INFO  es.ciudadescolar.Principal               - EntityManager cerrado
+2024-01-19 11:21:22,751 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-19 11:21:22,753 [main] INFO  es.ciudadescolar.Principal               - Fin del programa

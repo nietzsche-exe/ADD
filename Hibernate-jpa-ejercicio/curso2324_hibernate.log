@@ -1,0 +1,708 @@
+2024-01-12 11:03:18,230 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-01-12 11:03:18,273 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-12 11:03:18,300 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-01-12 11:03:18,301 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-12 11:03:18,455 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-01-12 11:03:18,458 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-12 11:03:18,462 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-12 11:03:18,462 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-12 11:03:18,463 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-01-12 11:03:18,463 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-01-12 11:03:18,465 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-01-12 11:03:19,533 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-12 11:03:19,562 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-01-12 11:03:19,578 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        peliculas
+        (fecha_grabacion, titulo) 
+    values
+        (?, ?)
+2024-01-12 11:03:19,583 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DATE) <- [1980-09-20]
+2024-01-12 11:03:19,583 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Los inmortales]
+2024-01-12 11:03:19,608 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    500400 nanoseconds spent acquiring 1 JDBC connections;
+    348100 nanoseconds spent releasing 1 JDBC connections;
+    4122000 nanoseconds spent preparing 1 JDBC statements;
+    7971600 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3879700 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-12 11:03:19,609 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-12 11:03:19,611 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-01-17 11:09:43,830 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-01-17 11:09:43,874 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-17 11:09:43,902 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-01-17 11:09:43,903 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-17 11:09:44,053 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-01-17 11:09:44,056 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-17 11:09:44,060 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-17 11:09:44,060 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-17 11:09:44,061 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-01-17 11:09:44,061 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-01-17 11:09:44,063 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-01-17 11:09:45,196 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-17 11:09:45,227 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-01-17 11:09:45,245 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        peliculas
+        (fecha_grabacion, titulo) 
+    values
+        (?, ?)
+2024-01-17 11:09:45,251 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DATE) <- [1980-09-20]
+2024-01-17 11:09:45,251 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Los inmortales]
+2024-01-17 11:09:45,279 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    515000 nanoseconds spent acquiring 1 JDBC connections;
+    296700 nanoseconds spent releasing 1 JDBC connections;
+    4320900 nanoseconds spent preparing 1 JDBC statements;
+    10082900 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    4006500 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:09:45,303 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:09:45,304 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [4]
+2024-01-17 11:09:45,314 [main] DEBUG org.hibernate.SQL                        - 
+    update
+        peliculas 
+    set
+        fecha_grabacion=?,
+        titulo=? 
+    where
+        cod_peli=?
+2024-01-17 11:09:45,315 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DATE) <- [1980-09-20]
+2024-01-17 11:09:45,315 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Los inmortales III]
+2024-01-17 11:09:45,315 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:INTEGER) <- [4]
+2024-01-17 11:09:45,320 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    284800 nanoseconds spent acquiring 1 JDBC connections;
+    274200 nanoseconds spent releasing 1 JDBC connections;
+    386100 nanoseconds spent preparing 2 JDBC statements;
+    2702000 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    9286200 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:09:45,321 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:09:45,322 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-01-17 11:09:45,323 [main] WARN  es.ciudadescolar.Principal               - No se ha encontrado la pelicula con ID 1
+2024-01-17 11:09:45,323 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    336700 nanoseconds spent acquiring 1 JDBC connections;
+    240100 nanoseconds spent releasing 1 JDBC connections;
+    492000 nanoseconds spent preparing 1 JDBC statements;
+    541300 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:09:45,323 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:09:45,324 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [9]
+2024-01-17 11:09:45,325 [main] WARN  es.ciudadescolar.Principal               - No se ha encontrado la pelicula con ID 1
+2024-01-17 11:09:45,325 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    280700 nanoseconds spent acquiring 1 JDBC connections;
+    266600 nanoseconds spent releasing 1 JDBC connections;
+    451400 nanoseconds spent preparing 1 JDBC statements;
+    565500 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:09:45,326 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-17 11:09:45,328 [main] INFO  es.ciudadescolar.Principal               - Fin de nuestra primera aplicación de ORM Hibernate
+2024-01-17 11:16:37,694 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-01-17 11:16:37,738 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-17 11:16:37,768 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-01-17 11:16:37,769 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-17 11:16:37,922 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-01-17 11:16:37,924 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-17 11:16:37,929 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-17 11:16:37,929 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-17 11:16:37,929 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-01-17 11:16:37,929 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-01-17 11:16:37,931 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-01-17 11:16:38,998 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-17 11:16:39,026 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-01-17 11:16:39,042 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        peliculas
+        (fecha_grabacion, titulo) 
+    values
+        (?, ?)
+2024-01-17 11:16:39,047 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DATE) <- [1980-09-20]
+2024-01-17 11:16:39,048 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Los inmortales]
+2024-01-17 11:16:39,071 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    507000 nanoseconds spent acquiring 1 JDBC connections;
+    306600 nanoseconds spent releasing 1 JDBC connections;
+    4152200 nanoseconds spent preparing 1 JDBC statements;
+    7873000 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3714200 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:16:39,092 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:16:39,093 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [5]
+2024-01-17 11:16:39,102 [main] DEBUG org.hibernate.SQL                        - 
+    update
+        peliculas 
+    set
+        fecha_grabacion=?,
+        titulo=? 
+    where
+        cod_peli=?
+2024-01-17 11:16:39,102 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DATE) <- [1980-09-20]
+2024-01-17 11:16:39,102 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Aliens]
+2024-01-17 11:16:39,102 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:INTEGER) <- [5]
+2024-01-17 11:16:39,106 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    266700 nanoseconds spent acquiring 1 JDBC connections;
+    255500 nanoseconds spent releasing 1 JDBC connections;
+    357400 nanoseconds spent preparing 2 JDBC statements;
+    1791200 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    7229700 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:16:39,107 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:16:39,107 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-01-17 11:19:05,201 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-01-17 11:19:05,244 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-17 11:19:05,271 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-01-17 11:19:05,272 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-17 11:19:05,422 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-01-17 11:19:05,425 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-17 11:19:05,430 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-17 11:19:05,430 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-17 11:19:05,430 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-01-17 11:19:05,430 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-01-17 11:19:05,433 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-01-17 11:19:06,497 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-17 11:19:06,526 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-01-17 11:19:06,541 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        peliculas
+        (fecha_grabacion, titulo) 
+    values
+        (?, ?)
+2024-01-17 11:19:06,547 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DATE) <- [1980-09-20]
+2024-01-17 11:19:06,547 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Los inmortales]
+2024-01-17 11:19:06,571 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    479900 nanoseconds spent acquiring 1 JDBC connections;
+    291200 nanoseconds spent releasing 1 JDBC connections;
+    4103300 nanoseconds spent preparing 1 JDBC statements;
+    8084300 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3764900 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:19:06,592 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:19:06,593 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-01-17 11:19:06,601 [main] DEBUG org.hibernate.SQL                        - 
+    update
+        peliculas 
+    set
+        fecha_grabacion=?,
+        titulo=? 
+    where
+        cod_peli=?
+2024-01-17 11:19:06,601 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DATE) <- [1980-09-20]
+2024-01-17 11:19:06,601 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Your Name]
+2024-01-17 11:19:06,602 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:INTEGER) <- [6]
+2024-01-17 11:19:06,605 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    276900 nanoseconds spent acquiring 1 JDBC connections;
+    256700 nanoseconds spent releasing 1 JDBC connections;
+    360400 nanoseconds spent preparing 2 JDBC statements;
+    1866200 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    7303700 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:19:06,606 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:19:06,607 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-01-17 11:19:06,608 [main] INFO  es.ciudadescolar.Principal               - pelicula con ID 6 encontrada:es.ciudadescolar.Pelicula@25
+2024-01-17 11:19:06,611 [main] INFO  es.ciudadescolar.Principal               - Borrada satisfactoriamente la pelicula recuperada con el find de BD
+2024-01-17 11:19:06,612 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        peliculas 
+    where
+        cod_peli=?
+2024-01-17 11:19:06,612 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-01-17 11:19:06,622 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    678800 nanoseconds spent acquiring 2 JDBC connections;
+    610900 nanoseconds spent releasing 2 JDBC connections;
+    550500 nanoseconds spent preparing 2 JDBC statements;
+    6831700 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    8204600 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:19:06,622 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:19:06,623 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [9]
+2024-01-17 11:19:06,624 [main] WARN  es.ciudadescolar.Principal               - No se ha encontrado la pelicula con ID 9
+2024-01-17 11:19:06,624 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    261300 nanoseconds spent acquiring 1 JDBC connections;
+    271000 nanoseconds spent releasing 1 JDBC connections;
+    439800 nanoseconds spent preparing 1 JDBC statements;
+    506500 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:19:06,624 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-17 11:19:06,627 [main] INFO  es.ciudadescolar.Principal               - Fin de nuestra primera aplicación de ORM Hibernate
+2024-01-17 11:25:45,175 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-01-17 11:25:45,219 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-17 11:25:45,246 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-01-17 11:25:45,247 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-17 11:25:45,398 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-01-17 11:25:45,401 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-17 11:25:45,405 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-17 11:25:45,405 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-17 11:25:45,405 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-01-17 11:25:45,405 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-01-17 11:25:45,407 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-01-17 11:25:46,464 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-17 11:25:46,493 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-01-17 11:25:46,508 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        peliculas
+        (fecha_grabacion, titulo) 
+    values
+        (?, ?)
+2024-01-17 11:25:46,514 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DATE) <- [1980-09-20]
+2024-01-17 11:25:46,514 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Los inmortales]
+2024-01-17 11:25:46,539 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    490600 nanoseconds spent acquiring 1 JDBC connections;
+    308300 nanoseconds spent releasing 1 JDBC connections;
+    4082400 nanoseconds spent preparing 1 JDBC statements;
+    7821400 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3702000 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:25:46,561 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:25:46,561 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [7]
+2024-01-17 11:25:46,570 [main] DEBUG org.hibernate.SQL                        - 
+    update
+        peliculas 
+    set
+        fecha_grabacion=?,
+        titulo=? 
+    where
+        cod_peli=?
+2024-01-17 11:25:46,570 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DATE) <- [1980-09-20]
+2024-01-17 11:25:46,570 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Your Name]
+2024-01-17 11:25:46,570 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:INTEGER) <- [7]
+2024-01-17 11:25:46,574 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    297400 nanoseconds spent acquiring 1 JDBC connections;
+    281800 nanoseconds spent releasing 1 JDBC connections;
+    374200 nanoseconds spent preparing 2 JDBC statements;
+    2323000 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    7800200 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:25:46,575 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:25:46,576 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-01-17 11:25:46,577 [main] WARN  es.ciudadescolar.Principal               - No se ha encontrado la pelicula con ID 6
+2024-01-17 11:25:46,577 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    372900 nanoseconds spent acquiring 1 JDBC connections;
+    297600 nanoseconds spent releasing 1 JDBC connections;
+    531500 nanoseconds spent preparing 1 JDBC statements;
+    556600 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:25:46,578 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:25:46,578 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [9]
+2024-01-17 11:25:46,579 [main] WARN  es.ciudadescolar.Principal               - No se ha encontrado la pelicula con ID 9
+2024-01-17 11:25:46,580 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    343400 nanoseconds spent acquiring 1 JDBC connections;
+    240900 nanoseconds spent releasing 1 JDBC connections;
+    490100 nanoseconds spent preparing 1 JDBC statements;
+    538100 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:25:46,580 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-17 11:25:46,583 [main] INFO  es.ciudadescolar.Principal               - Fin de nuestra primera aplicación de ORM Hibernate
+2024-01-17 11:26:18,857 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-01-17 11:26:18,902 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-17 11:26:18,929 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-01-17 11:26:18,930 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-17 11:26:19,081 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-01-17 11:26:19,084 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-17 11:26:19,088 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-17 11:26:19,088 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-17 11:26:19,088 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-01-17 11:26:19,088 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-01-17 11:26:19,090 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-01-17 11:26:20,151 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-17 11:26:20,180 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-01-17 11:26:20,195 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        peliculas
+        (fecha_grabacion, titulo) 
+    values
+        (?, ?)
+2024-01-17 11:26:20,201 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DATE) <- [1980-09-20]
+2024-01-17 11:26:20,201 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Los inmortales]
+2024-01-17 11:26:20,225 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    517700 nanoseconds spent acquiring 1 JDBC connections;
+    300400 nanoseconds spent releasing 1 JDBC connections;
+    4170200 nanoseconds spent preparing 1 JDBC statements;
+    8000600 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3825700 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:26:20,247 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:26:20,247 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [8]
+2024-01-17 11:26:20,256 [main] DEBUG org.hibernate.SQL                        - 
+    update
+        peliculas 
+    set
+        fecha_grabacion=?,
+        titulo=? 
+    where
+        cod_peli=?
+2024-01-17 11:26:20,257 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DATE) <- [1980-09-20]
+2024-01-17 11:26:20,257 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Ajin]
+2024-01-17 11:26:20,257 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:INTEGER) <- [8]
+2024-01-17 11:26:20,260 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    290700 nanoseconds spent acquiring 1 JDBC connections;
+    286600 nanoseconds spent releasing 1 JDBC connections;
+    363000 nanoseconds spent preparing 2 JDBC statements;
+    1770100 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    7462700 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:26:20,261 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:26:20,262 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-01-17 11:26:20,263 [main] WARN  es.ciudadescolar.Principal               - No se ha encontrado la pelicula con ID 6
+2024-01-17 11:26:20,263 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    324600 nanoseconds spent acquiring 1 JDBC connections;
+    230000 nanoseconds spent releasing 1 JDBC connections;
+    480600 nanoseconds spent preparing 1 JDBC statements;
+    507700 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:26:20,263 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:26:20,264 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [9]
+2024-01-17 11:26:20,264 [main] WARN  es.ciudadescolar.Principal               - No se ha encontrado la pelicula con ID 9
+2024-01-17 11:26:20,264 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    222700 nanoseconds spent acquiring 1 JDBC connections;
+    225000 nanoseconds spent releasing 1 JDBC connections;
+    357700 nanoseconds spent preparing 1 JDBC statements;
+    432900 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:26:20,265 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-17 11:26:20,267 [main] INFO  es.ciudadescolar.Principal               - Fin de nuestra primera aplicación de ORM Hibernate
+2024-01-17 11:26:52,501 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-01-17 11:26:52,545 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-17 11:26:52,572 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-01-17 11:26:52,573 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-17 11:26:52,724 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-01-17 11:26:52,727 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-17 11:26:52,731 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-17 11:26:52,731 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-17 11:26:52,731 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-01-17 11:26:52,732 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-01-17 11:26:52,734 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-01-17 11:26:53,785 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-17 11:26:53,815 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-01-17 11:26:53,830 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        peliculas
+        (fecha_grabacion, titulo) 
+    values
+        (?, ?)
+2024-01-17 11:26:53,835 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DATE) <- [1980-09-20]
+2024-01-17 11:26:53,836 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Los inmortales]
+2024-01-17 11:26:53,861 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    483100 nanoseconds spent acquiring 1 JDBC connections;
+    325700 nanoseconds spent releasing 1 JDBC connections;
+    4081700 nanoseconds spent preparing 1 JDBC statements;
+    8179200 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3675000 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:26:53,883 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:26:53,883 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [9]
+2024-01-17 11:26:53,892 [main] DEBUG org.hibernate.SQL                        - 
+    update
+        peliculas 
+    set
+        fecha_grabacion=?,
+        titulo=? 
+    where
+        cod_peli=?
+2024-01-17 11:26:53,893 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DATE) <- [1980-09-20]
+2024-01-17 11:26:53,893 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Sidonia]
+2024-01-17 11:26:53,893 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:INTEGER) <- [9]
+2024-01-17 11:26:53,897 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    284600 nanoseconds spent acquiring 1 JDBC connections;
+    258000 nanoseconds spent releasing 1 JDBC connections;
+    380700 nanoseconds spent preparing 2 JDBC statements;
+    1806900 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    7226800 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:26:53,898 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:26:53,898 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-01-17 11:26:53,899 [main] WARN  es.ciudadescolar.Principal               - No se ha encontrado la pelicula con ID 6
+2024-01-17 11:26:53,899 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    246600 nanoseconds spent acquiring 1 JDBC connections;
+    257000 nanoseconds spent releasing 1 JDBC connections;
+    391300 nanoseconds spent preparing 1 JDBC statements;
+    474000 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:26:53,900 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.cod_peli,
+        p1_0.fecha_grabacion,
+        p1_0.titulo 
+    from
+        peliculas p1_0 
+    where
+        p1_0.cod_peli=?
+2024-01-17 11:26:53,900 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [9]
+2024-01-17 11:26:53,902 [main] INFO  es.ciudadescolar.Principal               - pelicula con ID 9 encontrada:Pelicula [titulo=Sidonia]
+2024-01-17 11:26:53,902 [main] INFO  es.ciudadescolar.Principal               - Modificado satisfactoriamente la pelicula recuperada con el find de BD
+2024-01-17 11:26:53,903 [main] DEBUG org.hibernate.SQL                        - 
+    update
+        peliculas 
+    set
+        fecha_grabacion=?,
+        titulo=? 
+    where
+        cod_peli=?
+2024-01-17 11:26:53,903 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DATE) <- [1980-09-20]
+2024-01-17 11:26:53,903 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Terminator]
+2024-01-17 11:26:53,903 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:INTEGER) <- [9]
+2024-01-17 11:26:53,905 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    491900 nanoseconds spent acquiring 2 JDBC connections;
+    506500 nanoseconds spent releasing 2 JDBC connections;
+    526100 nanoseconds spent preparing 2 JDBC statements;
+    1064700 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1444600 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-01-17 11:26:53,906 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/peliculas_orm_2324]
+2024-01-17 11:26:53,908 [main] INFO  es.ciudadescolar.Principal               - Fin de nuestra primera aplicación de ORM Hibernate
