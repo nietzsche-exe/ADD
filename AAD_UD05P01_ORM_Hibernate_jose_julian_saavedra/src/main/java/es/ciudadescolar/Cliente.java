@@ -1,6 +1,8 @@
 package es.ciudadescolar;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import jakarta.persistence.CascadeType;
@@ -11,6 +13,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
@@ -37,8 +40,12 @@ public class Cliente implements Serializable {
 	@Column (name = "email")
 	private String email;
 	
-	@OneToOne(mappedBy = "cliente", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	@OneToOne (cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@JoinColumn (name = "customer_id")
 	private ClienteDetalles cliente_detalles;
+	
+	@OneToMany (mappedBy = "cliente", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	private List<Pago> pagos = new ArrayList<Pago>();
 	
 	public Cliente() {
 		
@@ -82,6 +89,16 @@ public class Cliente implements Serializable {
 
 	public void setCliente_detalles(ClienteDetalles cliente_detalles) {
 		this.cliente_detalles = cliente_detalles;
+		this.cliente_detalles.setCliente(this);
+	}
+	
+
+	public List<Pago> getPagos() {
+		return pagos;
+	}
+
+	public void setPagos(List<Pago> pagos) {
+		this.pagos = pagos;
 	}
 
 	@Override
@@ -104,8 +121,10 @@ public class Cliente implements Serializable {
 	@Override
 	public String toString() {
 		return "Cliente [cod_cliente=" + cod_cliente + ", nombre=" + nombre + ", appellido=" + appellido + ", email="
-				+ email + ", cliente_detalles=" + cliente_detalles + "]";
+				+ email + ", cliente_detalles=" + cliente_detalles + ", pagos=" + pagos + "]";
 	}
+
+	
 
 	
 }

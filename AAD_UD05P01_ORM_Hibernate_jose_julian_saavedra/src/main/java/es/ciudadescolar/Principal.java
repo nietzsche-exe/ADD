@@ -1,8 +1,7 @@
 package es.ciudadescolar;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -12,7 +11,6 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
-import jakarta.persistence.Query;
 
 public class Principal {
 
@@ -24,14 +22,19 @@ public class Principal {
 		
 		LOGGER.info("Iniciando programa...");
 		
-		//darAltaCliente();
-		consultarCliente();
+		LOGGER.info("Relaciones 1:1");
+		//darAltaClienteDetalles();
+		//consultarClienteDetalles(3);
+		//eliminarCliente();
+		
+		LOGGER.info("Relaciones 1:N");
+		darAltaClientePagos();
 		
 		emf.close();
 		LOGGER.info("Fin del programa");
 	}
 	
-	public static void darAltaCliente() {
+	public static void darAltaClienteDetalles() {
 		
 		EntityManager em = emf.createEntityManager();
 		
@@ -43,18 +46,104 @@ public class Principal {
 		ClienteDetalles cliente_detalles = new ClienteDetalles();
 		cliente_detalles.setTelefono("6496568991");
 		cliente_detalles.setDireccion("Avda. Sin nombre, 121");
-		
-		cliente.setCliente_detalles(cliente_detalles);
-		cliente_detalles.setCliente(cliente);
+
+	
 		
 		EntityTransaction transaccion = em.getTransaction();
 		
 		try {
+			
 			transaccion.begin();
 			
 			em.persist(cliente);
 			
 			transaccion.commit();
+			
+			cliente_detalles.setCod_cliente(cliente.getCod_cliente());
+			cliente.setCliente_detalles(cliente_detalles);
+			
+			transaccion.begin();
+			
+			em.persist(cliente_detalles);
+			
+			transaccion.commit();
+			
+			transaccion.begin();
+			
+			Cliente clienteBuscado = em.find(Cliente.class, cliente_detalles.getCod_cliente());
+			clienteBuscado.getCliente_detalles().setTelefono("149656899");
+			
+			transaccion.commit();
+			
+			
+		}
+		catch(Exception e) {
+			transaccion.rollback();
+			LOGGER.error("Error durante la operacion de persistencia: " + e.getMessage());
+			e.printStackTrace();
+		}
+		finally {
+			em.close();
+			LOGGER.info("EntityManager cerrado");
+		}
+		
+	}
+	
+	public static void consultarClienteDetalles(Integer idCustomer) {
+		
+	        EntityManager em = emf.createEntityManager();
+	        Integer customerId = 3;
+	        
+	        try {
+	            
+	        Cliente clienteBuscado = em.find(Cliente.class, customerId);
+	        LOGGER.info("Se ha encontrado al cliente con id: " + customerId + "\n"
+	        			+ "Cliente: " + clienteBuscado.toString());
+	        	
+	        } finally {
+	            em.close(); 
+	        }
+	}
+	
+	
+	
+	public static void eliminarCliente() {
+		
+	}
+	
+	public static void darAltaClientePagos() {
+
+		EntityManager em = emf.createEntityManager();
+
+		Cliente cliente = new Cliente();
+		cliente.setEmail("joaqrom@tocomocho.net");
+		cliente.setNombre("Joaquín");
+		cliente.setAppellido("Róman");
+		
+		Pago pago1 = new Pago();
+		pago1.setCantidad(234.45);
+		pago1.setFecha(LocalDate.of(2024, 01, 07));
+		Pago pago2 = new Pago();
+		pago2.setCantidad(100.25);
+		pago2.setFecha(LocalDate.of(2024, 01, 12));
+		Pago pago3 = new Pago();
+		pago3.setCantidad(655.99);
+		pago3.setFecha(LocalDate.of(2024, 01, 17));
+		
+		
+		
+		cliente.setPagos();
+		
+		EntityTransaction transaccion = em.getTransaction();
+		
+		try {
+			
+			transaccion.begin();
+			
+			em.persist(cliente);
+			
+			transaccion.commit();
+			
 		}
 		catch(Exception e) {
 			transaccion.rollback();
@@ -67,32 +156,6 @@ public class Principal {
 		
 	}
 	
-	public static void consultarCliente() {
-		
-	        EntityManager em = emf.createEntityManager();
-	        Integer customerId = 3;
-	        
-	        try {
-	            
-	        	String hql = "FROM Cliente c WHERE c.customer_id = :customer_id";
-	            Query query = em.createQuery(hql);
-	            query.setParameter("customer_id", customerId);
-
-	            List<Cliente> resultados = query.getResultList();
-
-	            if (!resultados.isEmpty()) {
-	               
-	            	for (Cliente cliente : resultados) {
-						System.out.println(cliente);
-					}
-	            	
-	            } else {
-	               LOGGER.error("no se encontro al cliente con id: " + customerId);
-	                
-	            }
-	        } finally {
-	            em.close(); 
-	        }
-	}
+	
 
 }

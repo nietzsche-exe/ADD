@@ -1,9 +1,9 @@
 package es.ciudadescolar;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Objects;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -11,13 +11,12 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.MapsId;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table (name = "customer_details", schema = "empresa_orm_2324")
-public class ClienteDetalles implements Serializable {
+@Table (name = "payments")
+public class Pago implements Serializable {
 
 	/**
 	 * 
@@ -25,20 +24,33 @@ public class ClienteDetalles implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue (strategy = GenerationType.IDENTITY)
+	@Column (name = "payment_id")
+	private Integer cod_pagos;
+	
 	@Column (name = "customer_id")
 	private Integer cod_cliente;
 	
-	@Column (name = "address")
-	private String direccion;
+	@Column (name = "amount")
+	private Double cantidad;
 	
-	@Column (name = "phone_number")
-	private String telefono;
+	@Column (name = "payment_date")
+	private LocalDate fecha;
 	
-	@OneToOne (mappedBy = "cliente_detalles", fetch = FetchType.EAGER)
+	@OneToMany (fetch = FetchType.EAGER)
+	@JoinColumn (name = "customer_id")
 	private Cliente cliente;
 	
-	public ClienteDetalles() {
+	public Pago() {
 		
+	}
+
+	public Integer getCod_pagos() {
+		return cod_pagos;
+	}
+
+	public void setCod_pagos(Integer cod_pagos) {
+		this.cod_pagos = cod_pagos;
 	}
 
 	public Integer getCod_cliente() {
@@ -49,20 +61,20 @@ public class ClienteDetalles implements Serializable {
 		this.cod_cliente = cod_cliente;
 	}
 
-	public String getDireccion() {
-		return direccion;
+	public Double getCantidad() {
+		return cantidad;
 	}
 
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
+	public void setCantidad(Double cantidad) {
+		this.cantidad = cantidad;
 	}
 
-	public String getTelefono() {
-		return telefono;
+	public LocalDate getFecha() {
+		return fecha;
 	}
 
-	public void setTelefono(String telefono) {
-		this.telefono = telefono;
+	public void setFecha(LocalDate fecha) {
+		this.fecha = fecha;
 	}
 
 	public Cliente getCliente() {
@@ -75,7 +87,7 @@ public class ClienteDetalles implements Serializable {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(cod_cliente);
+		return Objects.hash(cod_pagos);
 	}
 
 	@Override
@@ -86,17 +98,16 @@ public class ClienteDetalles implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		ClienteDetalles other = (ClienteDetalles) obj;
-		return Objects.equals(cod_cliente, other.cod_cliente);
+		Pago other = (Pago) obj;
+		return Objects.equals(cod_pagos, other.cod_pagos);
 	}
 
 	@Override
 	public String toString() {
-		return "ClienteDetalles [cod_cliente=" + cod_cliente + ", direccion=" + direccion + ", telefono=" + telefono + "]";
+		return "Pago [cod_pagos=" + cod_pagos + ", cod_cliente=" + cod_cliente + ", cantidad=" + cantidad + ", fecha="
+				+ fecha + "]";
 	}
 	
 	
 	
 }
-
-
