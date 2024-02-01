@@ -45,7 +45,7 @@ public class Cliente implements Serializable {
 	private ClienteDetalles cliente_detalles;
 	
 	@OneToMany (mappedBy = "cliente", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-	private List<Pago> pagos;
+	private List<Pago> pagos = new ArrayList<Pago>();
 	
 	public Cliente() {
 		

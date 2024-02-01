@@ -24,7 +24,7 @@ public class Principal {
 		LOGGER.info("Iniciando programa...");
 		
 		LOGGER.info("Relaciones 1:1");
-		darAltaClienteDetalles();
+		//darAltaClienteDetalles();
 		//consultarClienteDetalles(3);
 		
 		

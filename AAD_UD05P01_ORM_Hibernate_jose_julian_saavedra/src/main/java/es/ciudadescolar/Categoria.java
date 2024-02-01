@@ -1,5 +1,6 @@
 package es.ciudadescolar;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -25,7 +26,7 @@ public class Categoria {
 	private String nombre;
 	
 	@ManyToMany (mappedBy = "categorias", fetch = FetchType.EAGER)
-	private List<Producto> productos;
+	private List<Producto> productos = new ArrayList<Producto>();
 	
 	public Categoria() {
 		
@@ -57,12 +58,12 @@ public class Categoria {
 	
 	public void addProducto(Producto producto) {
 		this.productos.add(producto);
-		producto.addCategoria(this);
+		
 	}
 	
 	public void removeProducto(Producto producto) {
 		this.productos.remove(producto);
-		producto.removeCategoria(this);
+		
 	}
 
 	@Override

@@ -1,8 +1,10 @@
 package es.ciudadescolar;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -29,11 +31,12 @@ public class Producto {
 	@Column (name = "price")
 	private Double price;
 	
-	@ManyToMany (fetch = FetchType.EAGER)
+	@ManyToMany (fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	
 	@JoinTable (name = "product_categories", joinColumns = 
 	@JoinColumn (name = "product_id"), inverseJoinColumns = 
 	@JoinColumn (name = "category_id"))
-	private List<Categoria> categorias;
+	private List<Categoria> categorias = new ArrayList<Categoria>();
 	
 	public Producto() {
 		
