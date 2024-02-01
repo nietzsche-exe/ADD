@@ -45,7 +45,7 @@ public class Cliente implements Serializable {
 	private ClienteDetalles cliente_detalles;
 	
 	@OneToMany (mappedBy = "cliente", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-	private List<Pago> pagos = new ArrayList<Pago>();
+	private List<Pago> pagos;
 	
 	public Cliente() {
 		
@@ -100,10 +100,27 @@ public class Cliente implements Serializable {
 	public void setPagos(List<Pago> pagos) {
 		this.pagos = pagos;
 	}
+	
+	public void addPagos (Pago pago) {
+		if(this.pagos == null) {
+			this.pagos = new ArrayList<Pago>();
+		}
+		this.pagos.add(pago);
+		pago.setCliente(this);
+	}
+	
+	public void removePago (Pago pago) {
+		if(this.pagos != null) {
+			this.pagos.remove(pago);
+			pago.setCliente(null);
+		}
+	}
+
+	
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(cod_cliente);
+		return Objects.hash(appellido, cod_cliente, email, nombre, pagos);
 	}
 
 	@Override
@@ -115,7 +132,9 @@ public class Cliente implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Cliente other = (Cliente) obj;
-		return Objects.equals(cod_cliente, other.cod_cliente);
+		return Objects.equals(appellido, other.appellido) && Objects.equals(cod_cliente, other.cod_cliente)
+				&& Objects.equals(email, other.email) && Objects.equals(nombre, other.nombre)
+				&& Objects.equals(pagos, other.pagos);
 	}
 
 	@Override

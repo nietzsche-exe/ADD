@@ -11,6 +11,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
+import jakarta.persistence.Query;
 
 public class Principal {
 
@@ -23,12 +24,22 @@ public class Principal {
 		LOGGER.info("Iniciando programa...");
 		
 		LOGGER.info("Relaciones 1:1");
-		//darAltaClienteDetalles();
+		darAltaClienteDetalles();
 		//consultarClienteDetalles(3);
-		//eliminarCliente();
+		
 		
 		LOGGER.info("Relaciones 1:N");
-		darAltaClientePagos();
+		//darAltaClientePagos();
+		//consultarClientePagos(2);
+
+		LOGGER.info("Relaciones N:M");
+		//darAltaProducto();
+		//consultarProducto(1);
+		
+		LOGGER.info("Consultas HQL:");
+		//consultaClienteHQL("Jane");
+		//modificacionPagoHQL(null, null, null, null);
+		//deleteProductoHQL(null);
 		
 		emf.close();
 		LOGGER.info("Fin del programa");
@@ -70,10 +81,17 @@ public class Principal {
 			
 			transaccion.begin();
 			
-			Cliente clienteBuscado = em.find(Cliente.class, cliente_detalles.getCod_cliente());
-			clienteBuscado.getCliente_detalles().setTelefono("149656899");
+			cliente.getCliente_detalles().setTelefono("149656899");
 			
 			transaccion.commit();
+			
+			transaccion.begin();
+			
+			em.remove(em.find(ClienteDetalles.class, cliente_detalles.getCod_cliente()));
+			em.remove(em.find(Cliente.class, cliente.getCod_cliente()));
+			
+			transaccion.commit();
+			
 			
 			
 		}
@@ -92,12 +110,12 @@ public class Principal {
 	public static void consultarClienteDetalles(Integer idCustomer) {
 		
 	        EntityManager em = emf.createEntityManager();
-	        Integer customerId = 3;
+	        
 	        
 	        try {
 	            
-	        Cliente clienteBuscado = em.find(Cliente.class, customerId);
-	        LOGGER.info("Se ha encontrado al cliente con id: " + customerId + "\n"
+	        Cliente clienteBuscado = em.find(Cliente.class, idCustomer);
+	        LOGGER.info("Se ha encontrado al cliente con id: " + idCustomer + "\n"
 	        			+ "Cliente: " + clienteBuscado.toString());
 	        	
 	        } finally {
@@ -105,11 +123,6 @@ public class Principal {
 	        }
 	}
 	
-	
-	
-	public static void eliminarCliente() {
-		
-	}
 	
 	public static void darAltaClientePagos() {
 
@@ -131,8 +144,10 @@ public class Principal {
 		pago3.setFecha(LocalDate.of(2024, 01, 17));
 		
 		
+		cliente.addPagos(pago1);
+		cliente.addPagos(pago2);
+		cliente.addPagos(pago3);
 		
-		cliente.setPagos();
 		
 		EntityTransaction transaccion = em.getTransaction();
 		
@@ -141,6 +156,13 @@ public class Principal {
 			transaccion.begin();
 			
 			em.persist(cliente);
+			
+			transaccion.commit();
+			
+			transaccion.begin();
+			
+			Pago pagoBuscado = em.find(Pago.class, cliente.getPagos().get(2));
+			em.remove(pagoBuscado);
 			
 			transaccion.commit();
 			
@@ -156,6 +178,97 @@ public class Principal {
 		
 	}
 	
+	public static void consultarClientePagos(Integer idCustomer) {
+		
+        EntityManager em = emf.createEntityManager();
+        
+        
+        try {
+            
+        Cliente clienteBuscado = em.find(Cliente.class, idCustomer);
+        LOGGER.info("Se ha encontrado al cliente con id: " + idCustomer + "\n"
+        			+ "Cliente: " + clienteBuscado.toString());
+        	
+        } finally {
+            em.close(); 
+        }
+	}
+	
+	public static void darAltaProducto() {
+		
+		EntityManager em = emf.createEntityManager();
+	
+		Producto producto = new Producto();
+		producto.setNombre("Los pilares de la tierra");
+		producto.setPrice(21.99);
+		
+		Categoria categoria = new Categoria();
+		categoria.setNombre("libros");
+		Categoria categoria2 = new Categoria();
+		categoria2.setNombre("entretenimiento");
+		
+		producto.addCategoria(categoria);
+		producto.addCategoria(categoria2);
+		
+		EntityTransaction transaccion = em.getTransaction();
+		
+		try {
+			
+			transaccion.begin();
+			
+			em.persist(producto);
+			
+			transaccion.commit();
+			
+		}
+		catch(Exception e) {
+			transaccion.rollback();
+			LOGGER.error("Error durante la operacion de persistencia: " + e.getMessage());
+			e.printStackTrace();
+		}
+		finally {
+			em.close();
+			LOGGER.info("EntityManager cerrado");
+		}
+		
+	}
+
+	public static void consultarProducto(Integer idProducto) {
+
+		EntityManager em = emf.createEntityManager();
+
+		try {
+
+			Producto productoBuscado = em.find(Producto.class, idProducto);
+			LOGGER.info("Se ha encontrado el Producto con id: " + idProducto + "\n" + "Cliente: "
+					+ productoBuscado.toString());
+
+		} finally {
+			em.close();
+		}
+	}
+	
+	public static void consultaClienteHQL(String nombre) {
+		
+		EntityManager em = emf.createEntityManager();
+		
+		Query consultarCliente = em.createQuery("from Cliente a where a.nombre = :name");
+		consultarCliente.setParameter("name", nombre);
+		List<Cliente> listaClientes = consultarCliente.getResultList();
+		
+		for (Cliente cliente : listaClientes) {
+			LOGGER.info(cliente.toString());
+		}
+		
+	}
+	
+	public static void modificacionPagoHQL(String nombre, String appellido, LocalDate fecha, Double importe) {
+		
+	}
+	
+	public static void deleteProductoHQL(String nombre) {
+		
+	}
 	
 
 }

@@ -73,9 +73,11 @@ public class ClienteDetalles implements Serializable {
 		this.cliente = cliente;
 	}
 
+
+
 	@Override
 	public int hashCode() {
-		return Objects.hash(cod_cliente);
+		return Objects.hash(cod_cliente, direccion, telefono);
 	}
 
 	@Override
@@ -87,7 +89,8 @@ public class ClienteDetalles implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		ClienteDetalles other = (ClienteDetalles) obj;
-		return Objects.equals(cod_cliente, other.cod_cliente);
+		return Objects.equals(cod_cliente, other.cod_cliente) && Objects.equals(direccion, other.direccion)
+				&& Objects.equals(telefono, other.telefono);
 	}
 
 	@Override

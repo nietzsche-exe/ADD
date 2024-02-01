@@ -11,6 +11,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
@@ -28,16 +30,13 @@ public class Pago implements Serializable {
 	@Column (name = "payment_id")
 	private Integer cod_pagos;
 	
-	@Column (name = "customer_id")
-	private Integer cod_cliente;
-	
 	@Column (name = "amount")
 	private Double cantidad;
 	
 	@Column (name = "payment_date")
 	private LocalDate fecha;
 	
-	@OneToMany (fetch = FetchType.EAGER)
+	@ManyToOne (fetch = FetchType.EAGER)
 	@JoinColumn (name = "customer_id")
 	private Cliente cliente;
 	
@@ -53,13 +52,6 @@ public class Pago implements Serializable {
 		this.cod_pagos = cod_pagos;
 	}
 
-	public Integer getCod_cliente() {
-		return cod_cliente;
-	}
-
-	public void setCod_cliente(Integer cod_cliente) {
-		this.cod_cliente = cod_cliente;
-	}
 
 	public Double getCantidad() {
 		return cantidad;
@@ -104,7 +96,7 @@ public class Pago implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Pago [cod_pagos=" + cod_pagos + ", cod_cliente=" + cod_cliente + ", cantidad=" + cantidad + ", fecha="
+		return "Pago [cod_pagos=" + cod_pagos  + ", cantidad=" + cantidad + ", fecha="
 				+ fecha + "]";
 	}
 	

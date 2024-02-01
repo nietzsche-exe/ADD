@@ -1,47 +1,82 @@
 package es.ciudadescolar;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class Director {
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 
-	private Integer cod_director;
-	private String nombre;
-	private List<Pelicula> peliculas;
+@Entity
+@Table (name = "directores", schema = "peliculas_orm_2324")
+public class Director implements Serializable{
 
-	public Director(){
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@Column (name = "cod_director")
+	private Integer codigo_director;
+	
+	@Column (name = "nombre")
+	private String nombre_director;
+
+	//Vamos a indicar que director es owner (1) y peliculas es (N)
+	@OneToMany(mappedBy = "director", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private List<Pelicula> peliculas_dirigidas;
+	
+	public Director () {
 		
 	}
-
-	public Integer getCod_director() {
-		return cod_director;
+	
+	
+	public Integer getCodigo_director() {
+		return codigo_director;
+	}
+	public void setCodigo_director(Integer codigo_director) {
+		this.codigo_director = codigo_director;
+	}
+	public String getNombre_director() {
+		return nombre_director;
+	}
+	public void setNombre_director(String nombre_director) {
+		this.nombre_director = nombre_director;
+	}
+	public List<Pelicula> getPeliculas_dirigidas() {
+		return peliculas_dirigidas;
+	}
+	public void setPeliculas_dirigidas(List<Pelicula> peliculas_dirigidas) {
+		this.peliculas_dirigidas = peliculas_dirigidas;
+	}
+	
+	
+	public void addPeliculaDirigida (Pelicula peli) {
+		if (this.peliculas_dirigidas == null) {
+			this.peliculas_dirigidas = new ArrayList<Pelicula>();
+		}
+		this.peliculas_dirigidas.add(peli);
+		peli.setDirector(this);
 	}
 
-	public void setCod_director(Integer cod_director) {
-		this.cod_director = cod_director;
+	
+	public void removePeliculaDirigida (Pelicula peli) {
+		
+		if (this.peliculas_dirigidas != null) {
+			this.peliculas_dirigidas.remove(peli);
+			peli.setDirector(null);
+		}
 	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public List<Pelicula> getPeliculas() {
-		return peliculas;
-	}
-
-	public void setPeliculas(List<Pelicula> peliculas) {
-		this.peliculas = peliculas;
-	}
+	
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(cod_director);
+		return Objects.hash(codigo_director, nombre_director);
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -51,14 +86,17 @@ public class Director {
 		if (getClass() != obj.getClass())
 			return false;
 		Director other = (Director) obj;
-		return Objects.equals(cod_director, other.cod_director);
+		return Objects.equals(codigo_director, other.codigo_director)
+				&& Objects.equals(nombre_director, other.nombre_director);
 	}
+
 
 	@Override
 	public String toString() {
-		return "Director [cod_director=" + cod_director + ", nombre=" + nombre + "]";
+		return "Director [codigo_director=" + codigo_director + ", nombre_director=" + nombre_director
+				+ ", peliculas_dirigidas=" + peliculas_dirigidas + "]";
 	}
 	
 	
-
+	
 }
