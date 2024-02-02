@@ -13,6 +13,12 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
+/*
+ * Clase Categoria que maneja la relacion con la base de datos
+ * @author Jose Julian Saavedra
+ * @version 1.0
+ * @since 2023 - 2024
+ */
 @Entity
 @Table (name = "categories", schema = "empresa_orm_2324")
 public class Categoria {

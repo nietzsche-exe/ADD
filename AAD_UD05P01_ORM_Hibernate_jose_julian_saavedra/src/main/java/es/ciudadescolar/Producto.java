@@ -16,6 +16,12 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
+/*
+ * Clase Producto que maneja la relacion con la base de datos
+ * @author Jose Julian Saavedra
+ * @version 1.0
+ * @since 2023 - 2024
+ */
 @Entity
 @Table (name = "products", schema = "empresa_orm_2324")
 public class Producto {

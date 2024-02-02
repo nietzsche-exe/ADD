@@ -15,6 +15,12 @@ import jakarta.persistence.MapsId;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
+/*
+ * Clase ClienteDetalles que maneja la relacion con la base de datos
+ * @author Jose Julian Saavedra
+ * @version 1.0
+ * @since 2023 - 2024
+ */
 @Entity
 @Table (name = "customer_details", schema = "empresa_orm_2324")
 public class ClienteDetalles implements Serializable {

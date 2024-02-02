@@ -16,6 +16,12 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
+/*
+ * Clase Pago que maneja la relacion con la base de datos
+ * @author Jose Julian Saavedra
+ * @version 1.0
+ * @since 2023 - 2024
+ */
 @Entity
 @Table (name = "payments")
 public class Pago implements Serializable {

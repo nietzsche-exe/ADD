@@ -4240,3 +4240,2418 @@ Cliente: Producto [cod_producto=1, nombre=Laptop, price=899.99, categorias=[Cate
 }
 2024-02-01 16:24:24,841 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/empresa_orm_2324]
 2024-02-01 16:24:24,844 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-02-02 11:43:21,722 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 11:43:21,769 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 11:43:21,798 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 11:43:21,798 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 11:43:21,962 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 11:43:21,965 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 11:43:21,970 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 11:43:21,970 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/empresa_orm_2324]
+2024-02-02 11:43:21,970 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 11:43:21,970 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 11:43:21,973 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 11:43:22,070 [main] WARN  o.h.e.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:259)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:129)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:52)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:135)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:247)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:132)
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:43)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:61)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.addConnections(DriverManagerConnectionProviderImpl.java:499)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:372)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections$Builder.build(DriverManagerConnectionProviderImpl.java:550)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:102)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:82)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:135)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:247)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:395)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:262)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:129)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:55)
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at es.ciudadescolar.Principal.<clinit>(Principal.java:19)
+2024-02-02 11:43:48,166 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 11:43:48,210 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 11:43:48,237 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 11:43:48,237 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 11:43:48,398 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 11:43:48,401 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 11:43:48,406 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 11:43:48,406 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 11:43:48,406 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 11:43:48,406 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 11:43:48,409 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 11:43:49,617 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 11:43:49,620 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 11:43:49,621 [main] INFO  es.ciudadescolar.Principal               - Relaciones 1:1
+2024-02-02 11:43:49,621 [main] INFO  es.ciudadescolar.Principal               - Relaciones 1:N
+2024-02-02 11:43:49,621 [main] INFO  es.ciudadescolar.Principal               - Relaciones N:M
+2024-02-02 11:43:49,621 [main] INFO  es.ciudadescolar.Principal               - Consultas HQL:
+2024-02-02 11:43:49,646 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 11:43:49,943 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.first_name,
+        p1_0.amount 
+    from
+        customers c1_0,
+        payments p1_0 
+    where
+        c1_0.first_name=?
+2024-02-02 11:43:49,949 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Jane]
+2024-02-02 11:43:49,972 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: select c.nombre, p.cantidad from Cliente c, Pago p where c.nombre = :name, time: 35ms, rows: 47
+2024-02-02 11:43:49,974 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 2099.97
+2024-02-02 11:43:49,974 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 739.96
+2024-02-02 11:43:49,974 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 885.96
+2024-02-02 11:43:49,974 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 885.96
+2024-02-02 11:43:49,974 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 899.99
+2024-02-02 11:43:49,974 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 234.45
+2024-02-02 11:43:49,974 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 100.25
+2024-02-02 11:43:49,974 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 655.99
+2024-02-02 11:43:49,974 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 234.45
+2024-02-02 11:43:49,974 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 100.25
+2024-02-02 11:43:49,974 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 655.99
+2024-02-02 11:43:49,974 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 234.45
+2024-02-02 11:43:49,974 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 100.25
+2024-02-02 11:43:49,974 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 655.99
+2024-02-02 11:43:49,974 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 234.45
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 100.25
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 655.99
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 234.45
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 100.25
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 655.99
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 234.45
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 100.25
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 655.99
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 234.45
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 100.25
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 655.99
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 234.45
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 100.25
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 655.99
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 234.45
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 100.25
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 655.99
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 234.45
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 100.25
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 655.99
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 234.45
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 100.25
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 655.99
+2024-02-02 11:43:49,975 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 234.45
+2024-02-02 11:43:49,976 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 100.25
+2024-02-02 11:43:49,976 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 655.99
+2024-02-02 11:43:49,976 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 234.45
+2024-02-02 11:43:49,976 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 100.25
+2024-02-02 11:43:49,976 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 655.99
+2024-02-02 11:43:49,976 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 234.45
+2024-02-02 11:43:49,976 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 100.25
+2024-02-02 11:43:49,976 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 655.99
+2024-02-02 11:43:49,977 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 11:43:49,979 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-02-02 11:46:23,625 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 11:46:23,669 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 11:46:23,697 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 11:46:23,697 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 11:46:23,858 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 11:46:23,861 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 11:46:23,865 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 11:46:23,865 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 11:46:23,866 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 11:46:23,866 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 11:46:23,868 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 11:46:25,070 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 11:46:25,073 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 11:46:25,073 [main] INFO  es.ciudadescolar.Principal               - Relaciones 1:1
+2024-02-02 11:46:25,073 [main] INFO  es.ciudadescolar.Principal               - Relaciones 1:N
+2024-02-02 11:46:25,073 [main] INFO  es.ciudadescolar.Principal               - Relaciones N:M
+2024-02-02 11:46:25,073 [main] INFO  es.ciudadescolar.Principal               - Consultas HQL:
+2024-02-02 11:46:25,099 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 11:46:25,411 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.first_name,
+        p1_0.amount 
+    from
+        customers c1_0,
+        payments p1_0 
+    where
+        c1_0.first_name=? 
+        and p1_0.payment_id=c1_0.customer_id
+2024-02-02 11:46:25,417 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Jane]
+2024-02-02 11:46:25,421 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: select c.nombre, p.cantidad from Cliente c, Pago p where c.nombre = :name AND p.cod_pagos = c.cod_cliente, time: 16ms, rows: 1
+2024-02-02 11:46:25,422 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 739.96
+2024-02-02 11:46:25,423 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 11:46:25,425 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-02-02 11:57:57,211 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 11:57:57,255 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 11:57:57,282 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 11:57:57,282 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 11:57:57,442 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 11:57:57,445 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 11:57:57,450 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 11:57:57,450 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 11:57:57,450 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 11:57:57,450 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 11:57:57,452 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 11:57:58,655 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 11:57:58,658 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 11:58:02,453 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 11:58:02,475 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        customers
+        (last_name, email, first_name) 
+    values
+        (?, ?, ?)
+2024-02-02 11:58:02,481 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Díaz]
+2024-02-02 11:58:02,481 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [pd1921@tocomocho.net]
+2024-02-02 11:58:02,482 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:VARCHAR) <- [Paco]
+2024-02-02 11:58:02,510 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        customer_details
+        (address, phone_number, customer_id) 
+    values
+        (?, ?, ?)
+2024-02-02 11:58:02,511 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Avda. Sin nombre, 121]
+2024-02-02 11:58:02,511 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [6496568991]
+2024-02-02 11:58:02,511 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:INTEGER) <- [31]
+2024-02-02 11:58:02,525 [main] DEBUG org.hibernate.SQL                        - 
+    update
+        customer_details 
+    set
+        address=?,
+        phone_number=? 
+    where
+        customer_id=?
+2024-02-02 11:58:02,526 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Avda. Sin nombre, 121]
+2024-02-02 11:58:02,526 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [149656899]
+2024-02-02 11:58:02,526 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:INTEGER) <- [31]
+2024-02-02 11:58:02,537 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        customer_details 
+    where
+        customer_id=?
+2024-02-02 11:58:02,537 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [31]
+2024-02-02 11:58:02,538 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        customers 
+    where
+        customer_id=?
+2024-02-02 11:58:02,539 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [31]
+2024-02-02 11:58:02,547 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    1380200 nanoseconds spent acquiring 4 JDBC connections;
+    1286500 nanoseconds spent releasing 4 JDBC connections;
+    5488700 nanoseconds spent preparing 5 JDBC statements;
+    16189200 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    35761200 nanoseconds spent executing 4 flushes (flushing a total of 7 entities and 4 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 11:58:02,548 [main] INFO  es.ciudadescolar.Principal               - EntityManager cerrado
+2024-02-02 12:01:02,698 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:01:02,742 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:01:02,769 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:01:02,770 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:01:02,930 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:01:02,933 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:01:02,938 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:01:02,938 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:01:02,938 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:01:02,938 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:01:02,940 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:01:04,140 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:01:04,144 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:01:07,675 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:01:07,702 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.customer_id,
+        c1_0.last_name,
+        c2_0.customer_id,
+        c2_0.address,
+        c2_0.phone_number,
+        c1_0.email,
+        c1_0.first_name,
+        p1_0.customer_id,
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.payment_date 
+    from
+        customers c1_0 
+    left join
+        customer_details c2_0 
+            on c2_0.customer_id=c1_0.customer_id 
+    left join
+        payments p1_0 
+            on c1_0.customer_id=p1_0.customer_id 
+    where
+        c1_0.customer_id=?
+2024-02-02 12:01:07,709 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [3]
+2024-02-02 12:01:07,728 [main] INFO  es.ciudadescolar.Principal               - Se ha encontrado al cliente con id: 3
+Cliente: Cliente [cod_cliente=3, nombre=Bob, appellido=Johnson, email=bob.johnson@example.com, cliente_detalles=ClienteDetalles [cod_cliente=3, direccion=789 Pine Road, Villageland, telefono=555-9876], pagos=[Pago [cod_pagos=5, cantidad=899.99, fecha=2023-01-14]]]
+2024-02-02 12:01:07,728 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    789600 nanoseconds spent acquiring 1 JDBC connections;
+    486500 nanoseconds spent releasing 1 JDBC connections;
+    6173900 nanoseconds spent preparing 1 JDBC statements;
+    1677400 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:02:22,231 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:02:22,276 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:02:22,303 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:02:22,304 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:02:22,463 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:02:22,466 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:02:22,470 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:02:22,470 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:02:22,470 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:02:22,470 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:02:22,472 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:02:23,654 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:02:23,657 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:02:34,802 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:02:34,805 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-02-02 12:02:58,236 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:02:58,281 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:02:58,311 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:02:58,312 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:02:58,488 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:02:58,491 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:02:58,495 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:02:58,495 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:02:58,495 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:02:58,496 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:02:58,498 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:02:59,705 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:02:59,708 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:03:02,699 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:03:02,722 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        customers
+        (last_name, email, first_name) 
+    values
+        (?, ?, ?)
+2024-02-02 12:03:02,728 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Róman]
+2024-02-02 12:03:02,728 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [joaqrom@tocomocho.net]
+2024-02-02 12:03:02,728 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:VARCHAR) <- [Joaquín]
+2024-02-02 12:03:02,739 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        payments
+        (amount, customer_id, payment_date) 
+    values
+        (?, ?, ?)
+2024-02-02 12:03:02,740 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [234.45]
+2024-02-02 12:03:02,740 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [32]
+2024-02-02 12:03:02,740 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2024-01-07]
+2024-02-02 12:03:02,749 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        payments
+        (amount, customer_id, payment_date) 
+    values
+        (?, ?, ?)
+2024-02-02 12:03:02,750 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [100.25]
+2024-02-02 12:03:02,750 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [32]
+2024-02-02 12:03:02,750 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2024-01-12]
+2024-02-02 12:03:02,751 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        payments
+        (amount, customer_id, payment_date) 
+    values
+        (?, ?, ?)
+2024-02-02 12:03:02,752 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [655.99]
+2024-02-02 12:03:02,752 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [32]
+2024-02-02 12:03:02,752 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2024-01-17]
+2024-02-02 12:03:02,772 [main] ERROR es.ciudadescolar.Principal               - Error durante la operacion de persistencia: Argument 'Pago [cod_pagos=50, cantidad=655.99, fecha=2024-01-17]' could not be converted to the identifier type of entity 'es.ciudadescolar.Pago' [Cannot coerce value 'Pago [cod_pagos=50, cantidad=655.99, fecha=2024-01-17]' [es.ciudadescolar.Pago] to Integer]
+2024-02-02 12:03:02,773 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    936700 nanoseconds spent acquiring 2 JDBC connections;
+    667000 nanoseconds spent releasing 2 JDBC connections;
+    5092500 nanoseconds spent preparing 4 JDBC statements;
+    10744600 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    7853700 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 1 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:03:02,773 [main] INFO  es.ciudadescolar.Principal               - EntityManager cerrado
+2024-02-02 12:04:28,966 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:04:29,009 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:04:29,036 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:04:29,036 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:04:29,197 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:04:29,200 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:04:29,204 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:04:29,204 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:04:29,204 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:04:29,204 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:04:29,206 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:04:30,416 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:04:30,420 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:04:33,084 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:04:33,106 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        customers
+        (last_name, email, first_name) 
+    values
+        (?, ?, ?)
+2024-02-02 12:04:33,113 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Róman]
+2024-02-02 12:04:33,113 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [joaqrom@tocomocho.net]
+2024-02-02 12:04:33,113 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:VARCHAR) <- [Joaquín]
+2024-02-02 12:04:33,124 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        payments
+        (amount, customer_id, payment_date) 
+    values
+        (?, ?, ?)
+2024-02-02 12:04:33,125 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [234.45]
+2024-02-02 12:04:33,125 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [33]
+2024-02-02 12:04:33,125 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2024-01-07]
+2024-02-02 12:04:33,134 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        payments
+        (amount, customer_id, payment_date) 
+    values
+        (?, ?, ?)
+2024-02-02 12:04:33,135 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [100.25]
+2024-02-02 12:04:33,135 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [33]
+2024-02-02 12:04:33,135 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2024-01-12]
+2024-02-02 12:04:33,136 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        payments
+        (amount, customer_id, payment_date) 
+    values
+        (?, ?, ?)
+2024-02-02 12:04:33,136 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [655.99]
+2024-02-02 12:04:33,136 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [33]
+2024-02-02 12:04:33,137 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2024-01-17]
+2024-02-02 12:04:33,155 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    1028000 nanoseconds spent acquiring 2 JDBC connections;
+    639500 nanoseconds spent releasing 2 JDBC connections;
+    5679200 nanoseconds spent preparing 4 JDBC statements;
+    10615300 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    8632000 nanoseconds spent executing 2 flushes (flushing a total of 8 entities and 2 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:04:33,156 [main] INFO  es.ciudadescolar.Principal               - EntityManager cerrado
+2024-02-02 12:05:30,700 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:05:30,744 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:05:30,771 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:05:30,772 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:05:30,930 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:05:30,933 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:05:30,938 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:05:30,938 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:05:30,938 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:05:30,938 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:05:30,940 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:05:32,140 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:05:32,143 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:05:33,811 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:05:33,832 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        customers
+        (last_name, email, first_name) 
+    values
+        (?, ?, ?)
+2024-02-02 12:05:33,839 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Róman]
+2024-02-02 12:05:33,839 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [joaqrom@tocomocho.net]
+2024-02-02 12:05:33,840 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:VARCHAR) <- [Joaquín]
+2024-02-02 12:05:33,851 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        payments
+        (amount, customer_id, payment_date) 
+    values
+        (?, ?, ?)
+2024-02-02 12:05:33,852 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [234.45]
+2024-02-02 12:05:33,852 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [34]
+2024-02-02 12:05:33,852 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2024-01-07]
+2024-02-02 12:05:33,862 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        payments
+        (amount, customer_id, payment_date) 
+    values
+        (?, ?, ?)
+2024-02-02 12:05:33,862 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [100.25]
+2024-02-02 12:05:33,862 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [34]
+2024-02-02 12:05:33,863 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2024-01-12]
+2024-02-02 12:05:33,864 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        payments
+        (amount, customer_id, payment_date) 
+    values
+        (?, ?, ?)
+2024-02-02 12:05:33,864 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [655.99]
+2024-02-02 12:05:33,864 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [34]
+2024-02-02 12:05:33,864 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2024-01-17]
+2024-02-02 12:05:33,888 [main] ERROR es.ciudadescolar.Principal               - Error durante la operacion de persistencia: org.hibernate.ObjectDeletedException: deleted instance passed to merge: [es.ciudadescolar.Pago#<null>]
+2024-02-02 12:05:33,889 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    886600 nanoseconds spent acquiring 2 JDBC connections;
+    761800 nanoseconds spent releasing 2 JDBC connections;
+    5826400 nanoseconds spent preparing 4 JDBC statements;
+    11463300 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    9115400 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 1 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:05:33,889 [main] INFO  es.ciudadescolar.Principal               - EntityManager cerrado
+2024-02-02 12:07:07,560 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:07:07,604 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:07:07,631 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:07:07,632 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:07:07,794 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:07:07,797 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:07:07,802 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:07:07,802 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:07:07,802 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:07:07,802 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:07:07,805 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:07:09,013 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:07:09,017 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:07:15,499 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:07:15,521 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        products
+        (product_name, price) 
+    values
+        (?, ?)
+2024-02-02 12:07:15,528 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:07:15,528 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:DOUBLE) <- [21.99]
+2024-02-02 12:07:15,549 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        categories
+        (category_name) 
+    values
+        (?)
+2024-02-02 12:07:15,550 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [libros]
+2024-02-02 12:07:15,558 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        categories
+        (category_name) 
+    values
+        (?)
+2024-02-02 12:07:15,558 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [entretenimiento]
+2024-02-02 12:07:15,569 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+2024-02-02 12:07:15,569 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [7]
+2024-02-02 12:07:15,569 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [7]
+2024-02-02 12:07:15,577 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+2024-02-02 12:07:15,578 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [7]
+2024-02-02 12:07:15,578 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [8]
+2024-02-02 12:07:15,584 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    609400 nanoseconds spent acquiring 1 JDBC connections;
+    355500 nanoseconds spent releasing 1 JDBC connections;
+    5785500 nanoseconds spent preparing 5 JDBC statements;
+    27126100 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    20891700 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 3 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:07:15,584 [main] INFO  es.ciudadescolar.Principal               - EntityManager cerrado
+2024-02-02 12:08:05,338 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:08:05,383 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:08:05,409 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:08:05,410 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:08:05,569 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:08:05,571 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:08:05,576 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:08:05,576 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:08:05,577 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:08:05,577 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:08:05,579 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:08:06,778 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:08:06,781 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:08:11,413 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:08:11,439 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.product_id,
+        p1_0.product_name,
+        p1_0.price,
+        c1_0.product_id,
+        c1_1.category_id,
+        c1_1.category_name 
+    from
+        products p1_0 
+    left join
+        product_categories c1_0 
+            on p1_0.product_id=c1_0.product_id 
+    left join
+        categories c1_1 
+            on c1_1.category_id=c1_0.category_id 
+    where
+        p1_0.product_id=?
+2024-02-02 12:08:11,446 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 12:08:11,466 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:08:11,466 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [4]
+2024-02-02 12:08:11,469 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:08:11,470 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 12:08:11,471 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.product_id,
+        c1_1.category_id,
+        c1_1.category_name 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.category_id=c1_0.category_id 
+    where
+        c1_0.product_id=?
+2024-02-02 12:08:11,472 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [2]
+2024-02-02 12:08:11,473 [main] INFO  es.ciudadescolar.Principal               - Se ha encontrado el Producto con id: 1
+Cliente: Producto [cod_producto=1, nombre=Laptop, price=899.99, categorias=[Categoria [cod_categoria=1, nombre=Electrónicos], Categoria [cod_categoria=4, nombre=Ordenadores]]]
+2024-02-02 12:08:11,474 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    1161300 nanoseconds spent acquiring 3 JDBC connections;
+    1089500 nanoseconds spent releasing 3 JDBC connections;
+    6894700 nanoseconds spent preparing 4 JDBC statements;
+    4025900 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:10:48,672 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:10:48,718 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:10:48,745 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:10:48,746 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:10:48,906 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:10:48,908 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:10:48,912 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:10:48,912 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:10:48,912 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:10:48,912 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:10:48,914 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:10:50,107 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:10:50,110 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:10:55,604 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:10:55,854 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.product_id,
+        p1_0.product_name,
+        p1_0.price 
+    from
+        products p1_0 
+    where
+        p1_0.product_name=?
+2024-02-02 12:10:55,859 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:10:55,878 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.product_id,
+        c1_1.category_id,
+        c1_1.category_name 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.category_id=c1_0.category_id 
+    where
+        c1_0.product_id=?
+2024-02-02 12:10:55,878 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [7]
+2024-02-02 12:10:55,883 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:10:55,884 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [8]
+2024-02-02 12:10:55,886 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:10:55,887 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [7]
+2024-02-02 12:10:55,888 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.product_id,
+        c1_1.category_id,
+        c1_1.category_name 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.category_id=c1_0.category_id 
+    where
+        c1_0.product_id=?
+2024-02-02 12:10:55,889 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-02-02 12:10:55,891 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:10:55,892 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-02-02 12:10:55,893 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:10:55,894 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [5]
+2024-02-02 12:10:55,895 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Producto p where p.nombre = :nombre, time: 51ms, rows: 2
+2024-02-02 12:10:55,898 [main] ERROR es.ciudadescolar.Principal               - Execepcion en el menu principal
+2024-02-02 12:10:55,899 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:10:55,901 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-02-02 12:11:32,458 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:11:32,500 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:11:32,527 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:11:32,528 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:11:32,687 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:11:32,690 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:11:32,694 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:11:32,694 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:11:32,694 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:11:32,694 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:11:32,697 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:11:33,892 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:11:33,895 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:11:36,547 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:11:36,798 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.product_id,
+        p1_0.product_name,
+        p1_0.price 
+    from
+        products p1_0 
+    where
+        p1_0.product_name=?
+2024-02-02 12:11:36,803 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:11:36,821 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.product_id,
+        c1_1.category_id,
+        c1_1.category_name 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.category_id=c1_0.category_id 
+    where
+        c1_0.product_id=?
+2024-02-02 12:11:36,821 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [7]
+2024-02-02 12:11:36,827 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:11:36,827 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [8]
+2024-02-02 12:11:36,830 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:11:36,830 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [7]
+2024-02-02 12:11:36,832 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.product_id,
+        c1_1.category_id,
+        c1_1.category_name 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.category_id=c1_0.category_id 
+    where
+        c1_0.product_id=?
+2024-02-02 12:11:36,833 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-02-02 12:11:36,835 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:11:36,836 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-02-02 12:11:36,837 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:11:36,837 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [5]
+2024-02-02 12:11:36,839 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Producto p where p.nombre = :nombre, time: 51ms, rows: 2
+2024-02-02 12:11:36,841 [main] ERROR es.ciudadescolar.Principal               - Execepcion en el menu principal
+2024-02-02 12:11:36,842 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:11:36,844 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-02-02 12:13:06,240 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:13:06,283 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:13:06,310 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:13:06,311 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:13:06,474 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:13:06,477 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:13:06,481 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:13:06,481 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:13:06,481 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:13:06,481 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:13:06,483 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:13:07,690 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:13:07,693 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:13:07,718 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:13:07,966 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.product_id,
+        p1_0.product_name,
+        p1_0.price 
+    from
+        products p1_0 
+    where
+        p1_0.product_name=?
+2024-02-02 12:13:07,972 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:13:07,992 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.product_id,
+        c1_1.category_id,
+        c1_1.category_name 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.category_id=c1_0.category_id 
+    where
+        c1_0.product_id=?
+2024-02-02 12:13:07,992 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [7]
+2024-02-02 12:13:07,998 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:13:07,999 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [8]
+2024-02-02 12:13:08,002 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:13:08,002 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [7]
+2024-02-02 12:13:08,004 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.product_id,
+        c1_1.category_id,
+        c1_1.category_name 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.category_id=c1_0.category_id 
+    where
+        c1_0.product_id=?
+2024-02-02 12:13:08,005 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-02-02 12:13:08,007 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:13:08,008 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-02-02 12:13:08,010 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:13:08,011 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [5]
+2024-02-02 12:13:08,012 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Producto p where p.nombre = :nombre, time: 56ms, rows: 2
+2024-02-02 12:18:52,745 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:18:52,788 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:18:52,814 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:18:52,815 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:18:52,976 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:18:52,978 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:18:52,982 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:18:52,983 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:18:52,983 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:18:52,983 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:18:52,985 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:18:54,197 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:18:54,199 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:18:54,225 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:18:54,477 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.product_id,
+        p1_0.product_name,
+        p1_0.price 
+    from
+        products p1_0 
+    where
+        p1_0.product_name=?
+2024-02-02 12:18:54,482 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:18:54,500 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.product_id,
+        c1_1.category_id,
+        c1_1.category_name 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.category_id=c1_0.category_id 
+    where
+        c1_0.product_id=?
+2024-02-02 12:18:54,501 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [7]
+2024-02-02 12:18:54,507 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:18:54,508 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [8]
+2024-02-02 12:18:54,510 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:18:54,511 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [7]
+2024-02-02 12:18:54,513 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.product_id,
+        c1_1.category_id,
+        c1_1.category_name 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.category_id=c1_0.category_id 
+    where
+        c1_0.product_id=?
+2024-02-02 12:18:54,513 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-02-02 12:18:54,515 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:18:54,516 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-02-02 12:18:54,517 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:18:54,518 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [5]
+2024-02-02 12:18:54,520 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Producto p where p.nombre = :nombre, time: 53ms, rows: 2
+2024-02-02 12:18:54,539 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        product_categories 
+    where
+        product_id=?
+2024-02-02 12:18:54,540 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-02-02 12:18:54,545 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        categories 
+    where
+        category_id=?
+2024-02-02 12:18:54,546 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [5]
+2024-02-02 12:18:54,548 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        categories 
+    where
+        category_id=?
+2024-02-02 12:18:54,548 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-02-02 12:18:54,549 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        products 
+    where
+        product_id=?
+2024-02-02 12:18:54,549 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [6]
+2024-02-02 12:18:54,554 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        product_categories 
+    where
+        product_id=?
+2024-02-02 12:18:54,554 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [7]
+2024-02-02 12:18:54,555 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        categories 
+    where
+        category_id=?
+2024-02-02 12:18:54,555 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [7]
+2024-02-02 12:18:54,556 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        categories 
+    where
+        category_id=?
+2024-02-02 12:18:54,556 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [8]
+2024-02-02 12:18:54,557 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        products 
+    where
+        product_id=?
+2024-02-02 12:18:54,557 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [7]
+2024-02-02 12:18:54,560 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    2929700 nanoseconds spent acquiring 8 JDBC connections;
+    3029400 nanoseconds spent releasing 8 JDBC connections;
+    8145900 nanoseconds spent preparing 15 JDBC statements;
+    13182200 nanoseconds spent executing 15 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    27337400 nanoseconds spent executing 2 flushes (flushing a total of 9 entities and 9 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:18:54,562 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:18:54,564 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-02-02 12:19:59,002 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:19:59,046 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:19:59,073 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:19:59,074 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:19:59,232 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:19:59,234 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:19:59,239 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:19:59,239 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:19:59,239 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:19:59,239 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:19:59,241 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:20:00,443 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:20:00,446 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:20:21,123 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:20:21,144 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        products
+        (product_name, price) 
+    values
+        (?, ?)
+2024-02-02 12:20:21,151 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:20:21,151 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:DOUBLE) <- [21.99]
+2024-02-02 12:20:21,163 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        categories
+        (category_name) 
+    values
+        (?)
+2024-02-02 12:20:21,163 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [libros]
+2024-02-02 12:20:21,164 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        categories
+        (category_name) 
+    values
+        (?)
+2024-02-02 12:20:21,165 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [entretenimiento]
+2024-02-02 12:20:21,175 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+2024-02-02 12:20:21,176 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [8]
+2024-02-02 12:20:21,176 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [9]
+2024-02-02 12:20:21,177 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+2024-02-02 12:20:21,178 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [8]
+2024-02-02 12:20:21,178 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [10]
+2024-02-02 12:20:21,183 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    532200 nanoseconds spent acquiring 1 JDBC connections;
+    315400 nanoseconds spent releasing 1 JDBC connections;
+    5272900 nanoseconds spent preparing 5 JDBC statements;
+    3681900 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    13619400 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 3 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:20:21,183 [main] INFO  es.ciudadescolar.Principal               - EntityManager cerrado
+2024-02-02 12:21:34,363 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:21:34,406 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:21:34,433 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:21:34,434 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:21:34,593 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:21:34,596 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:21:34,601 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:21:34,601 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:21:34,601 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:21:34,601 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:21:34,604 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:21:35,804 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:21:35,808 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:21:42,059 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:21:42,327 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.customer_id,
+        c1_0.last_name,
+        c1_0.email,
+        c1_0.first_name 
+    from
+        customers c1_0 
+    where
+        c1_0.first_name=? 
+        and c1_0.last_name=?
+2024-02-02 12:21:42,333 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [John]
+2024-02-02 12:21:42,333 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Doe]
+2024-02-02 12:21:42,349 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        cd1_0.customer_id,
+        c1_0.customer_id,
+        c1_0.last_name,
+        c1_0.email,
+        c1_0.first_name,
+        p1_0.customer_id,
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.payment_date,
+        cd1_0.address,
+        cd1_0.phone_number 
+    from
+        customer_details cd1_0 
+    left join
+        customers c1_0 
+            on cd1_0.customer_id=c1_0.customer_id 
+    left join
+        payments p1_0 
+            on c1_0.customer_id=p1_0.customer_id 
+    where
+        cd1_0.customer_id=?
+2024-02-02 12:21:42,350 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 12:21:42,361 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Cliente c where c.nombre = :name and c.appellido = :apellido, time: 46ms, rows: 1
+2024-02-02 12:21:42,367 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.customer_id,
+        p1_0.payment_date 
+    from
+        payments p1_0 
+    where
+        p1_0.customer_id=? 
+        and p1_0.payment_date=?
+2024-02-02 12:21:42,368 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 12:21:42,368 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:DATE) <- [2023-01-25]
+2024-02-02 12:21:42,379 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Pago p where p.cliente = :cliente and p.fecha = :fecha, time: 12ms, rows: 1
+2024-02-02 12:21:42,397 [main] DEBUG org.hibernate.SQL                        - 
+    update
+        payments 
+    set
+        amount=?,
+        customer_id=?,
+        payment_date=? 
+    where
+        payment_id=?
+2024-02-02 12:21:42,399 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [1099.97]
+2024-02-02 12:21:42,399 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [1]
+2024-02-02 12:21:42,399 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2023-01-25]
+2024-02-02 12:21:42,399 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (4:INTEGER) <- [1]
+2024-02-02 12:21:42,404 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    1134100 nanoseconds spent acquiring 3 JDBC connections;
+    1230500 nanoseconds spent releasing 3 JDBC connections;
+    6112400 nanoseconds spent preparing 4 JDBC statements;
+    13844200 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    17314900 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:21:42,406 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.product_id,
+        p1_0.product_name,
+        p1_0.price 
+    from
+        products p1_0 
+    where
+        p1_0.product_name=?
+2024-02-02 12:21:42,407 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:21:42,410 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.product_id,
+        c1_1.category_id,
+        c1_1.category_name 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.category_id=c1_0.category_id 
+    where
+        c1_0.product_id=?
+2024-02-02 12:21:42,410 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [8]
+2024-02-02 12:21:42,413 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:21:42,413 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [10]
+2024-02-02 12:21:42,414 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:21:42,415 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [9]
+2024-02-02 12:21:42,416 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Producto p where p.nombre = :nombre, time: 9ms, rows: 1
+2024-02-02 12:21:42,420 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        product_categories 
+    where
+        product_id=?
+2024-02-02 12:21:42,420 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [8]
+2024-02-02 12:21:42,422 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        categories 
+    where
+        category_id=?
+2024-02-02 12:21:42,422 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [9]
+2024-02-02 12:21:42,423 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        categories 
+    where
+        category_id=?
+2024-02-02 12:21:42,424 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [10]
+2024-02-02 12:21:42,424 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        products 
+    where
+        product_id=?
+2024-02-02 12:21:42,425 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [8]
+2024-02-02 12:21:42,427 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    1069800 nanoseconds spent acquiring 4 JDBC connections;
+    1028600 nanoseconds spent releasing 4 JDBC connections;
+    1734200 nanoseconds spent preparing 8 JDBC statements;
+    4457300 nanoseconds spent executing 8 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    7554700 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 3 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:22:40,058 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:22:40,101 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:22:40,128 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:22:40,129 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:22:40,289 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:22:40,291 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:22:40,296 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:22:40,296 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:22:40,296 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:22:40,296 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:22:40,298 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:22:41,490 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:22:41,494 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:22:51,099 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:22:51,121 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        products
+        (product_name, price) 
+    values
+        (?, ?)
+2024-02-02 12:22:51,127 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:22:51,127 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:DOUBLE) <- [21.99]
+2024-02-02 12:22:51,138 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        categories
+        (category_name) 
+    values
+        (?)
+2024-02-02 12:22:51,139 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [libros]
+2024-02-02 12:22:51,140 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        categories
+        (category_name) 
+    values
+        (?)
+2024-02-02 12:22:51,140 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [entretenimiento]
+2024-02-02 12:22:51,151 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+2024-02-02 12:22:51,151 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [9]
+2024-02-02 12:22:51,152 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [11]
+2024-02-02 12:22:51,153 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+2024-02-02 12:22:51,153 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [9]
+2024-02-02 12:22:51,153 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [12]
+2024-02-02 12:22:51,160 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    643900 nanoseconds spent acquiring 1 JDBC connections;
+    323300 nanoseconds spent releasing 1 JDBC connections;
+    5424800 nanoseconds spent preparing 5 JDBC statements;
+    3756800 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    13356600 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 3 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:22:51,161 [main] INFO  es.ciudadescolar.Principal               - EntityManager cerrado
+2024-02-02 12:23:02,188 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.customer_id,
+        c1_0.last_name,
+        c1_0.email,
+        c1_0.first_name 
+    from
+        customers c1_0 
+    where
+        c1_0.first_name=? 
+        and c1_0.last_name=?
+2024-02-02 12:23:02,189 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [John]
+2024-02-02 12:23:02,189 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Doe]
+2024-02-02 12:23:02,197 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        cd1_0.customer_id,
+        c1_0.customer_id,
+        c1_0.last_name,
+        c1_0.email,
+        c1_0.first_name,
+        p1_0.customer_id,
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.payment_date,
+        cd1_0.address,
+        cd1_0.phone_number 
+    from
+        customer_details cd1_0 
+    left join
+        customers c1_0 
+            on cd1_0.customer_id=c1_0.customer_id 
+    left join
+        payments p1_0 
+            on c1_0.customer_id=p1_0.customer_id 
+    where
+        cd1_0.customer_id=?
+2024-02-02 12:23:02,197 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 12:23:02,203 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Cliente c where c.nombre = :name and c.appellido = :apellido, time: 25ms, rows: 1
+2024-02-02 12:23:02,207 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.customer_id,
+        p1_0.payment_date 
+    from
+        payments p1_0 
+    where
+        p1_0.customer_id=? 
+        and p1_0.payment_date=?
+2024-02-02 12:23:02,208 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 12:23:02,209 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:DATE) <- [2023-01-25]
+2024-02-02 12:23:02,217 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Pago p where p.cliente = :cliente and p.fecha = :fecha, time: 10ms, rows: 1
+2024-02-02 12:23:02,221 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    1209700 nanoseconds spent acquiring 3 JDBC connections;
+    1368700 nanoseconds spent releasing 3 JDBC connections;
+    1795600 nanoseconds spent preparing 3 JDBC statements;
+    9318600 nanoseconds spent executing 3 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    499100 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:23:38,855 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:23:38,895 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:23:38,922 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:23:38,923 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:23:39,082 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:23:39,085 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:23:39,090 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:23:39,090 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:23:39,090 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:23:39,090 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:23:39,092 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:23:40,290 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:23:40,293 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:23:44,460 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:23:44,727 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.customer_id,
+        c1_0.last_name,
+        c1_0.email,
+        c1_0.first_name 
+    from
+        customers c1_0 
+    where
+        c1_0.first_name=? 
+        and c1_0.last_name=?
+2024-02-02 12:23:44,732 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [John]
+2024-02-02 12:23:44,733 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [Doe]
+2024-02-02 12:23:44,747 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        cd1_0.customer_id,
+        c1_0.customer_id,
+        c1_0.last_name,
+        c1_0.email,
+        c1_0.first_name,
+        p1_0.customer_id,
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.payment_date,
+        cd1_0.address,
+        cd1_0.phone_number 
+    from
+        customer_details cd1_0 
+    left join
+        customers c1_0 
+            on cd1_0.customer_id=c1_0.customer_id 
+    left join
+        payments p1_0 
+            on c1_0.customer_id=p1_0.customer_id 
+    where
+        cd1_0.customer_id=?
+2024-02-02 12:23:44,748 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 12:23:44,760 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Cliente c where c.nombre = :name and c.appellido = :apellido, time: 45ms, rows: 1
+2024-02-02 12:23:44,766 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.customer_id,
+        p1_0.payment_date 
+    from
+        payments p1_0 
+    where
+        p1_0.customer_id=? 
+        and p1_0.payment_date=?
+2024-02-02 12:23:44,766 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 12:23:44,766 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:DATE) <- [2023-01-25]
+2024-02-02 12:23:44,777 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Pago p where p.cliente = :cliente and p.fecha = :fecha, time: 11ms, rows: 1
+2024-02-02 12:23:44,799 [main] DEBUG org.hibernate.SQL                        - 
+    update
+        payments 
+    set
+        amount=?,
+        customer_id=?,
+        payment_date=? 
+    where
+        payment_id=?
+2024-02-02 12:23:44,800 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [1098.97]
+2024-02-02 12:23:44,800 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [1]
+2024-02-02 12:23:44,800 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2023-01-25]
+2024-02-02 12:23:44,800 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (4:INTEGER) <- [1]
+2024-02-02 12:23:44,805 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    1561200 nanoseconds spent acquiring 3 JDBC connections;
+    1365100 nanoseconds spent releasing 3 JDBC connections;
+    5987600 nanoseconds spent preparing 4 JDBC statements;
+    12772700 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    18005400 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:24:29,182 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:24:29,226 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:24:29,252 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:24:29,253 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:24:29,413 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:24:29,416 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:24:29,420 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:24:29,420 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:24:29,420 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:24:29,420 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:24:29,423 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:24:30,632 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:24:30,637 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:24:33,204 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:24:33,457 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.product_id,
+        p1_0.product_name,
+        p1_0.price 
+    from
+        products p1_0 
+    where
+        p1_0.product_name=?
+2024-02-02 12:24:33,462 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:24:33,480 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.product_id,
+        c1_1.category_id,
+        c1_1.category_name 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.category_id=c1_0.category_id 
+    where
+        c1_0.product_id=?
+2024-02-02 12:24:33,480 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [9]
+2024-02-02 12:24:33,486 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:24:33,487 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [12]
+2024-02-02 12:24:33,489 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 12:24:33,490 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [11]
+2024-02-02 12:24:33,491 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Producto p where p.nombre = :nombre, time: 45ms, rows: 1
+2024-02-02 12:24:33,508 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        product_categories 
+    where
+        product_id=?
+2024-02-02 12:24:33,509 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [9]
+2024-02-02 12:24:33,513 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        categories 
+    where
+        category_id=?
+2024-02-02 12:24:33,513 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [11]
+2024-02-02 12:24:33,515 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        categories 
+    where
+        category_id=?
+2024-02-02 12:24:33,515 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [12]
+2024-02-02 12:24:33,516 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        products 
+    where
+        product_id=?
+2024-02-02 12:24:33,516 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [9]
+2024-02-02 12:24:33,519 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    1575900 nanoseconds spent acquiring 4 JDBC connections;
+    1386200 nanoseconds spent releasing 4 JDBC connections;
+    6359400 nanoseconds spent preparing 8 JDBC statements;
+    6642000 nanoseconds spent executing 8 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    18490100 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 3 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:24:33,520 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:24:33,521 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-02-02 12:24:51,411 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:24:51,454 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:24:51,482 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:24:51,483 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:24:51,646 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:24:51,649 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:24:51,653 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:24:51,654 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:24:51,654 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:24:51,654 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:24:51,656 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:24:52,847 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:24:52,852 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:24:56,676 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:24:56,930 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.product_id,
+        p1_0.product_name,
+        p1_0.price 
+    from
+        products p1_0 
+    where
+        p1_0.product_name=?
+2024-02-02 12:24:56,935 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:24:56,938 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Producto p where p.nombre = :nombre, time: 19ms, rows: 0
+2024-02-02 12:24:56,939 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    501600 nanoseconds spent acquiring 1 JDBC connections;
+    393300 nanoseconds spent releasing 1 JDBC connections;
+    4786700 nanoseconds spent preparing 1 JDBC statements;
+    1346000 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:24:56,940 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:24:56,942 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-02-02 12:26:48,485 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:26:48,527 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:26:48,554 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:26:48,555 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:26:48,713 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:26:48,716 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:26:48,721 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:26:48,721 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:26:48,721 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:26:48,721 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:26:48,723 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:26:49,922 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:26:49,925 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:26:59,628 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:26:59,941 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.first_name,
+        p1_0.amount 
+    from
+        customers c1_0,
+        payments p1_0 
+    where
+        c1_0.first_name=? 
+        and p1_0.payment_id=c1_0.customer_id
+2024-02-02 12:26:59,947 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Jane]
+2024-02-02 12:26:59,951 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: select c.nombre, p.cantidad from Cliente c, Pago p where c.nombre = :name AND p.cod_pagos = c.cod_cliente, time: 16ms, rows: 1
+2024-02-02 12:26:59,952 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 739.96
+2024-02-02 12:30:25,379 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:30:25,422 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:30:25,449 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:30:25,449 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:30:25,606 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:30:25,609 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:30:25,614 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:30:25,614 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:30:25,615 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:30:25,615 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:30:25,617 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:30:26,823 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:30:26,826 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:30:31,674 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:30:31,983 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.first_name,
+        p1_0.amount 
+    from
+        customers c1_0,
+        payments p1_0 
+    where
+        c1_0.first_name=? 
+        and p1_0.customer_id=c1_0.customer_id
+2024-02-02 12:30:31,988 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Jane]
+2024-02-02 12:30:31,992 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: select c.nombre, p.cantidad from Cliente c, Pago p where c.nombre = :name AND p.cliente.cod_cliente = c.cod_cliente, time: 15ms, rows: 3
+2024-02-02 12:30:31,993 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 739.96
+2024-02-02 12:30:31,993 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 885.96
+2024-02-02 12:30:31,993 [main] INFO  es.ciudadescolar.Principal               - Nombre: Jane, Pagos: 885.96
+2024-02-02 12:36:13,400 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:36:13,445 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:36:13,472 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:36:13,473 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:36:13,632 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:36:13,635 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:36:13,639 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:36:13,639 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:36:13,639 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:36:13,639 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:36:13,642 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:36:14,850 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:36:14,853 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:36:28,019 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:36:28,041 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        products
+        (product_name, price) 
+    values
+        (?, ?)
+2024-02-02 12:36:28,047 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:36:28,047 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:DOUBLE) <- [21.99]
+2024-02-02 12:36:28,059 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        categories
+        (category_name) 
+    values
+        (?)
+2024-02-02 12:36:28,060 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [libros]
+2024-02-02 12:36:28,061 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        categories
+        (category_name) 
+    values
+        (?)
+2024-02-02 12:36:28,061 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [entretenimiento]
+2024-02-02 12:36:28,072 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+2024-02-02 12:36:28,073 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [10]
+2024-02-02 12:36:28,073 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [13]
+2024-02-02 12:36:28,074 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+2024-02-02 12:36:28,074 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [10]
+2024-02-02 12:36:28,074 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [14]
+2024-02-02 12:36:28,079 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    610300 nanoseconds spent acquiring 1 JDBC connections;
+    307100 nanoseconds spent releasing 1 JDBC connections;
+    5127200 nanoseconds spent preparing 5 JDBC statements;
+    3519900 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    14129900 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 3 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:36:28,080 [main] INFO  es.ciudadescolar.Principal               - EntityManager cerrado
+2024-02-02 12:36:33,553 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        products
+        (product_name, price) 
+    values
+        (?, ?)
+2024-02-02 12:36:33,554 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:36:33,554 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:DOUBLE) <- [21.99]
+2024-02-02 12:36:33,556 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        categories
+        (category_name) 
+    values
+        (?)
+2024-02-02 12:36:33,556 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [libros]
+2024-02-02 12:36:33,557 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        categories
+        (category_name) 
+    values
+        (?)
+2024-02-02 12:36:33,557 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [entretenimiento]
+2024-02-02 12:36:33,558 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+2024-02-02 12:36:33,558 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [11]
+2024-02-02 12:36:33,559 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [15]
+2024-02-02 12:36:33,559 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        product_categories
+        (product_id, category_id) 
+    values
+        (?, ?)
+2024-02-02 12:36:33,559 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [11]
+2024-02-02 12:36:33,560 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [16]
+2024-02-02 12:36:33,565 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    568100 nanoseconds spent acquiring 1 JDBC connections;
+    435700 nanoseconds spent releasing 1 JDBC connections;
+    1001300 nanoseconds spent preparing 5 JDBC statements;
+    2308800 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2459700 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 3 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:36:33,565 [main] INFO  es.ciudadescolar.Principal               - EntityManager cerrado
+2024-02-02 12:38:55,458 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:38:55,502 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:38:55,530 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:38:55,530 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:38:55,689 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:38:55,692 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:38:55,696 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:38:55,696 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:38:55,696 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:38:55,696 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:38:55,698 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:38:56,906 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:38:56,909 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:39:07,534 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:39:07,577 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:39:07,604 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:39:07,605 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:39:07,762 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:39:07,764 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:39:07,769 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:39:07,770 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:39:07,770 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:39:07,770 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:39:07,772 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:39:08,976 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:39:08,979 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:39:20,723 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:39:20,960 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        product_categories 
+    where
+        product_id in (select
+            p1_0.product_id 
+        from
+            products p1_0 
+        where
+            p1_0.product_name=?)
+2024-02-02 12:39:20,965 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:39:20,968 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        products 
+    where
+        product_name=?
+2024-02-02 12:39:20,968 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:39:20,972 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    494300 nanoseconds spent acquiring 1 JDBC connections;
+    321500 nanoseconds spent releasing 1 JDBC connections;
+    4533400 nanoseconds spent preparing 2 JDBC statements;
+    4037500 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    295600 nanoseconds spent executing 2 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:39:20,973 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:39:20,975 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-02-02 12:39:36,484 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:39:36,528 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:39:36,555 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:39:36,556 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:39:36,714 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:39:36,716 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:39:36,720 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:39:36,721 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:39:36,721 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:39:36,721 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:39:36,723 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:39:37,917 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:39:37,920 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:39:40,387 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:39:40,624 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        product_categories 
+    where
+        product_id in (select
+            p1_0.product_id 
+        from
+            products p1_0 
+        where
+            p1_0.product_name=?)
+2024-02-02 12:39:40,629 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:39:40,632 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        products 
+    where
+        product_name=?
+2024-02-02 12:39:40,632 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Los pilares de la tierra]
+2024-02-02 12:39:40,634 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    623100 nanoseconds spent acquiring 1 JDBC connections;
+    244500 nanoseconds spent releasing 1 JDBC connections;
+    4604500 nanoseconds spent preparing 2 JDBC statements;
+    1653800 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    474400 nanoseconds spent executing 2 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:39:40,635 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:39:40,637 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-02-02 12:41:27,960 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:41:28,004 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:41:28,031 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:41:28,031 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:41:28,190 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:41:28,193 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:41:28,197 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:41:28,197 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:41:28,198 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:41:28,198 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:41:28,200 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:41:29,401 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:41:29,404 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:41:35,571 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:41:35,594 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        customers
+        (last_name, email, first_name) 
+    values
+        (?, ?, ?)
+2024-02-02 12:41:35,601 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Róman]
+2024-02-02 12:41:35,601 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [joaqrom@tocomocho.net]
+2024-02-02 12:41:35,601 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:VARCHAR) <- [Joaquín]
+2024-02-02 12:41:35,613 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        payments
+        (amount, customer_id, payment_date) 
+    values
+        (?, ?, ?)
+2024-02-02 12:41:35,614 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [234.45]
+2024-02-02 12:41:35,614 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [35]
+2024-02-02 12:41:35,614 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2024-01-07]
+2024-02-02 12:41:35,623 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        payments
+        (amount, customer_id, payment_date) 
+    values
+        (?, ?, ?)
+2024-02-02 12:41:35,624 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [100.25]
+2024-02-02 12:41:35,624 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [35]
+2024-02-02 12:41:35,624 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2024-01-12]
+2024-02-02 12:41:35,625 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        payments
+        (amount, customer_id, payment_date) 
+    values
+        (?, ?, ?)
+2024-02-02 12:41:35,626 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [655.99]
+2024-02-02 12:41:35,626 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [35]
+2024-02-02 12:41:35,626 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2024-01-17]
+2024-02-02 12:41:35,647 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    894400 nanoseconds spent acquiring 2 JDBC connections;
+    545000 nanoseconds spent releasing 2 JDBC connections;
+    5880600 nanoseconds spent preparing 4 JDBC statements;
+    10919100 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    9914800 nanoseconds spent executing 2 flushes (flushing a total of 8 entities and 2 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:41:35,648 [main] INFO  es.ciudadescolar.Principal               - EntityManager cerrado
+2024-02-02 12:43:35,136 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 12:43:35,180 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 12:43:35,208 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 12:43:35,208 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 12:43:35,369 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 12:43:35,371 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 12:43:35,376 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 12:43:35,376 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 12:43:35,376 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 12:43:35,376 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 12:43:35,378 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 12:43:36,580 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 12:43:36,583 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 12:43:40,538 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 12:43:40,559 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        customers
+        (last_name, email, first_name) 
+    values
+        (?, ?, ?)
+2024-02-02 12:43:40,565 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Róman]
+2024-02-02 12:43:40,565 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:VARCHAR) <- [joaqrom@tocomocho.net]
+2024-02-02 12:43:40,565 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:VARCHAR) <- [Joaquín]
+2024-02-02 12:43:40,577 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        payments
+        (amount, customer_id, payment_date) 
+    values
+        (?, ?, ?)
+2024-02-02 12:43:40,577 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [234.45]
+2024-02-02 12:43:40,578 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [36]
+2024-02-02 12:43:40,578 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2024-01-07]
+2024-02-02 12:43:40,587 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        payments
+        (amount, customer_id, payment_date) 
+    values
+        (?, ?, ?)
+2024-02-02 12:43:40,588 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [100.25]
+2024-02-02 12:43:40,588 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [36]
+2024-02-02 12:43:40,588 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2024-01-12]
+2024-02-02 12:43:40,590 [main] DEBUG org.hibernate.SQL                        - 
+    insert 
+    into
+        payments
+        (amount, customer_id, payment_date) 
+    values
+        (?, ?, ?)
+2024-02-02 12:43:40,590 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:DOUBLE) <- [655.99]
+2024-02-02 12:43:40,590 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:INTEGER) <- [36]
+2024-02-02 12:43:40,590 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:DATE) <- [2024-01-17]
+2024-02-02 12:43:40,612 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    891500 nanoseconds spent acquiring 2 JDBC connections;
+    964600 nanoseconds spent releasing 2 JDBC connections;
+    5427700 nanoseconds spent preparing 4 JDBC statements;
+    11074600 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    9771100 nanoseconds spent executing 2 flushes (flushing a total of 8 entities and 2 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 12:43:40,612 [main] INFO  es.ciudadescolar.Principal               - EntityManager cerrado
+2024-02-02 13:05:51,970 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 13:05:52,013 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 13:05:52,040 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 13:05:52,041 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 13:05:52,202 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 13:05:52,205 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 13:05:52,210 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 13:05:52,210 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 13:05:52,210 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 13:05:52,210 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 13:05:52,213 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 13:05:53,466 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 13:05:53,469 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 13:05:59,148 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 13:05:59,175 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.customer_id,
+        c1_0.last_name,
+        c2_0.customer_id,
+        c2_0.address,
+        c2_0.phone_number,
+        c1_0.email,
+        c1_0.first_name,
+        p1_0.customer_id,
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.payment_date 
+    from
+        customers c1_0 
+    left join
+        customer_details c2_0 
+            on c2_0.customer_id=c1_0.customer_id 
+    left join
+        payments p1_0 
+            on c1_0.customer_id=p1_0.customer_id 
+    where
+        c1_0.customer_id=?
+2024-02-02 13:05:59,182 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [2]
+2024-02-02 13:05:59,203 [main] INFO  es.ciudadescolar.Principal               - Cliente: Jane, Pagos: Pago [cod_pagos=2, cantidad=739.96, fecha=2023-01-17]
+2024-02-02 13:05:59,203 [main] INFO  es.ciudadescolar.Principal               - Cliente: Jane, Pagos: Pago [cod_pagos=3, cantidad=885.96, fecha=2023-01-12]
+2024-02-02 13:05:59,203 [main] INFO  es.ciudadescolar.Principal               - Cliente: Jane, Pagos: Pago [cod_pagos=4, cantidad=885.96, fecha=2023-01-30]
+2024-02-02 13:05:59,203 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    627700 nanoseconds spent acquiring 1 JDBC connections;
+    517701 nanoseconds spent releasing 1 JDBC connections;
+    6019800 nanoseconds spent preparing 1 JDBC statements;
+    1948500 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 13:09:06,714 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 13:09:06,756 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 13:09:06,782 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 13:09:06,783 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 13:09:06,943 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 13:09:06,946 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 13:09:06,950 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 13:09:06,950 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 13:09:06,951 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 13:09:06,951 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 13:09:06,953 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 13:09:08,151 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 13:09:08,154 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 13:09:11,579 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 13:09:11,605 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.customer_id,
+        c1_0.last_name,
+        c2_0.customer_id,
+        c2_0.address,
+        c2_0.phone_number,
+        c1_0.email,
+        c1_0.first_name,
+        p1_0.customer_id,
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.payment_date 
+    from
+        customers c1_0 
+    left join
+        customer_details c2_0 
+            on c2_0.customer_id=c1_0.customer_id 
+    left join
+        payments p1_0 
+            on c1_0.customer_id=p1_0.customer_id 
+    where
+        c1_0.customer_id=?
+2024-02-02 13:09:11,611 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [2]
+2024-02-02 13:09:11,630 [main] INFO  es.ciudadescolar.Principal               - Se ha encontrado al cliente con id: 2Cliente: Jane
+2024-02-02 13:09:11,630 [main] INFO  es.ciudadescolar.Principal               - Pagos: Pago [cod_pagos=2, cantidad=739.96, fecha=2023-01-17]
+2024-02-02 13:09:11,630 [main] INFO  es.ciudadescolar.Principal               - Pagos: Pago [cod_pagos=3, cantidad=885.96, fecha=2023-01-12]
+2024-02-02 13:09:11,630 [main] INFO  es.ciudadescolar.Principal               - Pagos: Pago [cod_pagos=4, cantidad=885.96, fecha=2023-01-30]
+2024-02-02 13:09:11,630 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    568399 nanoseconds spent acquiring 1 JDBC connections;
+    502401 nanoseconds spent releasing 1 JDBC connections;
+    4985801 nanoseconds spent preparing 1 JDBC statements;
+    1694801 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 13:14:28,400 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaPeliculas]
+2024-02-02 13:14:28,443 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 13:14:28,469 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 13:14:28,470 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 13:14:28,629 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-02 13:14:28,632 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-02 13:14:28,637 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-02-02 13:14:28,637 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3333/empresa_orm_2324]
+2024-02-02 13:14:28,637 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001001: Connection properties: {password=****, autocommit=false, user=root}
+2024-02-02 13:14:28,637 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001003: Autocommit mode: false
+2024-02-02 13:14:28,640 [main] INFO  org.hibernate.orm.connections.pooling    - HHH10001115: Connection pool size: 20 (min=1)
+2024-02-02 13:14:29,838 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 13:14:29,841 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-02 13:14:35,227 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 13:14:35,252 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.product_id,
+        p1_0.product_name,
+        p1_0.price,
+        c1_0.product_id,
+        c1_1.category_id,
+        c1_1.category_name 
+    from
+        products p1_0 
+    left join
+        product_categories c1_0 
+            on p1_0.product_id=c1_0.product_id 
+    left join
+        categories c1_1 
+            on c1_1.category_id=c1_0.category_id 
+    where
+        p1_0.product_id=?
+2024-02-02 13:14:35,258 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 13:14:35,278 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 13:14:35,279 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [4]
+2024-02-02 13:14:35,282 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        p1_0.category_id,
+        p1_1.product_id,
+        p1_1.product_name,
+        p1_1.price 
+    from
+        product_categories p1_0 
+    join
+        products p1_1 
+            on p1_1.product_id=p1_0.product_id 
+    where
+        p1_0.category_id=?
+2024-02-02 13:14:35,283 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 13:14:35,285 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        c1_0.product_id,
+        c1_1.category_id,
+        c1_1.category_name 
+    from
+        product_categories c1_0 
+    join
+        categories c1_1 
+            on c1_1.category_id=c1_0.category_id 
+    where
+        c1_0.product_id=?
+2024-02-02 13:14:35,285 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [2]
+2024-02-02 13:14:35,287 [main] INFO  es.ciudadescolar.Principal               - Se ha encontrado el Producto con id: 1, Producto: Laptop
+2024-02-02 13:14:35,287 [main] INFO  es.ciudadescolar.Principal               - Categoria: Categoria [cod_categoria=1, nombre=Electrónicos]
+2024-02-02 13:14:35,287 [main] INFO  es.ciudadescolar.Principal               - Categoria: Categoria [cod_categoria=4, nombre=Ordenadores]
+2024-02-02 13:14:35,287 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    1225099 nanoseconds spent acquiring 3 JDBC connections;
+    1167999 nanoseconds spent releasing 3 JDBC connections;
+    6593699 nanoseconds spent preparing 4 JDBC statements;
+    3899400 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
