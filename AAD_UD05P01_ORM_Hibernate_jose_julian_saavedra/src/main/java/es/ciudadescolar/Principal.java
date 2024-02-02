@@ -38,8 +38,8 @@ public class Principal {
 		
 		LOGGER.info("Consultas HQL:");
 		//consultaClienteHQL("Jane");
-		//modificacionPagoHQL(null, null, null, null);
-		//deleteProductoHQL(null);
+		//modificacionPagoHQL("John", "Doe", LocalDate.of(2023, 01, 25), 1099.97);
+		//deleteProductoHQL("Los pilares de la tierra");
 		
 		emf.close();
 		LOGGER.info("Fin del programa");
@@ -263,11 +263,39 @@ public class Principal {
 	}
 	
 	public static void modificacionPagoHQL(String nombre, String appellido, LocalDate fecha, Double importe) {
-		
+	    EntityManager em = emf.createEntityManager();
+
+	    Query consultarCliente = em.createQuery("from Cliente c where c.nombre = :name and c.appellido = :apellido");
+	    consultarCliente.setParameter("name", nombre);
+	    consultarCliente.setParameter("apellido", appellido);
+	    Cliente cliente = (Cliente) consultarCliente.getSingleResult();
+
+	    Query consultarPago = em.createQuery("from Pago p where p.cliente = :cliente and p.fecha = :fecha");
+	    consultarPago.setParameter("cliente", cliente);
+	    consultarPago.setParameter("fecha", fecha);
+	    Pago pago = (Pago) consultarPago.getSingleResult();
+
+	    pago.setCantidad(importe);
+
+	    em.getTransaction().begin();
+	    em.merge(pago);
+	    em.getTransaction().commit();
+
+	    em.close();
 	}
 	
 	public static void deleteProductoHQL(String nombre) {
-		
+	    EntityManager em = emf.createEntityManager();
+
+	    Query consultaProducto = em.createQuery("from Producto p where p.nombre = :nombre");
+	    consultaProducto.setParameter("nombre", nombre);
+	    Producto producto = (Producto) consultaProducto.getSingleResult();
+
+	    em.getTransaction().begin();
+	    em.remove(producto);
+	    em.getTransaction().commit();
+
+	    em.close();
 	}
 	
 
