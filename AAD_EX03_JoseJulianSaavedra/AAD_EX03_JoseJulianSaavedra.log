@@ -1,0 +1,785 @@
+2024-02-02 09:42:14,239 [main] INFO  o.hibernate.jpa.boot.internal.PersistenceXmlParser - HHH000318: Could not find any META-INF/persistence.xml file in the classpath
+2024-02-02 09:42:44,454 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 09:42:44,512 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 09:42:44,550 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 09:42:44,551 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 09:42:44,719 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 09:42:44,719 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 09:42:44,719 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 09:42:44,742 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 09:42:44,842 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 09:42:44,869 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 09:42:44,891 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@ae245cae [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@528b1381 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t4nt0eqhyztl|2b46a8c1, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@cc5992c8 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t4nt0eqhyztl|61861a29, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t4nt0eqhyztl|6b739528, numHelperThreads -> 3 ]
+2024-02-02 09:42:46,126 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 09:42:46,130 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 09:42:46,160 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 09:42:46,171 [main] ERROR es.JoseJulianSaavedra.Principal          - Error en la operacion de persistencia del turista: Turista [codigo_turista=3001, nombre_turista=Domingo, apellido_turista=Pazos, fecha_turista=2005-06-15, reservas=[Reserva [codigo_reserva=null, hotel_reserva=Hotel Mediterraneo, fecha_entrada=2024-02-02, fecha_salida=2024-02-09]]]
+2024-02-02 09:42:46,172 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    484100 nanoseconds spent acquiring 1 JDBC connections;
+    338000 nanoseconds spent releasing 1 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 09:42:46,172 [main] INFO  es.JoseJulianSaavedra.Principal          - Cerrado el EntityManager
+2024-02-02 09:42:46,173 [main] INFO  es.JoseJulianSaavedra.Principal          - Fin del Programa
+2024-02-02 09:44:19,415 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 09:44:19,462 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 09:44:19,493 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 09:44:19,494 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 09:44:19,648 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 09:44:19,648 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 09:44:19,648 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 09:44:19,667 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 09:44:19,758 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 09:44:19,785 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 09:44:19,806 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@eebbaf65 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@93226638 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t4pu92ol4da|2b46a8c1, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@cf0e57f [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t4pu92ol4da|61861a29, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t4pu92ol4da|6b739528, numHelperThreads -> 3 ]
+2024-02-02 09:44:20,963 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 09:44:20,967 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 09:44:20,995 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 09:44:21,005 [main] ERROR es.JoseJulianSaavedra.Principal          - Error en la operacion de persistencia del turista: Turista [codigo_turista=3001, nombre_turista=Domingo, apellido_turista=Pazos, fecha_turista=2005-06-15, reservas=[Reserva [codigo_reserva=null, hotel_reserva=Hotel Mediterraneo, fecha_entrada=2024-02-02, fecha_salida=2024-02-09]]]
+2024-02-02 09:44:21,005 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    425400 nanoseconds spent acquiring 1 JDBC connections;
+    303100 nanoseconds spent releasing 1 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 09:44:21,005 [main] INFO  es.JoseJulianSaavedra.Principal          - Cerrado el EntityManager
+2024-02-02 09:44:21,007 [main] INFO  es.JoseJulianSaavedra.Principal          - Fin del Programa
+2024-02-02 09:45:04,951 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 09:45:04,999 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 09:45:05,034 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 09:45:05,035 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 09:45:05,189 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 09:45:05,189 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 09:45:05,189 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 09:45:05,208 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 09:45:05,300 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 09:45:05,327 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 09:45:05,347 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@36fddac [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@a7d6947f [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t4qte41d6d40l|2b46a8c1, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@21a513c6 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t4qte41d6d40l|61861a29, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t4qte41d6d40l|6b739528, numHelperThreads -> 3 ]
+2024-02-02 09:45:06,506 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 09:45:06,510 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 09:45:06,538 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 09:45:06,548 [main] ERROR es.JoseJulianSaavedra.Principal          - Error en la operacion de persistencia del turista: Turista [codigo_turista=3001, nombre_turista=Domingo, apellido_turista=Pazos, fecha_turista=2005-06-15, reservas=[Reserva [codigo_reserva=null, hotel_reserva=Hotel Mediterraneo, fecha_entrada=2024-02-02, fecha_salida=2024-02-09]]]
+2024-02-02 09:45:06,549 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    464800 nanoseconds spent acquiring 1 JDBC connections;
+    392600 nanoseconds spent releasing 1 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 09:45:06,549 [main] INFO  es.JoseJulianSaavedra.Principal          - Cerrado el EntityManager
+2024-02-02 09:45:06,550 [main] INFO  es.JoseJulianSaavedra.Principal          - Fin del Programa
+2024-02-02 09:46:20,315 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 09:46:20,361 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 09:46:20,392 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 09:46:20,394 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 09:46:20,548 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 09:46:20,548 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 09:46:20,548 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 09:46:20,566 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 09:46:20,657 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 09:46:20,683 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 09:46:20,704 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@1967abdf [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@bdce62b2 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t4sfjd1wpz06s|2b46a8c1, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@379ce1f9 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t4sfjd1wpz06s|61861a29, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t4sfjd1wpz06s|6b739528, numHelperThreads -> 3 ]
+2024-02-02 09:46:21,864 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 09:46:21,868 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 09:46:21,897 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 09:46:21,907 [main] ERROR es.JoseJulianSaavedra.Principal          - Error en la operacion de persistencia del turista: Turista [codigo_turista=3001, nombre_turista=Domingo, apellido_turista=Pazos, fecha_turista=2005-06-15, reservas=[Reserva [codigo_reserva=null, hotel_reserva=Hotel Mediterraneo, fecha_entrada=2024-02-02, fecha_salida=2024-02-09]]]
+2024-02-02 09:46:21,907 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    474000 nanoseconds spent acquiring 1 JDBC connections;
+    292300 nanoseconds spent releasing 1 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 09:46:21,908 [main] INFO  es.JoseJulianSaavedra.Principal          - Cerrado el EntityManager
+2024-02-02 09:46:21,909 [main] INFO  es.JoseJulianSaavedra.Principal          - Fin del Programa
+2024-02-02 09:47:08,984 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 09:47:09,030 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 09:47:09,063 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 09:47:09,063 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 09:47:09,219 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 09:47:09,219 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 09:47:09,219 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 09:47:09,236 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 09:47:09,328 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 09:47:09,355 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 09:47:09,374 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@2f6e0d59 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@d3d4c42c [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t4th3cb55wjg|2b46a8c1, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@4da34373 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t4th3cb55wjg|61861a29, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t4th3cb55wjg|6b739528, numHelperThreads -> 3 ]
+2024-02-02 09:47:10,548 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 09:47:10,551 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 09:47:10,581 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 09:47:10,591 [main] ERROR es.JoseJulianSaavedra.Principal          - Error en la operacion de persistencia del turista: Turista [codigo_turista=3001, nombre_turista=Domingo, apellido_turista=Pazos, fecha_turista=2005-06-15, reservas=[Reserva [codigo_reserva=null, hotel_reserva=Hotel Mediterraneo, fecha_entrada=2024-02-02, fecha_salida=2024-02-09]]]
+2024-02-02 09:47:10,592 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    444800 nanoseconds spent acquiring 1 JDBC connections;
+    319900 nanoseconds spent releasing 1 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 09:47:10,592 [main] INFO  es.JoseJulianSaavedra.Principal          - Cerrado el EntityManager
+2024-02-02 09:47:10,593 [main] INFO  es.JoseJulianSaavedra.Principal          - Fin del Programa
+2024-02-02 10:05:02,585 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:05:02,635 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:05:02,668 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:05:02,669 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:05:02,824 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:05:02,824 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:05:02,825 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:05:02,843 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:05:02,936 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:05:02,962 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:05:02,982 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@dd22c9d2 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@adb6d13 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t5ghhra8wcpo|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@de6601f0 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t5ghhra8wcpo|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t5ghhra8wcpo|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:05:04,139 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:05:04,143 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:05:04,172 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:05:04,364 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        t1_0.id_turista,
+        t1_0.ape_turista,
+        t1_0.fechaNac_turista,
+        t1_0.nom_turista 
+    from
+        turista t1_0
+2024-02-02 10:05:04,385 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Turista, time: 34ms, rows: 4
+2024-02-02 10:05:04,393 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        r1_0.id_turista,
+        r1_0.id_reserva,
+        r1_0.fecha_entrada,
+        r1_0.fecha_salida,
+        r1_0.nom_hotel 
+    from
+        reserva r1_0 
+    where
+        r1_0.id_turista=?
+2024-02-02 10:05:04,395 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 10:05:04,416 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
+2024-02-02 10:05:04,416 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 'r1_0.id_turista' in 'field list'
+2024-02-02 10:05:58,971 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:05:59,021 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:05:59,053 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:05:59,053 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:05:59,208 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:05:59,209 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:05:59,209 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:05:59,228 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:05:59,317 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:05:59,344 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:05:59,363 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@2cc009a4 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@5a78ace5 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t5hozzdeowep|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@2e0341c2 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t5hozzdeowep|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t5hozzdeowep|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:06:00,536 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:06:00,540 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:06:00,567 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:06:29,337 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:06:29,385 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:06:29,418 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:06:29,419 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:06:29,572 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:06:29,572 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:06:29,572 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:06:29,590 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:06:29,682 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:06:29,708 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:06:29,729 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@620e34e3 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@8fc6d824 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t5icfenn82fo|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@63516d01 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t5icfenn82fo|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t5icfenn82fo|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:06:30,893 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:06:30,898 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:06:30,926 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:06:44,041 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:06:44,087 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:06:44,120 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:06:44,121 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:06:44,274 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:06:44,274 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:06:44,274 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:06:44,292 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:06:44,384 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:06:44,410 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:06:44,432 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@6655ce59 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@940e719a [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t5inrsydgc7p|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@67990677 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t5inrsydgc7p|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t5inrsydgc7p|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:06:45,607 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:06:45,611 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:06:45,640 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:06:45,858 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        t1_0.id_turista,
+        t1_0.ape_turista,
+        t1_0.fechaNac_turista,
+        t1_0.nom_turista 
+    from
+        turista t1_0 
+    where
+        t1_0.id_turista>0
+2024-02-02 10:06:45,880 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Turista t where t.codigo_turista > 0, time: 34ms, rows: 4
+2024-02-02 10:06:45,888 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        r1_0.id_turista,
+        r1_0.id_reserva,
+        r1_0.fecha_entrada,
+        r1_0.fecha_salida,
+        r1_0.nom_hotel 
+    from
+        reserva r1_0 
+    where
+        r1_0.id_turista=?
+2024-02-02 10:06:45,889 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 10:06:45,909 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
+2024-02-02 10:06:45,909 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 'r1_0.id_turista' in 'field list'
+2024-02-02 10:07:00,567 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:07:00,616 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:07:00,648 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:07:00,649 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:07:00,801 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:07:00,802 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:07:00,802 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:07:00,820 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:07:00,910 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:07:00,936 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:07:00,957 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@306d330b [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@5e25d64c [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t5j0iwo8g7q8|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@31b06b29 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t5j0iwo8g7q8|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t5j0iwo8g7q8|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:07:02,118 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:07:02,122 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:07:02,150 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:08:11,508 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:08:11,554 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:08:11,589 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:08:11,590 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:08:11,745 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:08:11,745 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:08:11,745 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:08:11,763 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:08:11,855 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:08:11,881 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:08:11,900 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@4cbe555a [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@7a76f89b [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t5kj9j17irllz|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@4e018d78 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t5kj9j17irllz|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t5kj9j17irllz|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:08:13,066 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:08:13,070 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:08:13,098 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:08:13,283 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        t1_0.id_turista,
+        t1_0.ape_turista,
+        t1_0.fechaNac_turista,
+        t1_0.nom_turista 
+    from
+        turista t1_0
+2024-02-02 10:08:13,305 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Turista, time: 34ms, rows: 4
+2024-02-02 10:08:13,313 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        r1_0.id_turista,
+        r1_0.id_reserva,
+        r1_0.fecha_entrada,
+        r1_0.fecha_salida,
+        r1_0.nom_hotel 
+    from
+        reserva r1_0 
+    where
+        r1_0.id_turista=?
+2024-02-02 10:08:13,314 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 10:08:13,335 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
+2024-02-02 10:08:13,335 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 'r1_0.id_turista' in 'field list'
+2024-02-02 10:12:18,392 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:12:18,438 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:12:18,472 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:12:18,472 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:12:18,625 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:12:18,625 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:12:18,625 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:12:18,643 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:12:18,734 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:12:18,760 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:12:18,781 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@f3223ecc [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@20dae20d [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t5ptrba3loh2|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@f46576ea [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t5ptrba3loh2|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t5ptrba3loh2|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:12:19,961 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:12:19,966 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:12:19,995 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:12:20,180 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        t1_0.id_turista,
+        t1_0.ape_turista,
+        t1_0.fechaNac_turista,
+        t1_0.nom_turista 
+    from
+        turista t1_0
+2024-02-02 10:12:20,203 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Turista, time: 35ms, rows: 4
+2024-02-02 10:12:20,211 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        r1_0.turista,
+        r1_0.id_reserva,
+        r1_0.fecha_entrada,
+        r1_0.fecha_salida,
+        r1_0.nom_hotel 
+    from
+        reserva r1_0 
+    where
+        r1_0.turista=?
+2024-02-02 10:12:20,212 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 10:12:20,215 [main] INFO  es.JoseJulianSaavedra.Principal          - Turista [codigo_turista=1, nombre_turista=Ramón, apellido_turista=Salgado, fecha_turista=null, reservas=[]]
+2024-02-02 10:12:20,216 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        r1_0.turista,
+        r1_0.id_reserva,
+        r1_0.fecha_entrada,
+        r1_0.fecha_salida,
+        r1_0.nom_hotel 
+    from
+        reserva r1_0 
+    where
+        r1_0.turista=?
+2024-02-02 10:12:20,217 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [2]
+2024-02-02 10:12:20,222 [main] INFO  es.JoseJulianSaavedra.Principal          - Turista [codigo_turista=2, nombre_turista=Luis, apellido_turista=Galgo, fecha_turista=null, reservas=[Reserva [codigo_reserva=1, hotel_reserva=Hotel Sol, fecha_entrada=2024-02-09, fecha_salida=2024-02-16], Reserva [codigo_reserva=2, hotel_reserva=Hotel Molia, fecha_entrada=2024-02-03, fecha_salida=2024-02-07]]]
+2024-02-02 10:12:20,222 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        r1_0.turista,
+        r1_0.id_reserva,
+        r1_0.fecha_entrada,
+        r1_0.fecha_salida,
+        r1_0.nom_hotel 
+    from
+        reserva r1_0 
+    where
+        r1_0.turista=?
+2024-02-02 10:12:20,223 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [3]
+2024-02-02 10:12:20,225 [main] INFO  es.JoseJulianSaavedra.Principal          - Turista [codigo_turista=3, nombre_turista=David, apellido_turista=Ponce, fecha_turista=null, reservas=[]]
+2024-02-02 10:12:20,225 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        r1_0.turista,
+        r1_0.id_reserva,
+        r1_0.fecha_entrada,
+        r1_0.fecha_salida,
+        r1_0.nom_hotel 
+    from
+        reserva r1_0 
+    where
+        r1_0.turista=?
+2024-02-02 10:12:20,225 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [4]
+2024-02-02 10:12:20,227 [main] INFO  es.JoseJulianSaavedra.Principal          - Turista [codigo_turista=4, nombre_turista=Mario, apellido_turista=Pelaez, fecha_turista=null, reservas=[]]
+2024-02-02 10:12:20,228 [main] INFO  es.JoseJulianSaavedra.Principal          - Fin del Programa
+2024-02-02 10:13:05,498 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:13:05,545 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:13:05,578 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:13:05,578 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:13:05,734 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:13:05,734 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:13:05,735 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:13:05,753 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:13:05,843 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:13:05,869 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:13:05,889 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@8368022 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@35ef2363 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t5qu3wuggio0|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@979b840 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t5qu3wuggio0|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t5qu3wuggio0|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:13:07,064 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:13:07,068 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:13:07,097 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:13:07,106 [main] ERROR es.JoseJulianSaavedra.Principal          - Error en la operacion de persistencia del turista: Turista [codigo_turista=3001, nombre_turista=Domingo, apellido_turista=Pazos, fecha_turista=2005-06-15, reservas=[Reserva [codigo_reserva=null, hotel_reserva=Hotel Mediterraneo, fecha_entrada=2024-02-02, fecha_salida=2024-02-09]]]
+2024-02-02 10:13:07,107 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    422100 nanoseconds spent acquiring 1 JDBC connections;
+    305100 nanoseconds spent releasing 1 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 10:13:07,107 [main] INFO  es.JoseJulianSaavedra.Principal          - Cerrado el EntityManager
+2024-02-02 10:13:07,109 [main] INFO  es.JoseJulianSaavedra.Principal          - Fin del Programa
+2024-02-02 10:19:31,030 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:19:31,078 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:19:31,111 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:19:31,112 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:19:31,266 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:19:31,266 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:19:31,266 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:19:31,284 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:19:31,376 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:19:31,402 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:19:31,423 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@b442b9c1 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@e1fb5d02 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t5z3l4ux9z8q|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@b585f1df [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t5z3l4ux9z8q|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t5z3l4ux9z8q|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:19:32,587 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:19:32,591 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:19:32,621 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:19:32,804 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        t1_0.id_turista,
+        t1_0.ape_turista,
+        t1_0.fechaNac_turista,
+        t1_0.nom_turista 
+    from
+        turista t1_0
+2024-02-02 10:19:32,828 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Turista, time: 36ms, rows: 4
+2024-02-02 10:19:32,836 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        r1_0.turista,
+        r1_0.id_reserva,
+        r1_0.fecha_entrada,
+        r1_0.fecha_salida,
+        r1_0.nom_hotel 
+    from
+        reserva r1_0 
+    where
+        r1_0.turista=?
+2024-02-02 10:19:32,837 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 10:19:42,487 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:19:42,533 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:19:42,566 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:19:42,567 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:19:42,719 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:19:42,719 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:19:42,719 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:19:42,739 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:19:42,831 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:19:42,858 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:19:42,878 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@347bad30 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@62345071 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t5zcfaeryxqp|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@35bee54e [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t5zcfaeryxqp|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t5zcfaeryxqp|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:19:44,040 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:19:44,043 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:19:44,071 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:19:44,251 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        t1_0.id_turista,
+        t1_0.ape_turista,
+        t1_0.fechaNac_turista,
+        t1_0.nom_turista 
+    from
+        turista t1_0
+2024-02-02 10:19:44,273 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Turista, time: 34ms, rows: 4
+2024-02-02 10:19:44,281 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        r1_0.turista,
+        r1_0.id_reserva,
+        r1_0.fecha_entrada,
+        r1_0.fecha_salida,
+        r1_0.nom_hotel 
+    from
+        reserva r1_0 
+    where
+        r1_0.turista=?
+2024-02-02 10:19:44,283 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 10:21:01,048 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:21:01,094 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:21:01,126 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:21:01,127 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:21:01,280 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:21:01,281 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:21:01,281 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:21:01,300 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:21:01,391 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:21:01,417 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:21:01,437 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@bdb80cbf [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@eb70b000 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t6111j1ulrba9|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@befb44dd [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t6111j1ulrba9|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t6111j1ulrba9|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:21:02,602 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:21:02,605 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:21:02,634 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:21:02,818 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        t1_0.id_turista,
+        t1_0.ape_turista,
+        t1_0.fechaNac_turista,
+        t1_0.nom_turista 
+    from
+        turista t1_0
+2024-02-02 10:21:02,840 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Turista, time: 34ms, rows: 4
+2024-02-02 10:21:02,849 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        r1_0.turista,
+        r1_0.id_reserva,
+        r1_0.fecha_entrada,
+        r1_0.fecha_salida,
+        r1_0.nom_hotel 
+    from
+        reserva r1_0 
+    where
+        r1_0.turista=?
+2024-02-02 10:21:02,851 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 10:21:02,854 [main] INFO  es.JoseJulianSaavedra.Principal          - Turista [codigo_turista=1, nombre_turista=Ramón, apellido_turista=Salgado, fecha_turista=null, reservas=[]]
+2024-02-02 10:21:02,854 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        r1_0.turista,
+        r1_0.id_reserva,
+        r1_0.fecha_entrada,
+        r1_0.fecha_salida,
+        r1_0.nom_hotel 
+    from
+        reserva r1_0 
+    where
+        r1_0.turista=?
+2024-02-02 10:21:02,855 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [2]
+2024-02-02 10:21:02,860 [main] INFO  es.JoseJulianSaavedra.Principal          - Turista [codigo_turista=2, nombre_turista=Luis, apellido_turista=Galgo, fecha_turista=null, reservas=[Reserva [codigo_reserva=1, hotel_reserva=Hotel Sol, fecha_entrada=2024-02-09, fecha_salida=2024-02-16], Reserva [codigo_reserva=2, hotel_reserva=Hotel Molia, fecha_entrada=2024-02-03, fecha_salida=2024-02-07]]]
+2024-02-02 10:21:02,861 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        r1_0.turista,
+        r1_0.id_reserva,
+        r1_0.fecha_entrada,
+        r1_0.fecha_salida,
+        r1_0.nom_hotel 
+    from
+        reserva r1_0 
+    where
+        r1_0.turista=?
+2024-02-02 10:21:02,861 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [3]
+2024-02-02 10:21:02,863 [main] INFO  es.JoseJulianSaavedra.Principal          - Turista [codigo_turista=3, nombre_turista=David, apellido_turista=Ponce, fecha_turista=null, reservas=[]]
+2024-02-02 10:21:02,863 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        r1_0.turista,
+        r1_0.id_reserva,
+        r1_0.fecha_entrada,
+        r1_0.fecha_salida,
+        r1_0.nom_hotel 
+    from
+        reserva r1_0 
+    where
+        r1_0.turista=?
+2024-02-02 10:21:02,864 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [4]
+2024-02-02 10:21:02,865 [main] INFO  es.JoseJulianSaavedra.Principal          - Turista [codigo_turista=4, nombre_turista=Mario, apellido_turista=Pelaez, fecha_turista=null, reservas=[]]
+2024-02-02 10:21:02,867 [main] INFO  es.JoseJulianSaavedra.Principal          - Fin del Programa
+2024-02-02 10:21:27,404 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:21:27,452 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:21:27,484 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:21:27,485 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:21:27,639 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:21:27,639 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:21:27,639 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:21:27,658 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:21:27,748 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:21:27,774 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:21:27,794 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@e06592e6 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@e1e3627 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t61ldp66ryo9|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@e1a8cb04 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t61ldp66ryo9|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t61ldp66ryo9|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:21:28,962 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:21:28,965 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:21:28,994 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:21:29,003 [main] ERROR es.JoseJulianSaavedra.Principal          - Error en la operacion de persistencia del turista: Turista [codigo_turista=3001, nombre_turista=Domingo, apellido_turista=Pazos, fecha_turista=2005-06-15, reservas=[Reserva [codigo_reserva=null, hotel_reserva=Hotel Mediterraneo, fecha_entrada=2024-02-02, fecha_salida=2024-02-09]]]
+2024-02-02 10:21:29,004 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    415600 nanoseconds spent acquiring 1 JDBC connections;
+    292100 nanoseconds spent releasing 1 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 10:21:29,004 [main] INFO  es.JoseJulianSaavedra.Principal          - Cerrado el EntityManager
+2024-02-02 10:21:29,006 [main] INFO  es.JoseJulianSaavedra.Principal          - Fin del Programa
+2024-02-02 10:25:26,359 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:25:26,407 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:25:26,438 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:25:26,439 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:25:26,594 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:25:26,594 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:25:26,594 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:25:26,612 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:25:26,705 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:25:26,732 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:25:26,754 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@b0dc4fa1 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@de94f2e2 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t66prc2z5mse|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@b21f87bf [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t66prc2z5mse|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t66prc2z5mse|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:25:27,923 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:25:27,926 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:25:27,953 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:25:27,980 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        t1_0.id_turista,
+        t1_0.ape_turista,
+        t1_0.fechaNac_turista,
+        t1_0.nom_turista 
+    from
+        turista t1_0 
+    where
+        t1_0.id_turista=?
+2024-02-02 10:25:27,988 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [2]
+2024-02-02 10:25:28,020 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        r1_0.turista,
+        r1_0.id_reserva,
+        r1_0.fecha_entrada,
+        r1_0.fecha_salida,
+        r1_0.nom_hotel 
+    from
+        reserva r1_0 
+    where
+        r1_0.turista=?
+2024-02-02 10:25:28,021 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [2]
+2024-02-02 10:25:28,041 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        reserva 
+    where
+        id_reserva=?
+2024-02-02 10:25:28,042 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 10:25:28,044 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        reserva 
+    where
+        id_reserva=?
+2024-02-02 10:25:28,045 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [2]
+2024-02-02 10:25:28,046 [main] DEBUG org.hibernate.SQL                        - 
+    delete 
+    from
+        turista 
+    where
+        id_turista=?
+2024-02-02 10:25:28,046 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [2]
+2024-02-02 10:25:28,049 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    978000 nanoseconds spent acquiring 2 JDBC connections;
+    1061400 nanoseconds spent releasing 2 JDBC connections;
+    7461300 nanoseconds spent preparing 5 JDBC statements;
+    4215700 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    16812800 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 10:25:28,050 [main] INFO  es.JoseJulianSaavedra.Principal          - Cerrado el EntityManager
+2024-02-02 10:25:28,051 [main] INFO  es.JoseJulianSaavedra.Principal          - Fin del Programa
+2024-02-02 10:35:17,571 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:35:17,618 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:35:17,652 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:35:17,653 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:35:17,808 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:35:17,809 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:35:17,809 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:35:17,826 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:35:17,918 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:35:17,945 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:35:17,964 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@cc4be35b [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@fa04869c [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t6jdxz1gnfc1s|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@cd8f1b79 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t6jdxz1gnfc1s|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t6jdxz1gnfc1s|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:35:19,144 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:35:19,147 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:35:19,176 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:35:19,201 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        t1_0.id_turista,
+        t1_0.ape_turista,
+        t1_0.fechaNac_turista,
+        t1_0.nom_turista 
+    from
+        turista t1_0 
+    where
+        t1_0.id_turista=?
+2024-02-02 10:35:19,209 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [1]
+2024-02-02 10:35:19,245 [main] DEBUG org.hibernate.SQL                        - 
+    update
+        turista 
+    set
+        ape_turista=?,
+        fechaNac_turista=?,
+        nom_turista=? 
+    where
+        id_turista=?
+2024-02-02 10:35:19,246 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Salgado]
+2024-02-02 10:35:19,246 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (2:DATE) <- [2007-09-12]
+2024-02-02 10:35:19,247 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (3:VARCHAR) <- [Ramón]
+2024-02-02 10:35:19,247 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (4:INTEGER) <- [1]
+2024-02-02 10:35:19,265 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    855200 nanoseconds spent acquiring 2 JDBC connections;
+    940300 nanoseconds spent releasing 2 JDBC connections;
+    6643100 nanoseconds spent preparing 2 JDBC statements;
+    13713600 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    31137200 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 1 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 10:35:19,266 [main] INFO  es.JoseJulianSaavedra.Principal          - Cerrado el EntityManager
+2024-02-02 10:35:19,267 [main] INFO  es.JoseJulianSaavedra.Principal          - Fin del Programa
+2024-02-02 10:40:01,032 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:40:01,077 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:40:01,109 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:40:01,110 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:40:01,264 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:40:01,265 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:40:01,265 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:40:01,279 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:40:01,375 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:40:01,401 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:40:01,422 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@9e77a420 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@cc304761 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t6pgnr1umfl68|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@9fbadc3e [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t6pgnr1umfl68|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t6pgnr1umfl68|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:40:02,588 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:40:02,592 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:40:02,594 [main] INFO  es.JoseJulianSaavedra.Principal          - Fin del Programa
+2024-02-02 10:40:13,213 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:40:13,259 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:40:13,292 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:40:13,294 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:40:13,449 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:40:13,449 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:40:13,449 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:40:13,467 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:40:13,559 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:40:13,585 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:40:13,605 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@2678e9 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@2ddf1c2a [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t6pq261g4ybit|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@169b107 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t6pq261g4ybit|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t6pq261g4ybit|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:40:14,783 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:40:14,787 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:40:14,815 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:40:14,817 [main] INFO  es.JoseJulianSaavedra.Principal          - Instancia creada de Turista: Turista [codigo_turista=3001, nombre_turista=Domingo, apellido_turista=Pazos, fecha_turista=2005-06-15, reservas=[]]
+2024-02-02 10:40:14,818 [main] INFO  es.JoseJulianSaavedra.Principal          - Instancia creada de Turista: Turista [codigo_turista=3002, nombre_turista=Mario, apellido_turista=García, fecha_turista=1999-02-21, reservas=[]]
+2024-02-02 10:40:14,818 [main] INFO  es.JoseJulianSaavedra.Principal          - Instancia creada de Reserva: Reserva [codigo_reserva=null, hotel_reserva=Hotel Mediterraneo, fecha_entrada=2024-02-02, fecha_salida=2024-02-09]
+2024-02-02 10:40:14,818 [main] INFO  es.JoseJulianSaavedra.Principal          - Instancia creada de Reserva: Reserva [codigo_reserva=null, hotel_reserva=Hotel Odisea, fecha_entrada=2024-02-02, fecha_salida=2024-02-09]
+2024-02-02 10:40:14,826 [main] ERROR es.JoseJulianSaavedra.Principal          - Error en la operacion de persistencia del turista: Turista [codigo_turista=3001, nombre_turista=Domingo, apellido_turista=Pazos, fecha_turista=2005-06-15, reservas=[]]
+2024-02-02 10:40:14,827 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    442100 nanoseconds spent acquiring 1 JDBC connections;
+    324000 nanoseconds spent releasing 1 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 10:40:14,827 [main] INFO  es.JoseJulianSaavedra.Principal          - Cerrado el EntityManager
+2024-02-02 10:40:14,828 [main] INFO  es.JoseJulianSaavedra.Principal          - Fin del Programa
+2024-02-02 10:41:17,449 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: PersistenciaAgencia]
+2024-02-02 10:41:17,495 [main] INFO  org.hibernate.Version                    - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-02 10:41:17,528 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-02 10:41:17,529 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-02 10:41:17,682 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3333/agencia_2324
+2024-02-02 10:41:17,682 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001001: Connection properties: {password=****, autocommit=false, user=hibernate}
+2024-02-02 10:41:17,682 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001003: Autocommit mode: false
+2024-02-02 10:41:17,700 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog                  - MLog clients using slf4j logging.
+2024-02-02 10:41:17,790 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+2024-02-02 10:41:17,817 [main] INFO  org.hibernate.orm.connections.pooling.c3p0 - HHH10001007: JDBC isolation level: <unknown>
+2024-02-02 10:41:17,837 [main] INFO  c.m.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@68a971e3 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@96621524 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1hgf4jgb1t6r3mg1ccseyd|2f40a43, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@69ecaa01 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hgf4jgb1t6r3mg1ccseyd|3a4e343, jdbcUrl -> jdbc:mysql://localhost:3333/agencia_2324, properties -> {password=******, autocommit=false, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hgf4jgb1t6r3mg1ccseyd|e041f0c, numHelperThreads -> 3 ]
+2024-02-02 10:41:19,001 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-02 10:41:19,005 [main] INFO  es.JoseJulianSaavedra.Principal          - Inicio del Programa
+2024-02-02 10:41:19,034 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-02 10:41:19,036 [main] INFO  es.JoseJulianSaavedra.Principal          - Instancia creada de Turista: Turista [codigo_turista=3001, nombre_turista=Domingo, apellido_turista=Pazos, fecha_turista=2005-06-15, reservas=[]]
+2024-02-02 10:41:19,036 [main] INFO  es.JoseJulianSaavedra.Principal          - Instancia creada de Turista: Turista [codigo_turista=3002, nombre_turista=Mario, apellido_turista=García, fecha_turista=1999-02-21, reservas=[]]
+2024-02-02 10:41:19,036 [main] INFO  es.JoseJulianSaavedra.Principal          - Instancia creada de Reserva: Reserva [codigo_reserva=null, hotel_reserva=Hotel Mediterraneo, fecha_entrada=2024-02-02, fecha_salida=2024-02-09]
+2024-02-02 10:41:19,036 [main] INFO  es.JoseJulianSaavedra.Principal          - Instancia creada de Reserva: Reserva [codigo_reserva=null, hotel_reserva=Hotel Odisea, fecha_entrada=2024-02-02, fecha_salida=2024-02-09]
+2024-02-02 10:41:19,045 [main] ERROR es.JoseJulianSaavedra.Principal          - Error en la operacion de persistencia del turista: Turista [codigo_turista=3001, nombre_turista=Domingo, apellido_turista=Pazos, fecha_turista=2005-06-15, reservas=[]]
+2024-02-02 10:41:19,046 [main] INFO  o.h.e.i.StatisticalLoggingSessionEventListener - Session Metrics {
+    491500 nanoseconds spent acquiring 1 JDBC connections;
+    443700 nanoseconds spent releasing 1 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2024-02-02 10:41:19,046 [main] INFO  es.JoseJulianSaavedra.Principal          - Cerrado el EntityManager
+2024-02-02 10:41:19,048 [main] INFO  es.JoseJulianSaavedra.Principal          - Fin del Programa
