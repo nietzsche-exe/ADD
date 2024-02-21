@@ -308,3 +308,33 @@
 2024-01-26 11:26:30,268 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [10]
 2024-01-26 11:26:30,272 [main] INFO  es.ciudadescolar.Principal               - Actor [cod_act=10, nombre=Carlos, direccion_actor=Direccion [cod_dir=10, calle=San Cristobal, numero=7]]
 2024-01-26 11:26:30,276 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
+2024-02-19 12:14:09,113 [main] DEBUG o.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-02-19 12:14:09,115 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-02-19 12:14:09,270 [main] WARN  o.h.e.j.c.internal.ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-02-19 12:14:09,273 [main] WARN  org.hibernate.orm.connections.pooling    - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-02-19 12:14:10,415 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19 12:14:10,418 [main] INFO  es.ciudadescolar.Principal               - Iniciando programa...
+2024-02-19 12:14:10,443 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=true]
+2024-02-19 12:14:10,687 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        a1_0.cod_act,
+        a1_0.cod_direccion,
+        a1_0.nombre 
+    from
+        actores a1_0 
+    where
+        a1_0.nombre=?
+2024-02-19 12:14:10,693 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:VARCHAR) <- [Carlos]
+2024-02-19 12:14:10,724 [main] DEBUG org.hibernate.stat.internal.StatisticsImpl - HHH000117: HQL: from Actor a where a.nombre = :name, time: 50ms, rows: 1
+2024-02-19 12:14:10,727 [main] DEBUG org.hibernate.SQL                        - 
+    select
+        d1_0.cod_dir,
+        d1_0.calle,
+        d1_0.numero 
+    from
+        direcciones d1_0 
+    where
+        d1_0.cod_dir=?
+2024-02-19 12:14:10,729 [main] TRACE org.hibernate.orm.jdbc.bind              - binding parameter (1:INTEGER) <- [10]
+2024-02-19 12:14:10,740 [main] INFO  es.ciudadescolar.Principal               - Actor [cod_act=10, nombre=Carlos, direccion_actor=Direccion [cod_dir=10, calle=San Cristobal, numero=7]]
+2024-02-19 12:14:10,744 [main] INFO  es.ciudadescolar.Principal               - Fin del programa
