@@ -44,13 +44,9 @@ public class Controlador extends HttpServlet
 				rd = request.getRequestDispatcher("procNuevoActor.jsp");
 				rd.forward(request, response);
 				break;
-			case "borrarActor":
-			    // es el servidor quien redirije internamente hacia la vista borrarActor.jsp
-			    response.sendRedirect("borraActor.jsp?codigo=" + request.getParameter("cod_actor"));
-			    break;
 			default:
 				// es el cliente quien deber� invocar a este recurso
-				response.sendRedirect("home.jsp");
+				response.sendRedirect("index.html");
 	
 		}
 		

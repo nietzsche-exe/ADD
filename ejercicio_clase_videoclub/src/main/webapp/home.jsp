@@ -16,11 +16,10 @@
 		<input type="hidden" name="opcion" value="muestraActor">
 		<input type="hidden" name="cod_actor">
 		<table border="1">
-			<tr>
-				<td colspan="2"> lista de actores </td>
-			</tr>
+			
 			
 			<tr>
+			    <td colspan="2"> <h2> Actores </h2> </td>
 				<td colspan="2"> <a href="javascript:void(0)" onclick="javascript:document.frm_muestraActores.opcion.value='altaActor';document.frm_muestraActores.submit();"> Nuevo actor </a> </td>
 			</tr>
 			
@@ -50,6 +49,8 @@
 								<td> <a href="javascript:void(0)" onclick="javascript:document.frm_muestraActores.cod_actor.value='<%=actor.getCodigo_actor() %>';document.frm_muestraActores.submit();"> <%=actor.getNombre_actor() %> </a></td>
 								<td> <a href="javascript:void(0)" onclick="javascript:document.frm_muestraActores.cod_actor.value='<%=actor.getCodigo_actor() %>';document.frm_muestraActores.opcion.value='altaActor'.submit();">Borrar</a></td>
 							</tr>
+							
+							
 							<%
 						}
 					}
@@ -63,7 +64,11 @@
 			
 			
 		</table>
-		
+		</p>
+		</p>
+		<tr>
+			<td><a href="index.html">Volver pagina principal</a></td>
+		</tr>
 	</form>
 </body>
 </html>
